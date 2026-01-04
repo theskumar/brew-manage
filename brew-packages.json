@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-01-04T15:29:03.875972",
+  "generated_at": "2026-01-04T15:49:06.359554",
   "summary": {
-    "total_formulas": 336,
-    "total_casks": 14,
-    "total_packages": 350
+    "total_formulas": 334,
+    "total_casks": 13,
+    "total_packages": 347
   },
   "formulas": [
     {
@@ -1147,18 +1147,6 @@
       "required_by": [],
       "homepage": "https://www.gnu.org/software/findutils/",
       "version": "4.10.0",
-      "status": "success"
-    },
-    {
-      "name": "fish",
-      "type": "formula",
-      "description": "User-friendly command-line shell for UNIX-like operating systems",
-      "dependencies": [
-        "pcre2"
-      ],
-      "required_by": [],
-      "homepage": "https://fishshell.com",
-      "version": "4.3.2",
       "status": "success"
     },
     {
@@ -4719,7 +4707,6 @@
       "required_by": [
         "cairo",
         "ffmpeg",
-        "fish",
         "gdal",
         "gdk-pixbuf",
         "git",
@@ -5345,16 +5332,6 @@
       ],
       "homepage": "https://www.libsdl.org/",
       "version": "2.32.10",
-      "status": "success"
-    },
-    {
-      "name": "sevenzip",
-      "type": "formula",
-      "description": "7-Zip is a file archiver with a high compression ratio",
-      "dependencies": [],
-      "required_by": [],
-      "homepage": "https://7-zip.org",
-      "version": "25.01",
       "status": "success"
     },
     {
@@ -6349,14 +6326,6 @@
       "description": "Replacement for Docker Desktop",
       "homepage": "https://orbstack.dev/",
       "version": "2.0.5,19905",
-      "status": "success"
-    },
-    {
-      "name": "pearcleaner",
-      "type": "cask",
-      "description": "Utility to uninstall apps and remove leftover files from old/uninstalled apps",
-      "homepage": "https://itsalin.com/appInfo/?id=pearcleaner",
-      "version": "5.4.3",
       "status": "success"
     },
     {
