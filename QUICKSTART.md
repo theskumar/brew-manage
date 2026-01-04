@@ -133,17 +133,21 @@ brew uninstall <package-name>
 ## 🔧 Troubleshooting
 
 ### Script won't run?
+
 ```bash
 chmod +x brew-info.py brew-deps-graph.py
 ```
 
 ### Package not found?
+
 List all packages to find the exact name:
+
 ```bash
 ./brew-deps-graph.py brew-packages.json --list | grep <search-term>
 ```
 
 ### Output too long?
+
 - Use `--depth 2` to limit tree depth
 - Pipe to `less -R` for scrolling
 - Use `| head -50` to see first 50 lines
@@ -156,5 +160,3 @@ See [README.md](README.md) for complete documentation and all available options.
 
 - **brew-info.py**: ~30-60 seconds (one-time, save JSON)
 - **brew-deps-graph.py**: Instant (reads from JSON)
-
-vs. old bash script which took 5+ minutes every time!
