@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-01-04T15:49:06.359554",
+  "generated_at": "2026-08-15T16:02:52.317310",
   "summary": {
-    "total_formulas": 334,
-    "total_casks": 13,
-    "total_packages": 347
+    "total_formulas": 353,
+    "total_casks": 25,
+    "total_packages": 378
   },
   "formulas": [
     {
@@ -16,11 +16,38 @@
         "gdal",
         "grpc",
         "mosh",
+        "onnx",
+        "onnxruntime",
         "protobuf",
-        "re2"
+        "re2",
+        "yvgude/lean-ctx/lean-ctx"
       ],
       "homepage": "https://abseil.io",
-      "version": "20250814.1",
+      "version": "20260526.0",
+      "status": "success"
+    },
+    {
+      "name": "acli",
+      "type": "formula",
+      "description": "Software to interact with Atlassian Cloud from the terminal",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://developer.atlassian.com/cloud/acli/reference/commands/",
+      "version": "1.3.23-stable",
+      "status": "success"
+    },
+    {
+      "name": "ada-url",
+      "type": "formula",
+      "description": "WHATWG-compliant and fast URL parser written in modern C++",
+      "dependencies": [
+        "fmt"
+      ],
+      "required_by": [
+        "node"
+      ],
+      "homepage": "https://ada-url.com",
+      "version": "4.0.0",
       "status": "success"
     },
     {
@@ -48,23 +75,22 @@
       "type": "formula",
       "description": "Codec library for encoding and decoding AV1 video streams",
       "dependencies": [
-        "jpeg-xl",
         "libvmaf"
       ],
       "required_by": [
-        "ffmpeg",
+        "chafa",
         "gd",
         "gdal",
         "graphviz",
         "imagemagick",
         "libavif",
         "libheif",
-        "php",
         "pillow",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://aomedia.googlesource.com/aom",
-      "version": "3.13.1",
+      "version": "3.14.1",
       "status": "success"
     },
     {
@@ -91,7 +117,7 @@
         "gdal"
       ],
       "homepage": "https://arrow.apache.org/",
-      "version": "22.0.0",
+      "version": "25.0.1",
       "status": "success"
     },
     {
@@ -100,8 +126,7 @@
       "description": "Apache Portable Runtime library",
       "dependencies": [],
       "required_by": [
-        "apr-util",
-        "php"
+        "apr-util"
       ],
       "homepage": "https://apr.apache.org/",
       "version": "1.7.6",
@@ -115,51 +140,9 @@
         "apr",
         "openssl@3"
       ],
-      "required_by": [
-        "php"
-      ],
+      "required_by": [],
       "homepage": "https://apr.apache.org/",
-      "version": "1.6.3",
-      "status": "success"
-    },
-    {
-      "name": "argon2",
-      "type": "formula",
-      "description": "Password hashing library and CLI utility",
-      "dependencies": [],
-      "required_by": [
-        "php"
-      ],
-      "homepage": "https://github.com/P-H-C/phc-winner-argon2",
-      "version": "20190702",
-      "status": "success"
-    },
-    {
-      "name": "aribb24",
-      "type": "formula",
-      "description": "Library for ARIB STD-B24, decoding JIS 8 bit characters and parsing MPEG-TS",
-      "dependencies": [
-        "libpng"
-      ],
-      "required_by": [
-        "ffmpeg"
-      ],
-      "homepage": "https://code.videolan.org/jeeb/aribb24",
-      "version": "1.0.4",
-      "status": "success"
-    },
-    {
-      "name": "autoconf",
-      "type": "formula",
-      "description": "Automatic configure script builder",
-      "dependencies": [
-        "m4"
-      ],
-      "required_by": [
-        "php"
-      ],
-      "homepage": "https://www.gnu.org/software/autoconf/",
-      "version": "2.72",
+      "version": "1.6.5",
       "status": "success"
     },
     {
@@ -181,7 +164,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-auth",
-      "version": "0.9.4",
+      "version": "0.10.4",
       "status": "success"
     },
     {
@@ -204,7 +187,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-cal",
-      "version": "0.9.13",
+      "version": "0.9.15",
       "status": "success"
     },
     {
@@ -229,7 +212,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-common",
-      "version": "0.12.6",
+      "version": "0.14.5",
       "status": "success"
     },
     {
@@ -250,7 +233,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-compression",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "status": "success"
     },
     {
@@ -269,7 +252,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-event-stream",
-      "version": "0.5.9",
+      "version": "0.7.1",
       "status": "success"
     },
     {
@@ -292,7 +275,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-http",
-      "version": "0.10.8",
+      "version": "0.11.0",
       "status": "success"
     },
     {
@@ -301,7 +284,9 @@
       "description": "Event driven framework for implementing application protocols",
       "dependencies": [
         "aws-c-cal",
-        "aws-c-common"
+        "aws-c-common",
+        "openssl@3",
+        "s2n"
       ],
       "required_by": [
         "apache-arrow",
@@ -315,7 +300,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-io",
-      "version": "0.24.2",
+      "version": "0.27.6",
       "status": "success"
     },
     {
@@ -334,7 +319,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-mqtt",
-      "version": "0.13.3",
+      "version": "0.16.1",
       "status": "success"
     },
     {
@@ -356,7 +341,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-s3",
-      "version": "0.11.3",
+      "version": "0.13.5",
       "status": "success"
     },
     {
@@ -375,7 +360,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-sdkutils",
-      "version": "0.2.4",
+      "version": "0.2.9",
       "status": "success"
     },
     {
@@ -394,7 +379,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-checksums",
-      "version": "0.2.8",
+      "version": "0.2.10",
       "status": "success"
     },
     {
@@ -419,7 +404,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-crt-cpp",
-      "version": "0.36.1",
+      "version": "0.43.5",
       "status": "success"
     },
     {
@@ -440,7 +425,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/aws/aws-sdk-cpp",
-      "version": "1.11.720",
+      "version": "1.11.870",
       "status": "success"
     },
     {
@@ -465,7 +450,7 @@
         "guile"
       ],
       "homepage": "https://www.hboehm.info/gc/",
-      "version": "8.2.10",
+      "version": "8.2.12",
       "status": "success"
     },
     {
@@ -495,13 +480,14 @@
         "fizz",
         "folly",
         "gdal",
+        "ledger",
         "mvfst",
         "sfcgal",
         "wangle",
         "watchman"
       ],
       "homepage": "https://www.boost.org/",
-      "version": "1.90.0",
+      "version": "1.92.0",
       "status": "success"
     },
     {
@@ -511,7 +497,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/FelixKratz/JankyBorders",
-      "version": "1.8.4",
+      "version": "1.9.0",
       "status": "success"
     },
     {
@@ -520,22 +506,15 @@
       "description": "Generic-purpose lossless compression algorithm by Google",
       "dependencies": [],
       "required_by": [
-        "aom",
         "apache-arrow",
-        "curl",
-        "ffmpeg",
+        "chafa",
+        "dotnet@9",
         "fsouza/prettierd/prettierd",
         "gd",
         "gdal",
-        "graphviz",
-        "imagemagick",
         "jpeg-xl",
-        "libavif",
-        "libheif",
-        "node",
-        "php",
-        "pillow",
-        "weasyprint"
+        "marksman",
+        "node"
       ],
       "homepage": "https://github.com/google/brotli",
       "version": "1.2.0",
@@ -564,7 +543,7 @@
         "node"
       ],
       "homepage": "https://c-ares.org/",
-      "version": "1.34.6",
+      "version": "1.34.8",
       "status": "success"
     },
     {
@@ -587,10 +566,18 @@
       "required_by": [
         "apache-arrow",
         "apr-util",
+        "aws-c-auth",
+        "aws-c-event-stream",
+        "aws-c-http",
+        "aws-c-io",
+        "aws-c-mqtt",
+        "aws-c-s3",
+        "aws-crt-cpp",
+        "aws-sdk-cpp",
         "bat",
         "certifi",
         "cryptography",
-        "curl",
+        "dotnet@9",
         "edencommon",
         "eza",
         "fb303",
@@ -602,20 +589,23 @@
         "freetds",
         "fsouza/prettierd/prettierd",
         "gdal",
+        "git-delta",
+        "git-trim",
         "gnupg",
         "gnutls",
         "gpgme",
         "gpgmepp",
         "grpc",
+        "hf",
         "httpie",
-        "huggingface-cli",
         "ivandokov/contrib/phockup",
+        "joshmedeski/sesh/sesh",
         "keyring",
         "krb5",
+        "ledger",
         "libdap",
         "libevent",
         "libgit2",
-        "liblqr",
         "libmicrohttpd",
         "libngtcp2",
         "libpq",
@@ -625,39 +615,43 @@
         "libwebsockets",
         "litecli",
         "llvm",
+        "marksman",
         "mvfst",
-        "net-snmp",
         "node",
-        "openldap",
-        "openssl@1.1",
         "openssl@3",
+        "opusfile",
         "p11-kit",
         "pgsync",
-        "php",
         "poppler",
-        "postgresql@14",
-        "postgresql@16",
+        "postgresql@17",
         "python@3.13",
         "python@3.14",
         "qemu",
-        "redis",
         "rtmpdump",
         "ruby",
         "rust",
+        "s2n",
+        "semgrep",
+        "snowflake-cli",
+        "sox",
         "srt",
         "tcl-tk",
         "thrift",
         "tmux",
+        "tmuxinator",
+        "toot",
         "ttyd",
         "unbound",
+        "valkey",
         "virtualenv",
         "wangle",
         "watchman",
         "weasyprint",
-        "wget"
+        "wget",
+        "yt-dlp"
       ],
       "homepage": "https://curl.se/docs/caextract.html",
-      "version": "2025-12-02",
+      "version": "2026-08-13",
       "status": "success"
     },
     {
@@ -667,7 +661,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://caddyserver.com/",
-      "version": "2.10.2",
+      "version": "2.11.4",
       "status": "success"
     },
     {
@@ -688,18 +682,17 @@
         "gettext"
       ],
       "required_by": [
-        "ffmpeg",
+        "chafa",
         "gdal",
         "graphviz",
         "harfbuzz",
-        "imagemagick",
-        "libass",
         "libraqm",
         "librsvg",
         "pango",
         "pillow",
         "poppler",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://cairographics.org/",
@@ -717,7 +710,7 @@
         "qemu"
       ],
       "homepage": "https://www.capstone-engine.org/",
-      "version": "5.0.6",
+      "version": "5.0.9",
       "status": "success"
     },
     {
@@ -728,12 +721,16 @@
         "ca-certificates"
       ],
       "required_by": [
+        "hf",
         "httpie",
-        "huggingface-cli",
-        "litecli"
+        "litecli",
+        "semgrep",
+        "snowflake-cli",
+        "toot",
+        "yt-dlp"
       ],
       "homepage": "https://github.com/certifi/python-certifi",
-      "version": "2025.11.12",
+      "version": "2026.7.22",
       "status": "success"
     },
     {
@@ -744,10 +741,13 @@
         "pycparser"
       ],
       "required_by": [
-        "cryptography"
+        "cryptography",
+        "semgrep",
+        "snowflake-cli",
+        "weasyprint"
       ],
       "homepage": "https://cffi.readthedocs.io/en/latest/",
-      "version": "2.0.0",
+      "version": "2.1.1",
       "status": "success"
     },
     {
@@ -759,7 +759,7 @@
         "gdal"
       ],
       "homepage": "https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html",
-      "version": "4.6.3",
+      "version": "4.7.0",
       "status": "success"
     },
     {
@@ -777,7 +777,29 @@
         "sfcgal"
       ],
       "homepage": "https://www.cgal.org/",
-      "version": "6.1",
+      "version": "6.2",
+      "status": "success"
+    },
+    {
+      "name": "chafa",
+      "type": "formula",
+      "description": "Versatile and fast Unicode/ASCII/ANSI graphics renderer",
+      "dependencies": [
+        "cairo",
+        "freetype",
+        "glib",
+        "jpeg-turbo",
+        "jpeg-xl",
+        "libavif",
+        "librsvg",
+        "libtiff",
+        "webp",
+        "gdk-pixbuf",
+        "gettext"
+      ],
+      "required_by": [],
+      "homepage": "https://hpjansson.org/chafa/",
+      "version": "1.18.2",
       "status": "success"
     },
     {
@@ -786,21 +808,10 @@
       "description": "Ultralightweight JSON parser in ANSI C",
       "dependencies": [],
       "required_by": [
-        "ffmpeg",
         "librist"
       ],
       "homepage": "https://github.com/DaveGamble/cJSON",
       "version": "1.7.19",
-      "status": "success"
-    },
-    {
-      "name": "cloudflared",
-      "type": "formula",
-      "description": "Cloudflare Tunnel client (formerly Argo Tunnel)",
-      "dependencies": [],
-      "required_by": [],
-      "homepage": "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/",
-      "version": "2025.11.1",
       "status": "success"
     },
     {
@@ -810,7 +821,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://www.cmake.org/",
-      "version": "4.2.1",
+      "version": "4.4.2",
       "status": "success"
     },
     {
@@ -832,7 +843,7 @@
       ],
       "required_by": [],
       "homepage": "https://www.gnu.org/software/coreutils/",
-      "version": "9.9",
+      "version": "9.11",
       "status": "success"
     },
     {
@@ -853,30 +864,12 @@
         "cffi",
         "openssl@3"
       ],
-      "required_by": [],
-      "homepage": "https://cryptography.io/en/latest/",
-      "version": "46.0.3",
-      "status": "success"
-    },
-    {
-      "name": "curl",
-      "type": "formula",
-      "description": "Get a file from an HTTP, HTTPS or FTP server",
-      "dependencies": [
-        "brotli",
-        "libnghttp2",
-        "libnghttp3",
-        "libngtcp2",
-        "libssh2",
-        "openssl@3",
-        "rtmpdump",
-        "zstd"
-      ],
       "required_by": [
-        "php"
+        "semgrep",
+        "snowflake-cli"
       ],
-      "homepage": "https://curl.se",
-      "version": "8.17.0",
+      "homepage": "https://cryptography.io/en/latest/",
+      "version": "50.0.0",
       "status": "success"
     },
     {
@@ -885,14 +878,31 @@
       "description": "AV1 decoder targeted to be small and fast",
       "dependencies": [],
       "required_by": [
+        "chafa",
         "ffmpeg",
         "graphviz",
-        "php",
+        "libavif",
         "pillow",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://code.videolan.org/videolan/dav1d",
-      "version": "1.5.3",
+      "version": "1.5.4",
+      "status": "success"
+    },
+    {
+      "name": "deno",
+      "type": "formula",
+      "description": "Secure runtime for JavaScript and TypeScript",
+      "dependencies": [
+        "little-cms2",
+        "sqlite"
+      ],
+      "required_by": [
+        "yt-dlp"
+      ],
+      "homepage": "https://deno.com/",
+      "version": "2.9.5",
       "status": "success"
     },
     {
@@ -911,8 +921,8 @@
       "description": "Diff that understands syntax",
       "dependencies": [],
       "required_by": [],
-      "homepage": "https://github.com/Wilfred/difftastic",
-      "version": "0.67.0",
+      "homepage": "https://difftastic.wilfred.me.uk/",
+      "version": "0.70.0",
       "status": "success"
     },
     {
@@ -922,7 +932,23 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/dotenvx/dotenvx",
-      "version": "1.51.4",
+      "version": "2.21.0",
+      "status": "success"
+    },
+    {
+      "name": "dotnet@9",
+      "type": "formula",
+      "description": ".NET Core",
+      "dependencies": [
+        "brotli",
+        "icu4c@78",
+        "openssl@3"
+      ],
+      "required_by": [
+        "marksman"
+      ],
+      "homepage": "https://dotnet.microsoft.com/",
+      "version": "9.0.119",
       "status": "success"
     },
     {
@@ -948,12 +974,36 @@
       "name": "dtc",
       "type": "formula",
       "description": "Device tree compiler",
-      "dependencies": [],
+      "dependencies": [
+        "libyaml"
+      ],
       "required_by": [
         "qemu"
       ],
       "homepage": "https://git.kernel.org/pub/scm/utils/dtc/dtc.git",
-      "version": "1.7.2",
+      "version": "1.8.1",
+      "status": "success"
+    },
+    {
+      "name": "duckdb",
+      "type": "formula",
+      "description": "Embeddable SQL OLAP Database Management System",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://www.duckdb.org",
+      "version": "1.5.5",
+      "status": "success"
+    },
+    {
+      "name": "dwarfutils",
+      "type": "formula",
+      "description": "Dump and produce DWARF debug information in ELF objects",
+      "dependencies": [],
+      "required_by": [
+        "semgrep"
+      ],
+      "homepage": "https://www.prevanders.net/dwarf.html",
+      "version": "2.3.2",
       "status": "success"
     },
     {
@@ -963,18 +1013,14 @@
       "dependencies": [
         "boost",
         "fb303",
-        "fbthrift",
         "fmt",
-        "folly",
-        "gflags",
-        "glog",
-        "openssl@3"
+        "folly"
       ],
       "required_by": [
         "watchman"
       ],
       "homepage": "https://github.com/facebookexperimental/edencommon",
-      "version": "2025.12.29.00",
+      "version": "2026.07.27.00",
       "status": "success"
     },
     {
@@ -1014,7 +1060,7 @@
         "ivandokov/contrib/phockup"
       ],
       "homepage": "https://exiftool.org",
-      "version": "13.44",
+      "version": "13.55",
       "status": "success"
     },
     {
@@ -1025,8 +1071,18 @@
         "libgit2"
       ],
       "required_by": [],
-      "homepage": "https://github.com/eza-community/eza",
-      "version": "0.23.4",
+      "homepage": "https://eza.rocks",
+      "version": "0.23.5",
+      "status": "success"
+    },
+    {
+      "name": "fabric-ai",
+      "type": "formula",
+      "description": "Open-source framework for augmenting humans using AI",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://github.com/danielmiessler/fabric",
+      "version": "1.4.470",
       "status": "success"
     },
     {
@@ -1035,19 +1091,17 @@
       "description": "Thrift functions for querying information from a service",
       "dependencies": [
         "fbthrift",
-        "fizz",
         "fmt",
         "folly",
         "gflags",
-        "glog",
-        "openssl@3"
+        "glog"
       ],
       "required_by": [
         "edencommon",
         "watchman"
       ],
       "homepage": "https://github.com/facebook/fb303",
-      "version": "2025.12.29.00",
+      "version": "2026.07.27.00",
       "status": "success"
     },
     {
@@ -1063,8 +1117,7 @@
         "glog",
         "openssl@3",
         "wangle",
-        "xxhash",
-        "zstd"
+        "xxhash"
       ],
       "required_by": [
         "edencommon",
@@ -1072,7 +1125,7 @@
         "watchman"
       ],
       "homepage": "https://github.com/facebook/fbthrift",
-      "version": "2025.12.29.00",
+      "version": "2026.07.27.00",
       "status": "success"
     },
     {
@@ -1082,61 +1135,29 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/sharkdp/fd",
-      "version": "10.3.0",
+      "version": "10.4.2",
       "status": "success"
     },
     {
       "name": "ffmpeg",
       "type": "formula",
-      "description": "Play, record, convert, and stream audio and video",
+      "description": "Play, record, convert, and stream select audio and video codecs",
       "dependencies": [
-        "aom",
-        "aribb24",
         "dav1d",
-        "fontconfig",
-        "freetype",
-        "frei0r",
-        "gnutls",
-        "harfbuzz",
-        "jpeg-xl",
         "lame",
-        "libass",
-        "libbluray",
-        "librist",
-        "libsoxr",
-        "libssh",
-        "libvidstab",
         "libvmaf",
-        "libvorbis",
         "libvpx",
-        "libx11",
-        "libxcb",
-        "opencore-amr",
-        "openjpeg",
+        "openssl@3",
         "opus",
-        "rav1e",
-        "rubberband",
-        "sdl2",
-        "snappy",
-        "speex",
-        "srt",
+        "sdl2-compat",
         "svt-av1",
-        "tesseract",
-        "theora",
-        "webp",
         "x264",
         "x265",
-        "xvid",
-        "xz",
-        "zeromq",
-        "zimg",
-        "libarchive",
-        "libogg",
-        "libsamplerate"
+        "xz"
       ],
       "required_by": [],
       "homepage": "https://ffmpeg.org/",
-      "version": "8.0.1",
+      "version": "9.0.1",
       "status": "success"
     },
     {
@@ -1146,7 +1167,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://www.gnu.org/software/findutils/",
-      "version": "4.10.0",
+      "version": "4.11.0",
       "status": "success"
     },
     {
@@ -1154,10 +1175,8 @@
       "type": "formula",
       "description": "C++14 implementation of the TLS-1.3 standard",
       "dependencies": [
-        "double-conversion",
         "fmt",
         "folly",
-        "gflags",
         "glog",
         "libsodium",
         "openssl@3",
@@ -1172,7 +1191,7 @@
         "watchman"
       ],
       "homepage": "https://github.com/facebookincubator/fizz",
-      "version": "2025.12.29.00",
+      "version": "2026.07.27.00",
       "status": "success"
     },
     {
@@ -1183,9 +1202,8 @@
         "libogg"
       ],
       "required_by": [
-        "ffmpeg",
         "libsndfile",
-        "rubberband"
+        "sox"
       ],
       "homepage": "https://xiph.org/flac/",
       "version": "1.5.0",
@@ -1198,7 +1216,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://fly.io",
-      "version": "0.4.0",
+      "version": "0.4.83",
       "status": "success"
     },
     {
@@ -1207,27 +1225,19 @@
       "description": "Open-source formatting library for C++",
       "dependencies": [],
       "required_by": [
+        "ada-url",
         "edencommon",
         "fb303",
         "fbthrift",
         "fizz",
         "folly",
         "mvfst",
+        "node",
         "wangle",
         "watchman"
       ],
       "homepage": "https://fmt.dev/",
-      "version": "12.1.0",
-      "status": "success"
-    },
-    {
-      "name": "fnm",
-      "type": "formula",
-      "description": "Fast and simple Node.js version manager",
-      "dependencies": [],
-      "required_by": [],
-      "homepage": "https://github.com/Schniz/fnm",
-      "version": "1.38.1",
+      "version": "12.2.0",
       "status": "success"
     },
     {
@@ -1258,7 +1268,7 @@
         "watchman"
       ],
       "homepage": "https://github.com/facebook/folly",
-      "version": "2025.12.29.00",
+      "version": "2026.07.27.00",
       "status": "success"
     },
     {
@@ -1271,25 +1281,22 @@
       ],
       "required_by": [
         "cairo",
-        "ffmpeg",
+        "chafa",
         "gd",
         "gdal",
         "graphviz",
         "harfbuzz",
-        "imagemagick",
-        "libass",
-        "libbluray",
         "libraqm",
         "librsvg",
         "pango",
-        "php",
         "pillow",
         "poppler",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://wiki.freedesktop.org/www/Software/fontconfig/",
-      "version": "2.17.1",
+      "version": "2.18.3",
       "status": "success"
     },
     {
@@ -1301,7 +1308,7 @@
       ],
       "required_by": [],
       "homepage": "https://github.com/fonttools/fonttools",
-      "version": "4.61.1",
+      "version": "4.63.0",
       "status": "success"
     },
     {
@@ -1332,11 +1339,9 @@
         "openssl@3",
         "unixodbc"
       ],
-      "required_by": [
-        "php"
-      ],
+      "required_by": [],
       "homepage": "https://www.freetds.org/",
-      "version": "1.5.10",
+      "version": "1.5.18",
       "status": "success"
     },
     {
@@ -1348,26 +1353,24 @@
       ],
       "required_by": [
         "cairo",
-        "ffmpeg",
+        "chafa",
         "fontconfig",
         "gd",
         "gdal",
         "graphviz",
         "harfbuzz",
         "imagemagick",
-        "libass",
-        "libbluray",
         "libraqm",
         "librsvg",
         "pango",
-        "php",
         "pillow",
         "poppler",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://www.freetype.org/",
-      "version": "2.14.1",
+      "version": "2.14.3",
       "status": "success"
     },
     {
@@ -1386,32 +1389,19 @@
       "status": "success"
     },
     {
-      "name": "frei0r",
-      "type": "formula",
-      "description": "Minimalistic plugin API for video effects",
-      "dependencies": [],
-      "required_by": [
-        "ffmpeg"
-      ],
-      "homepage": "https://frei0r.dyne.org/",
-      "version": "2.5.1",
-      "status": "success"
-    },
-    {
       "name": "fribidi",
       "type": "formula",
       "description": "Implementation of the Unicode BiDi algorithm",
       "dependencies": [],
       "required_by": [
-        "ffmpeg",
+        "chafa",
         "graphviz",
-        "imagemagick",
-        "libass",
         "libraqm",
         "librsvg",
         "pango",
         "pillow",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://github.com/fribidi/fribidi",
@@ -1424,8 +1414,8 @@
       "description": "Monitor a directory for changes and run a shell command",
       "dependencies": [],
       "required_by": [],
-      "homepage": "https://github.com/emcrisostomo/fswatch",
-      "version": "1.18.3",
+      "homepage": "https://emcrisostomo.github.io/fswatch/",
+      "version": "1.22.0",
       "status": "success"
     },
     {
@@ -1434,8 +1424,8 @@
       "description": "Command-line fuzzy finder written in Go",
       "dependencies": [],
       "required_by": [],
-      "homepage": "https://github.com/junegunn/fzf",
-      "version": "0.67.0",
+      "homepage": "https://junegunn.github.io/fzf/",
+      "version": "0.74.2",
       "status": "success"
     },
     {
@@ -1457,7 +1447,7 @@
         "openblas"
       ],
       "homepage": "https://gcc.gnu.org/",
-      "version": "15.2.0",
+      "version": "16.1.0",
       "status": "success"
     },
     {
@@ -1474,8 +1464,7 @@
         "webp"
       ],
       "required_by": [
-        "graphviz",
-        "php"
+        "graphviz"
       ],
       "homepage": "https://libgd.github.io/",
       "version": "2.3.3",
@@ -1533,7 +1522,7 @@
       ],
       "required_by": [],
       "homepage": "https://gdal.org/en/stable/",
-      "version": "3.12.1",
+      "version": "3.13.2",
       "status": "success"
     },
     {
@@ -1548,12 +1537,12 @@
         "gettext"
       ],
       "required_by": [
+        "chafa",
         "graphviz",
-        "imagemagick",
         "librsvg"
       ],
       "homepage": "https://gtk.org",
-      "version": "2.44.4",
+      "version": "2.44.8",
       "status": "success"
     },
     {
@@ -1575,12 +1564,13 @@
       "type": "formula",
       "description": "GNU internationalization (i18n) and localization (l10n) library",
       "dependencies": [
+        "json-c",
         "libunistring"
       ],
       "required_by": [
         "cairo",
         "capstone",
-        "ffmpeg",
+        "chafa",
         "fontconfig",
         "gdal",
         "gdk-pixbuf",
@@ -1593,36 +1583,32 @@
         "graphviz",
         "gts",
         "harfbuzz",
-        "imagemagick",
-        "libass",
+        "ledger",
         "libassuan",
-        "libbluray",
         "libgcrypt",
         "libgpg-error",
-        "libheif",
         "libidn2",
         "libksba",
-        "liblqr",
         "libmicrohttpd",
         "libraqm",
         "librist",
         "librsvg",
         "libslirp",
+        "newsboat",
         "pango",
-        "php",
         "pillow",
         "pinentry",
         "poppler",
-        "postgresql@16",
+        "postgresql@17",
         "qemu",
-        "shared-mime-info",
         "tesseract",
+        "toot",
         "wdiff",
         "weasyprint",
         "wget"
       ],
       "homepage": "https://www.gnu.org/software/gettext/",
-      "version": "0.26",
+      "version": "1.0",
       "status": "success"
     },
     {
@@ -1642,7 +1628,7 @@
         "watchman"
       ],
       "homepage": "https://gflags.github.io/gflags/",
-      "version": "2.3.0",
+      "version": "2.3.1",
       "status": "success"
     },
     {
@@ -1652,7 +1638,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://cli.github.com/",
-      "version": "2.83.2",
+      "version": "2.97.0",
       "status": "success"
     },
     {
@@ -1661,24 +1647,30 @@
       "description": "Library and utilities for processing GIFs",
       "dependencies": [],
       "required_by": [
-        "aom",
-        "ffmpeg",
+        "chafa",
+        "deno",
         "gd",
         "gdal",
+        "gdk-pixbuf",
         "graphviz",
         "imagemagick",
         "jpeg-xl",
         "leptonica",
-        "libavif",
         "libheif",
-        "php",
+        "librsvg",
+        "libtiff",
+        "openexr",
+        "openjph",
         "pillow",
+        "poppler",
         "tesseract",
+        "toot",
         "weasyprint",
-        "webp"
+        "webp",
+        "yt-dlp"
       ],
       "homepage": "https://giflib.sourceforge.net/",
-      "version": "5.2.2",
+      "version": "6.1.3",
       "status": "success"
     },
     {
@@ -1686,13 +1678,35 @@
       "type": "formula",
       "description": "Distributed revision control system",
       "dependencies": [
-        "gettext",
         "pcre2",
-        "libiconv"
+        "gettext"
       ],
       "required_by": [],
       "homepage": "https://git-scm.com",
-      "version": "2.52.0",
+      "version": "2.55.0",
+      "status": "success"
+    },
+    {
+      "name": "git-delta",
+      "type": "formula",
+      "description": "Syntax-highlighting pager for git and diff output",
+      "dependencies": [
+        "libgit2",
+        "oniguruma"
+      ],
+      "required_by": [],
+      "homepage": "https://dandavison.github.io/delta/",
+      "version": "0.19.2",
+      "status": "success"
+    },
+    {
+      "name": "git-filter-repo",
+      "type": "formula",
+      "description": "Quickly rewrite git repository history",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://github.com/newren/git-filter-repo",
+      "version": "2.47.0",
       "status": "success"
     },
     {
@@ -1701,10 +1715,22 @@
       "description": "Git extension for versioning large files",
       "dependencies": [],
       "required_by": [
-        "huggingface-cli"
+        "hf"
       ],
       "homepage": "https://git-lfs.com/",
       "version": "3.7.1",
+      "status": "success"
+    },
+    {
+      "name": "git-trim",
+      "type": "formula",
+      "description": "Trim your git remote tracking branches that are merged or gone",
+      "dependencies": [
+        "openssl@3"
+      ],
+      "required_by": [],
+      "homepage": "https://github.com/foriequal0/git-trim",
+      "version": "0.4.4",
       "status": "success"
     },
     {
@@ -1714,7 +1740,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://gitleaks.io/",
-      "version": "8.30.0",
+      "version": "8.30.1",
       "status": "success"
     },
     {
@@ -1727,16 +1753,12 @@
       ],
       "required_by": [
         "cairo",
-        "ffmpeg",
+        "chafa",
         "gdal",
         "gdk-pixbuf",
         "graphviz",
         "gts",
         "harfbuzz",
-        "imagemagick",
-        "libass",
-        "libheif",
-        "liblqr",
         "libraqm",
         "librsvg",
         "libslirp",
@@ -1744,12 +1766,12 @@
         "pillow",
         "poppler",
         "qemu",
-        "shared-mime-info",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://docs.gtk.org/glib/",
-      "version": "2.86.3",
+      "version": "2.88.3",
       "status": "success"
     },
     {
@@ -1770,7 +1792,7 @@
         "watchman"
       ],
       "homepage": "https://google.github.io/glog/stable/",
-      "version": "0.6.0",
+      "version": "0.7.1",
       "status": "success"
     },
     {
@@ -1780,7 +1802,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/charmbracelet/glow",
-      "version": "2.1.1",
+      "version": "3.0.0",
       "status": "success"
     },
     {
@@ -1791,7 +1813,6 @@
       "required_by": [
         "cgal",
         "coreutils",
-        "ffmpeg",
         "gcc",
         "gdal",
         "gnupg",
@@ -1801,6 +1822,7 @@
         "guile",
         "hdf5",
         "isl",
+        "ledger",
         "libmicrohttpd",
         "libmpc",
         "librist",
@@ -1809,9 +1831,10 @@
         "nettle",
         "numpy",
         "openblas",
-        "php",
+        "pandoc",
         "poppler",
         "qemu",
+        "semgrep",
         "sfcgal"
       ],
       "homepage": "https://gmplib.org/",
@@ -1825,7 +1848,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://www.gnu.org/software/sed/",
-      "version": "4.9",
+      "version": "4.10",
       "status": "success"
     },
     {
@@ -1848,10 +1871,11 @@
         "gdal",
         "gpgme",
         "gpgmepp",
+        "ledger",
         "poppler"
       ],
       "homepage": "https://gnupg.org/",
-      "version": "2.4.9",
+      "version": "2.5.21",
       "status": "success"
     },
     {
@@ -1866,22 +1890,21 @@
         "libunistring",
         "nettle",
         "p11-kit",
-        "unbound",
         "gettext"
       ],
       "required_by": [
-        "ffmpeg",
         "gdal",
         "gnupg",
         "gpgme",
         "gpgmepp",
+        "ledger",
         "libmicrohttpd",
         "librist",
         "poppler",
         "qemu"
       ],
       "homepage": "https://gnutls.org/",
-      "version": "3.8.11",
+      "version": "3.8.13",
       "status": "success"
     },
     {
@@ -1896,10 +1919,11 @@
       "required_by": [
         "gdal",
         "gpgmepp",
+        "ledger",
         "poppler"
       ],
       "homepage": "https://www.gnupg.org/related_software/gpgme/",
-      "version": "2.0.1",
+      "version": "2.1.2",
       "status": "success"
     },
     {
@@ -1911,10 +1935,11 @@
       ],
       "required_by": [
         "gdal",
+        "ledger",
         "poppler"
       ],
       "homepage": "https://www.gnupg.org/related_software/gpgme/",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "status": "success"
     },
     {
@@ -1923,20 +1948,19 @@
       "description": "Smart font renderer for non-Roman scripts",
       "dependencies": [],
       "required_by": [
-        "ffmpeg",
+        "chafa",
         "graphviz",
         "harfbuzz",
-        "imagemagick",
-        "libass",
         "libraqm",
         "librsvg",
         "pango",
         "pillow",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://graphite.sil.org/",
-      "version": "1.3.14",
+      "version": "1.3.15",
       "status": "success"
     },
     {
@@ -1961,7 +1985,7 @@
       ],
       "required_by": [],
       "homepage": "https://graphviz.org/",
-      "version": "14.1.1",
+      "version": "15.1.1",
       "status": "success"
     },
     {
@@ -1992,7 +2016,7 @@
         "gdal"
       ],
       "homepage": "https://grpc.io/",
-      "version": "1.76.0",
+      "version": "1.83.0",
       "status": "success"
     },
     {
@@ -2037,22 +2061,22 @@
         "freetype",
         "glib",
         "graphite2",
-        "icu4c@78"
+        "icu4c@78",
+        "libpng"
       ],
       "required_by": [
-        "ffmpeg",
+        "chafa",
         "graphviz",
-        "imagemagick",
-        "libass",
         "libraqm",
         "librsvg",
         "pango",
         "pillow",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://github.com/harfbuzz/harfbuzz",
-      "version": "12.3.0",
+      "version": "14.3.1",
       "status": "success"
     },
     {
@@ -2069,20 +2093,54 @@
         "netcdf"
       ],
       "homepage": "https://www.hdfgroup.org/solutions/hdf5/",
-      "version": "1.14.6",
+      "version": "2.2.0",
+      "status": "success"
+    },
+    {
+      "name": "hdrhistogram_c",
+      "type": "formula",
+      "description": "C port of the HdrHistogram",
+      "dependencies": [],
+      "required_by": [
+        "node"
+      ],
+      "homepage": "https://github.com/HdrHistogram/HdrHistogram_c",
+      "version": "0.11.10",
+      "status": "success"
+    },
+    {
+      "name": "helix",
+      "type": "formula",
+      "description": "Post-modern modal text editor",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://helix-editor.com",
+      "version": "25.07.1",
       "status": "success"
     },
     {
       "name": "heroku",
       "type": "formula",
-      "description": "CLI for Heroku",
+      "description": "Everything you need to get started with Heroku",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://cli.heroku.com",
+      "version": "11.9.0",
+      "status": "success"
+    },
+    {
+      "name": "hf",
+      "type": "formula",
+      "description": "Client library for huggingface.co hub",
       "dependencies": [
-        "node",
-        "terminal-notifier"
+        "certifi",
+        "git-lfs",
+        "libyaml",
+        "python@3.14"
       ],
       "required_by": [],
-      "homepage": "https://www.npmjs.com/package/heroku/",
-      "version": "10.16.0",
+      "homepage": "https://huggingface.co/docs/huggingface_hub/guides/cli",
+      "version": "1.27.0",
       "status": "success"
     },
     {
@@ -2091,21 +2149,23 @@
       "description": "Performance-portable, length-agnostic SIMD with runtime dispatch",
       "dependencies": [],
       "required_by": [
-        "aom",
-        "ffmpeg",
+        "chafa",
         "gd",
         "gdal",
-        "graphviz",
-        "imagemagick",
-        "jpeg-xl",
-        "libavif",
-        "libheif",
-        "php",
-        "pillow",
-        "weasyprint"
+        "jpeg-xl"
       ],
       "homepage": "https://github.com/google/highway",
-      "version": "1.3.0",
+      "version": "1.4.0",
+      "status": "success"
+    },
+    {
+      "name": "hl",
+      "type": "formula",
+      "description": "Fast and powerful log viewer and processor",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://github.com/pamburus/hl",
+      "version": "0.36.3",
       "status": "success"
     },
     {
@@ -2117,7 +2177,7 @@
       ],
       "required_by": [],
       "homepage": "https://htop.dev/",
-      "version": "3.4.1",
+      "version": "3.5.2",
       "status": "success"
     },
     {
@@ -2145,7 +2205,7 @@
       ],
       "required_by": [],
       "homepage": "https://huggingface.co/docs/huggingface_hub/guides/cli",
-      "version": "1.2.3",
+      "version": "1.27.0",
       "status": "success"
     },
     {
@@ -2155,30 +2215,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://gohugo.io/",
-      "version": "0.154.2",
-      "status": "success"
-    },
-    {
-      "name": "icu4c@76",
-      "type": "formula",
-      "description": "C/C++ and Java libraries for Unicode and globalization",
-      "dependencies": [],
-      "required_by": [],
-      "homepage": "https://icu.unicode.org/home",
-      "version": "76.1",
-      "status": "success"
-    },
-    {
-      "name": "icu4c@77",
-      "type": "formula",
-      "description": "C/C++ and Java libraries for Unicode and globalization",
-      "dependencies": [],
-      "required_by": [
-        "libass",
-        "libraqm"
-      ],
-      "homepage": "https://icu.unicode.org/home",
-      "version": "77.1",
+      "version": "0.165.0",
       "status": "success"
     },
     {
@@ -2189,70 +2226,59 @@
       "required_by": [
         "boost",
         "cgal",
+        "chafa",
+        "dotnet@9",
         "edencommon",
         "fb303",
         "fbthrift",
-        "ffmpeg",
         "fizz",
         "folly",
         "fsouza/prettierd/prettierd",
         "gdal",
         "graphviz",
         "harfbuzz",
-        "imagemagick",
+        "ledger",
         "libpq",
+        "libraqm",
         "librsvg",
+        "marksman",
+        "merve",
         "mvfst",
         "node",
         "pango",
         "pgsync",
-        "php",
         "pillow",
-        "postgresql@14",
-        "postgresql@16",
+        "postgresql@17",
         "sfcgal",
+        "simdutf",
         "tesseract",
+        "toot",
         "wangle",
         "watchman",
         "weasyprint"
       ],
       "homepage": "https://icu.unicode.org/home",
-      "version": "78.1",
+      "version": "78.3",
       "status": "success"
     },
     {
       "name": "imagemagick",
       "type": "formula",
-      "description": "Tools and libraries to manipulate images in many formats",
+      "description": "Tools and libraries to manipulate images in select formats",
       "dependencies": [
-        "cairo",
-        "fontconfig",
         "freetype",
         "jpeg-turbo",
-        "jpeg-xl",
         "libheif",
-        "liblqr",
         "libpng",
-        "libraw",
-        "librsvg",
         "libtiff",
         "libtool",
-        "libultrahdr",
-        "libzip",
         "little-cms2",
-        "openexr",
-        "openjpeg",
         "webp",
-        "xz",
-        "gdk-pixbuf",
-        "gettext",
-        "glib",
-        "imath",
-        "libomp"
+        "xz"
       ],
       "required_by": [],
-      "homepage": "https://imagemagick.org/index.php",
-      "version": "7.1.2-12",
+      "homepage": "https://imagemagick.org",
+      "version": "7.1.2-29",
       "status": "success"
     },
     {
@@ -2261,19 +2287,11 @@
       "description": "Library of 2D and 3D vector, matrix, and math operations",
       "dependencies": [],
       "required_by": [
-        "aom",
-        "ffmpeg",
+        "chafa",
         "gd",
         "gdal",
-        "graphviz",
-        "imagemagick",
         "jpeg-xl",
-        "libavif",
-        "libheif",
-        "openexr",
-        "php",
-        "pillow",
-        "weasyprint"
+        "openexr"
       ],
       "homepage": "https://imath.readthedocs.io/en/latest/",
       "version": "3.2.2",
@@ -2295,7 +2313,17 @@
         "openblas"
       ],
       "homepage": "https://libisl.sourceforge.io/",
-      "version": "0.27",
+      "version": "0.28",
+      "status": "success"
+    },
+    {
+      "name": "iwe",
+      "type": "formula",
+      "description": "Markdown-based personal knowledge management tool for developers",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://iwe.md",
+      "version": "0.19.1",
       "status": "success"
     },
     {
@@ -2308,12 +2336,34 @@
       "required_by": [
         "graphviz",
         "gts",
-        "imagemagick",
-        "libraw",
         "netpbm"
       ],
       "homepage": "https://ece.engr.uvic.ca/~frodo/jasper/",
-      "version": "4.2.8",
+      "version": "4.2.9",
+      "status": "success"
+    },
+    {
+      "name": "jj",
+      "type": "formula",
+      "description": "Git-compatible distributed version control system",
+      "dependencies": [],
+      "required_by": [
+        "jjui"
+      ],
+      "homepage": "https://github.com/jj-vcs/jj",
+      "version": "0.44.0",
+      "status": "success"
+    },
+    {
+      "name": "jjui",
+      "type": "formula",
+      "description": "TUI for interacting with the Jujutsu version control system",
+      "dependencies": [
+        "jj"
+      ],
+      "required_by": [],
+      "homepage": "https://idursun.github.io/jjui/",
+      "version": "0.10.9",
       "status": "success"
     },
     {
@@ -2322,8 +2372,8 @@
       "description": "JPEG image codec that aids compression and decompression",
       "dependencies": [],
       "required_by": [
-        "aom",
-        "ffmpeg",
+        "chafa",
+        "deno",
         "gd",
         "gdal",
         "gdk-pixbuf",
@@ -2336,27 +2386,26 @@
         "libavif",
         "libgeotiff",
         "libheif",
-        "libraw",
         "librsvg",
         "libspatialite",
         "libtiff",
-        "libultrahdr",
         "little-cms2",
         "netpbm",
         "openexr",
         "openjpeg",
         "openjph",
-        "php",
         "pillow",
         "poppler",
         "proj",
         "qemu",
         "tesseract",
+        "toot",
         "weasyprint",
-        "webp"
+        "webp",
+        "yt-dlp"
       ],
       "homepage": "https://www.libjpeg-turbo.org/",
-      "version": "3.1.3",
+      "version": "3.2.0",
       "status": "success"
     },
     {
@@ -2374,20 +2423,12 @@
         "openexr"
       ],
       "required_by": [
-        "aom",
-        "ffmpeg",
+        "chafa",
         "gd",
-        "gdal",
-        "graphviz",
-        "imagemagick",
-        "libavif",
-        "libheif",
-        "php",
-        "pillow",
-        "weasyprint"
+        "gdal"
       ],
       "homepage": "https://jpeg.org/jpegxl/index.html",
-      "version": "0.11.1",
+      "version": "0.12.0",
       "status": "success"
     },
     {
@@ -2399,7 +2440,7 @@
       ],
       "required_by": [],
       "homepage": "https://jqlang.github.io/jq/",
-      "version": "1.8.1",
+      "version": "1.8.2",
       "status": "success"
     },
     {
@@ -2408,11 +2449,37 @@
       "description": "JSON parser for C",
       "dependencies": [],
       "required_by": [
+        "capstone",
+        "chafa",
+        "fontconfig",
         "gdal",
-        "ttyd"
+        "gdk-pixbuf",
+        "git",
+        "glib",
+        "gnupg",
+        "gnutls",
+        "gpgme",
+        "gpgmepp",
+        "graphviz",
+        "harfbuzz",
+        "ledger",
+        "libksba",
+        "libmicrohttpd",
+        "librist",
+        "librsvg",
+        "libslirp",
+        "newsboat",
+        "pango",
+        "pillow",
+        "pinentry",
+        "poppler",
+        "qemu",
+        "toot",
+        "ttyd",
+        "weasyprint"
       ],
       "homepage": "https://github.com/json-c/json-c/wiki",
-      "version": "0.18",
+      "version": "0.19",
       "status": "success"
     },
     {
@@ -2421,8 +2488,18 @@
       "description": "Handy way to save and run project-specific commands",
       "dependencies": [],
       "required_by": [],
-      "homepage": "https://github.com/casey/just",
-      "version": "1.46.0",
+      "homepage": "https://just.systems",
+      "version": "1.58.0",
+      "status": "success"
+    },
+    {
+      "name": "ketch",
+      "type": "formula",
+      "description": "Fast web search and scrape CLI for agents",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://github.com/1broseidon/ketch",
+      "version": "0.14.0",
       "status": "success"
     },
     {
@@ -2448,26 +2525,26 @@
         "gdal",
         "libpq",
         "pgsync",
-        "php",
-        "postgresql@14",
-        "postgresql@16"
+        "postgresql@17"
       ],
       "homepage": "https://web.mit.edu/kerberos/",
-      "version": "1.22.1",
+      "version": "1.22.2",
       "status": "success"
     },
     {
       "name": "lame",
       "type": "formula",
       "description": "High quality MPEG Audio Layer III (MP3) encoder",
-      "dependencies": [],
+      "dependencies": [
+        "mpg123"
+      ],
       "required_by": [
         "ffmpeg",
         "libsndfile",
-        "rubberband"
+        "sox"
       ],
       "homepage": "https://lame.sourceforge.io/",
-      "version": "3.100",
+      "version": "4.0",
       "status": "success"
     },
     {
@@ -2477,7 +2554,37 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/jesseduffield/lazygit/",
-      "version": "0.58.0",
+      "version": "0.64.1",
+      "status": "success"
+    },
+    {
+      "name": "lean-ctx",
+      "type": "formula",
+      "description": "The Context Engineering Layer for AI Coding \u2014 71 MCP tools, 10 read modes, 95+ shell patterns",
+      "dependencies": [
+        "onnxruntime"
+      ],
+      "required_by": [],
+      "homepage": "https://leanctx.com",
+      "version": "3.9.18",
+      "status": "success"
+    },
+    {
+      "name": "ledger",
+      "type": "formula",
+      "description": "Command-line, double-entry accounting tool",
+      "dependencies": [
+        "boost",
+        "gmp",
+        "gpgme",
+        "gpgmepp",
+        "mpfr",
+        "python@3.14",
+        "libassuan"
+      ],
+      "required_by": [],
+      "homepage": "https://ledger-cli.org/",
+      "version": "3.4.1",
       "status": "success"
     },
     {
@@ -2493,7 +2600,6 @@
         "webp"
       ],
       "required_by": [
-        "ffmpeg",
         "tesseract"
       ],
       "homepage": "http://www.leptonica.org/",
@@ -2511,7 +2617,7 @@
         "netcdf"
       ],
       "homepage": "https://gitlab.dkrz.de/k202009/libaec",
-      "version": "1.1.4",
+      "version": "1.1.7",
       "status": "success"
     },
     {
@@ -2525,29 +2631,11 @@
         "zstd"
       ],
       "required_by": [
-        "ffmpeg",
         "gdal",
         "tesseract"
       ],
       "homepage": "https://www.libarchive.org",
-      "version": "3.8.4",
-      "status": "success"
-    },
-    {
-      "name": "libass",
-      "type": "formula",
-      "description": "Subtitle renderer for the ASS/SSA subtitle format",
-      "dependencies": [
-        "freetype",
-        "fribidi",
-        "harfbuzz",
-        "libunibreak"
-      ],
-      "required_by": [
-        "ffmpeg"
-      ],
-      "homepage": "https://github.com/libass/libass",
-      "version": "0.17.4",
+      "version": "3.8.9",
       "status": "success"
     },
     {
@@ -2562,6 +2650,7 @@
         "gnupg",
         "gpgme",
         "gpgmepp",
+        "ledger",
         "pinentry",
         "poppler"
       ],
@@ -2580,14 +2669,15 @@
         "libpng"
       ],
       "required_by": [
+        "chafa",
         "gd",
         "graphviz",
-        "php",
         "pillow",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://github.com/AOMediaCodec/libavif",
-      "version": "1.3.0",
+      "version": "1.4.2",
       "status": "success"
     },
     {
@@ -2596,29 +2686,12 @@
       "description": "Secure hashing function",
       "dependencies": [],
       "required_by": [
-        "ffmpeg",
         "gdal",
         "libarchive",
         "tesseract"
       ],
       "homepage": "https://blake2.net/",
       "version": "0.98.1",
-      "status": "success"
-    },
-    {
-      "name": "libbluray",
-      "type": "formula",
-      "description": "Blu-Ray disc playback library for media players like VLC",
-      "dependencies": [
-        "fontconfig",
-        "freetype",
-        "libudfread"
-      ],
-      "required_by": [
-        "ffmpeg"
-      ],
-      "homepage": "https://www.videolan.org/developers/libbluray.html",
-      "version": "1.4.0",
       "status": "success"
     },
     {
@@ -2635,6 +2708,23 @@
       "status": "success"
     },
     {
+      "name": "libdatrie",
+      "type": "formula",
+      "description": "Double-Array Trie Library",
+      "dependencies": [],
+      "required_by": [
+        "chafa",
+        "graphviz",
+        "librsvg",
+        "libthai",
+        "pango",
+        "weasyprint"
+      ],
+      "homepage": "https://github.com/tlwg/libdatrie",
+      "version": "0.2.14",
+      "status": "success"
+    },
+    {
       "name": "libde265",
       "type": "formula",
       "description": "Open h.265 video codec implementation",
@@ -2645,7 +2735,7 @@
         "libheif"
       ],
       "homepage": "https://github.com/strukturag/libde265",
-      "version": "1.0.16",
+      "version": "1.1.1",
       "status": "success"
     },
     {
@@ -2654,21 +2744,25 @@
       "description": "Heavily optimized DEFLATE/zlib/gzip compression and decompression",
       "dependencies": [],
       "required_by": [
-        "aom",
-        "ffmpeg",
+        "chafa",
         "gdal",
-        "graphviz",
-        "imagemagick",
         "jpeg-xl",
-        "libavif",
-        "libheif",
-        "openexr",
-        "php",
-        "pillow",
-        "weasyprint"
+        "openexr"
       ],
       "homepage": "https://github.com/ebiggers/libdeflate",
       "version": "1.25",
+      "status": "success"
+    },
+    {
+      "name": "libev",
+      "type": "formula",
+      "description": "Asynchronous event library",
+      "dependencies": [],
+      "required_by": [
+        "semgrep"
+      ],
+      "homepage": "https://software.schmorp.de/pkg/libev.html",
+      "version": "4.33",
       "status": "success"
     },
     {
@@ -2682,28 +2776,32 @@
         "edencommon",
         "fb303",
         "fbthrift",
-        "ffmpeg",
         "fizz",
         "folly",
-        "gdal",
-        "gnupg",
-        "gnutls",
-        "gpgme",
-        "gpgmepp",
-        "libmicrohttpd",
-        "librist",
+        "joshmedeski/sesh/sesh",
         "libwebsockets",
         "mvfst",
-        "poppler",
-        "qemu",
         "tmux",
+        "tmuxinator",
         "ttyd",
         "unbound",
         "wangle",
         "watchman"
       ],
       "homepage": "https://libevent.org/",
-      "version": "2.1.12",
+      "version": "2.1.13",
+      "status": "success"
+    },
+    {
+      "name": "libffi",
+      "type": "formula",
+      "description": "Portable Foreign Function Interface library",
+      "dependencies": [],
+      "required_by": [
+        "node"
+      ],
+      "homepage": "https://sourceware.org/libffi/",
+      "version": "3.8.0",
       "status": "success"
     },
     {
@@ -2718,10 +2816,11 @@
         "gnupg",
         "gpgme",
         "gpgmepp",
+        "ledger",
         "poppler"
       ],
       "homepage": "https://gnupg.org/related_software/libgcrypt/",
-      "version": "1.11.2",
+      "version": "1.12.2",
       "status": "success"
     },
     {
@@ -2745,15 +2844,17 @@
       "type": "formula",
       "description": "C library of Git core methods that is re-entrant and linkable",
       "dependencies": [
-        "libssh2"
+        "libssh2",
+        "llhttp"
       ],
       "required_by": [
         "bat",
         "eza",
+        "git-delta",
         "rust"
       ],
       "homepage": "https://libgit2.org/",
-      "version": "1.9.2",
+      "version": "1.9.7",
       "status": "success"
     },
     {
@@ -2768,6 +2869,7 @@
         "gnupg",
         "gpgme",
         "gpgmepp",
+        "ledger",
         "libassuan",
         "libgcrypt",
         "libksba",
@@ -2775,7 +2877,7 @@
         "poppler"
       ],
       "homepage": "https://www.gnupg.org/related_software/libgpg-error/",
-      "version": "1.58",
+      "version": "1.61",
       "status": "success"
     },
     {
@@ -2788,7 +2890,6 @@
         "libde265",
         "libpng",
         "libtiff",
-        "shared-mime-info",
         "webp",
         "x265"
       ],
@@ -2797,19 +2898,7 @@
         "imagemagick"
       ],
       "homepage": "https://www.libde265.org/",
-      "version": "1.21.1",
-      "status": "success"
-    },
-    {
-      "name": "libiconv",
-      "type": "formula",
-      "description": "Conversion library",
-      "dependencies": [],
-      "required_by": [
-        "git"
-      ],
-      "homepage": "https://www.gnu.org/software/libiconv/",
-      "version": "1.18",
+      "version": "1.23.1",
       "status": "success"
     },
     {
@@ -2821,12 +2910,12 @@
         "gettext"
       ],
       "required_by": [
-        "ffmpeg",
         "gdal",
         "gnupg",
         "gnutls",
         "gpgme",
         "gpgmepp",
+        "ledger",
         "libmicrohttpd",
         "librist",
         "poppler",
@@ -2844,6 +2933,7 @@
       "dependencies": [],
       "required_by": [
         "pillow",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://pngquant.org/lib/",
@@ -2877,37 +2967,23 @@
         "gnupg",
         "gpgme",
         "gpgmepp",
+        "ledger",
         "poppler"
       ],
       "homepage": "https://www.gnupg.org/related_software/libksba/",
-      "version": "1.6.7",
+      "version": "1.8.0",
       "status": "success"
     },
     {
       "name": "liblerc",
       "type": "formula",
-      "description": "Ersi LERC library (Limited Error Raster Compression)",
+      "description": "Esri LERC library (Limited Error Raster Compression)",
       "dependencies": [],
       "required_by": [
         "gdal"
       ],
       "homepage": "https://github.com/Esri/lerc",
-      "version": "4.0.0",
-      "status": "success"
-    },
-    {
-      "name": "liblqr",
-      "type": "formula",
-      "description": "C/C++ seam carving library",
-      "dependencies": [
-        "glib",
-        "gettext"
-      ],
-      "required_by": [
-        "imagemagick"
-      ],
-      "homepage": "https://liblqr.wikidot.com/",
-      "version": "0.4.3",
+      "version": "4.2.0",
       "status": "success"
     },
     {
@@ -2917,7 +2993,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://www.darwinsys.com/file/",
-      "version": "5.46",
+      "version": "5.48",
       "status": "success"
     },
     {
@@ -2928,11 +3004,10 @@
         "gnutls"
       ],
       "required_by": [
-        "ffmpeg",
         "librist"
       ],
       "homepage": "https://www.gnu.org/software/libmicrohttpd/",
-      "version": "1.0.2",
+      "version": "1.0.10",
       "status": "success"
     },
     {
@@ -2952,7 +3027,7 @@
         "openblas"
       ],
       "homepage": "https://www.multiprecision.org/",
-      "version": "1.3.1",
+      "version": "1.4.1",
       "status": "success"
     },
     {
@@ -2961,24 +3036,12 @@
       "description": "HTTP/2 C Library",
       "dependencies": [],
       "required_by": [
-        "curl",
-        "ffmpeg",
         "fsouza/prettierd/prettierd",
-        "gdal",
-        "gnupg",
-        "gnutls",
-        "gpgme",
-        "gpgmepp",
-        "libmicrohttpd",
-        "librist",
         "node",
-        "php",
-        "poppler",
-        "qemu",
         "unbound"
       ],
       "homepage": "https://nghttp2.org/",
-      "version": "1.68.0",
+      "version": "1.70.0",
       "status": "success"
     },
     {
@@ -2987,13 +3050,11 @@
       "description": "HTTP/3 library written in C",
       "dependencies": [],
       "required_by": [
-        "curl",
         "fsouza/prettierd/prettierd",
-        "node",
-        "php"
+        "node"
       ],
       "homepage": "https://nghttp2.org/nghttp3/",
-      "version": "1.14.0",
+      "version": "1.18.0",
       "status": "success"
     },
     {
@@ -3004,13 +3065,11 @@
         "openssl@3"
       ],
       "required_by": [
-        "curl",
         "fsouza/prettierd/prettierd",
-        "node",
-        "php"
+        "node"
       ],
       "homepage": "https://nghttp2.org/ngtcp2/",
-      "version": "1.19.0",
+      "version": "1.25.0",
       "status": "success"
     },
     {
@@ -3019,13 +3078,11 @@
       "description": "Ogg Bitstream Library",
       "dependencies": [],
       "required_by": [
-        "ffmpeg",
         "flac",
         "libsndfile",
         "libvorbis",
-        "rubberband",
-        "speex",
-        "theora"
+        "opusfile",
+        "sox"
       ],
       "homepage": "https://www.xiph.org/ogg/",
       "version": "1.3.6",
@@ -3037,11 +3094,12 @@
       "description": "LLVM's OpenMP runtime library",
       "dependencies": [],
       "required_by": [
-        "imagemagick",
-        "libraw"
+        "gdal",
+        "numpy",
+        "openblas"
       ],
       "homepage": "https://openmp.llvm.org/",
-      "version": "21.1.8",
+      "version": "22.1.8",
       "status": "success"
     },
     {
@@ -3050,10 +3108,9 @@
       "description": "Library for manipulating PNG images",
       "dependencies": [],
       "required_by": [
-        "aom",
-        "aribb24",
         "cairo",
-        "ffmpeg",
+        "chafa",
+        "deno",
         "fontconfig",
         "freetype",
         "gd",
@@ -3065,25 +3122,28 @@
         "imagemagick",
         "jpeg-xl",
         "leptonica",
-        "libass",
         "libavif",
-        "libbluray",
         "libheif",
         "libraqm",
         "librsvg",
+        "libtiff",
         "netpbm",
+        "openexr",
         "openjpeg",
+        "openjph",
         "pango",
-        "php",
         "pillow",
         "poppler",
         "qemu",
+        "sox",
         "tesseract",
+        "toot",
         "weasyprint",
-        "webp"
+        "webp",
+        "yt-dlp"
       ],
-      "homepage": "http://www.libpng.org/pub/png/libpng.html",
-      "version": "1.6.53",
+      "homepage": "https://www.libpng.org/pub/png/libpng.html",
+      "version": "1.6.58",
       "status": "success"
     },
     {
@@ -3093,15 +3153,15 @@
       "dependencies": [
         "icu4c@78",
         "krb5",
-        "openssl@3"
+        "openssl@3",
+        "readline"
       ],
       "required_by": [
         "gdal",
-        "pgsync",
-        "php"
+        "pgsync"
       ],
       "homepage": "https://www.postgresql.org/docs/current/libpq.html",
-      "version": "18.1",
+      "version": "18.6",
       "status": "success"
     },
     {
@@ -3115,27 +3175,11 @@
       ],
       "required_by": [
         "pillow",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://github.com/HOST-Oman/libraqm",
-      "version": "0.10.3",
-      "status": "success"
-    },
-    {
-      "name": "libraw",
-      "type": "formula",
-      "description": "Library for reading RAW files from digital photo cameras",
-      "dependencies": [
-        "jasper",
-        "jpeg-turbo",
-        "little-cms2",
-        "libomp"
-      ],
-      "required_by": [
-        "imagemagick"
-      ],
-      "homepage": "https://www.libraw.org/",
-      "version": "0.21.5",
+      "version": "0.11.0",
       "status": "success"
     },
     {
@@ -3145,13 +3189,12 @@
       "dependencies": [
         "cjson",
         "libmicrohttpd",
+        "lz4",
         "mbedtls@3"
       ],
-      "required_by": [
-        "ffmpeg"
-      ],
+      "required_by": [],
       "homepage": "https://code.videolan.org/rist/",
-      "version": "0.2.11",
+      "version": "0.2.20",
       "status": "success"
     },
     {
@@ -3170,11 +3213,11 @@
         "libpng"
       ],
       "required_by": [
-        "graphviz",
-        "imagemagick"
+        "chafa",
+        "graphviz"
       ],
       "homepage": "https://wiki.gnome.org/Projects/LibRsvg",
-      "version": "2.61.3",
+      "version": "2.62.3",
       "status": "success"
     },
     {
@@ -3193,19 +3236,6 @@
       "status": "success"
     },
     {
-      "name": "libsamplerate",
-      "type": "formula",
-      "description": "Library for sample rate conversion of audio data",
-      "dependencies": [],
-      "required_by": [
-        "ffmpeg",
-        "rubberband"
-      ],
-      "homepage": "https://github.com/libsndfile/libsamplerate",
-      "version": "0.2.2",
-      "status": "success"
-    },
-    {
       "name": "libslirp",
       "type": "formula",
       "description": "General purpose TCP-IP emulator",
@@ -3216,7 +3246,7 @@
         "qemu"
       ],
       "homepage": "https://gitlab.freedesktop.org/slirp/libslirp",
-      "version": "4.9.1",
+      "version": "4.9.3",
       "status": "success"
     },
     {
@@ -3232,8 +3262,7 @@
         "opus"
       ],
       "required_by": [
-        "ffmpeg",
-        "rubberband"
+        "sox"
       ],
       "homepage": "https://libsndfile.github.io/libsndfile/",
       "version": "1.2.2",
@@ -3248,29 +3277,14 @@
         "edencommon",
         "fb303",
         "fbthrift",
-        "ffmpeg",
         "fizz",
         "folly",
         "mvfst",
-        "php",
         "wangle",
-        "watchman",
-        "zeromq"
+        "watchman"
       ],
       "homepage": "https://libsodium.org/",
-      "version": "1.0.20",
-      "status": "success"
-    },
-    {
-      "name": "libsoxr",
-      "type": "formula",
-      "description": "High quality, one-dimensional sample-rate conversion library",
-      "dependencies": [],
-      "required_by": [
-        "ffmpeg"
-      ],
-      "homepage": "https://sourceforge.net/projects/soxr/",
-      "version": "0.1.3",
+      "version": "1.0.22",
       "status": "success"
     },
     {
@@ -3301,11 +3315,10 @@
         "openssl@3"
       ],
       "required_by": [
-        "ffmpeg",
         "qemu"
       ],
       "homepage": "https://www.libssh.org/",
-      "version": "0.11.3",
+      "version": "0.12.2",
       "status": "success"
     },
     {
@@ -3317,10 +3330,9 @@
       ],
       "required_by": [
         "bat",
-        "curl",
         "eza",
+        "git-delta",
         "libgit2",
-        "php",
         "rust"
       ],
       "homepage": "https://libssh2.org/",
@@ -3333,12 +3345,12 @@
       "description": "ASN.1 structure parser library",
       "dependencies": [],
       "required_by": [
-        "ffmpeg",
         "gdal",
         "gnupg",
         "gnutls",
         "gpgme",
         "gpgmepp",
+        "ledger",
         "libmicrohttpd",
         "librist",
         "p11-kit",
@@ -3346,7 +3358,25 @@
         "qemu"
       ],
       "homepage": "https://www.gnu.org/software/libtasn1/",
-      "version": "4.20.0",
+      "version": "4.21.0",
+      "status": "success"
+    },
+    {
+      "name": "libthai",
+      "type": "formula",
+      "description": "Thai language support library",
+      "dependencies": [
+        "libdatrie"
+      ],
+      "required_by": [
+        "chafa",
+        "graphviz",
+        "librsvg",
+        "pango",
+        "weasyprint"
+      ],
+      "homepage": "https://linux.thai.net/projects/libthai",
+      "version": "0.1.30",
       "status": "success"
     },
     {
@@ -3355,12 +3385,13 @@
       "description": "TIFF library and utilities",
       "dependencies": [
         "jpeg-turbo",
+        "webp",
         "xz",
         "zstd"
       ],
       "required_by": [
-        "aom",
-        "ffmpeg",
+        "chafa",
+        "deno",
         "gd",
         "gdal",
         "gdk-pixbuf",
@@ -3369,10 +3400,8 @@
         "imagemagick",
         "jpeg-xl",
         "leptonica",
-        "libavif",
         "libgeotiff",
         "libheif",
-        "libraw",
         "librsvg",
         "libspatialite",
         "little-cms2",
@@ -3380,16 +3409,17 @@
         "openexr",
         "openjpeg",
         "openjph",
-        "php",
         "pillow",
         "poppler",
         "proj",
         "tesseract",
+        "toot",
         "weasyprint",
-        "webp"
+        "webp",
+        "yt-dlp"
       ],
       "homepage": "https://libtiff.gitlab.io/libtiff/",
-      "version": "4.7.1",
+      "version": "4.7.2",
       "status": "success"
     },
     {
@@ -3417,51 +3447,10 @@
         "graphviz",
         "guile",
         "imagemagick",
-        "php",
         "unixodbc"
       ],
       "homepage": "https://www.gnu.org/software/libtool/",
-      "version": "2.5.4",
-      "status": "success"
-    },
-    {
-      "name": "libudfread",
-      "type": "formula",
-      "description": "Universal Disk Format reader",
-      "dependencies": [],
-      "required_by": [
-        "ffmpeg",
-        "libbluray"
-      ],
-      "homepage": "https://code.videolan.org/videolan/libudfread",
-      "version": "1.2.0",
-      "status": "success"
-    },
-    {
-      "name": "libultrahdr",
-      "type": "formula",
-      "description": "Reference codec for the Ultra HDR format",
-      "dependencies": [
-        "jpeg-turbo"
-      ],
-      "required_by": [
-        "imagemagick"
-      ],
-      "homepage": "https://developer.android.com/media/platform/hdr-image-format",
-      "version": "1.4.0",
-      "status": "success"
-    },
-    {
-      "name": "libunibreak",
-      "type": "formula",
-      "description": "Implementation of the Unicode line- and word-breaking algorithms",
-      "dependencies": [],
-      "required_by": [
-        "ffmpeg",
-        "libass"
-      ],
-      "homepage": "https://github.com/adah1972/libunibreak",
-      "version": "6.1",
+      "version": "2.6.2",
       "status": "success"
     },
     {
@@ -3472,7 +3461,7 @@
       "required_by": [
         "cairo",
         "capstone",
-        "ffmpeg",
+        "chafa",
         "fontconfig",
         "gdal",
         "gdk-pixbuf",
@@ -3486,35 +3475,32 @@
         "graphviz",
         "guile",
         "harfbuzz",
-        "imagemagick",
-        "libass",
+        "ledger",
         "libassuan",
-        "libbluray",
         "libgcrypt",
         "libgpg-error",
-        "libheif",
         "libidn2",
-        "liblqr",
+        "libksba",
         "libmicrohttpd",
         "libraqm",
         "librist",
         "librsvg",
         "libslirp",
+        "newsboat",
         "pango",
-        "php",
         "pillow",
         "pinentry",
         "poppler",
-        "postgresql@16",
+        "postgresql@17",
         "qemu",
-        "shared-mime-info",
         "tesseract",
+        "toot",
         "wdiff",
         "weasyprint",
         "wget"
       ],
       "homepage": "https://www.gnu.org/software/libunistring/",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "status": "success"
     },
     {
@@ -3527,11 +3513,12 @@
         "gnupg",
         "gpgme",
         "gpgmepp",
+        "ledger",
         "poppler",
         "qemu"
       ],
       "homepage": "https://libusb.info/",
-      "version": "1.0.29",
+      "version": "1.0.30",
       "status": "success"
     },
     {
@@ -3546,20 +3533,8 @@
         "ttyd",
         "uvwasi"
       ],
-      "homepage": "https://libuv.org",
-      "version": "1.51.0",
-      "status": "success"
-    },
-    {
-      "name": "libvidstab",
-      "type": "formula",
-      "description": "Transcode video stabilization plugin",
-      "dependencies": [],
-      "required_by": [
-        "ffmpeg"
-      ],
-      "homepage": "https://github.com/georgmartius/vid.stab",
-      "version": "1.1.1",
+      "homepage": "https://libuv.org/",
+      "version": "1.52.1",
       "status": "success"
     },
     {
@@ -3569,6 +3544,7 @@
       "dependencies": [],
       "required_by": [
         "aom",
+        "chafa",
         "ffmpeg",
         "gd",
         "gdal",
@@ -3576,12 +3552,12 @@
         "imagemagick",
         "libavif",
         "libheif",
-        "php",
         "pillow",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://github.com/Netflix/vmaf",
-      "version": "3.0.0",
+      "version": "3.2.0",
       "status": "success"
     },
     {
@@ -3592,10 +3568,8 @@
         "libogg"
       ],
       "required_by": [
-        "ffmpeg",
         "libsndfile",
-        "rubberband",
-        "theora"
+        "sox"
       ],
       "homepage": "https://xiph.org/vorbis/",
       "version": "1.3.7",
@@ -3610,7 +3584,7 @@
         "ffmpeg"
       ],
       "homepage": "https://www.webmproject.org/code/",
-      "version": "1.15.2",
+      "version": "1.16.0",
       "status": "success"
     },
     {
@@ -3626,7 +3600,7 @@
         "ttyd"
       ],
       "homepage": "https://github.com/warmcat/libwebsockets",
-      "version": "4.5.2",
+      "version": "5.0.0",
       "status": "success"
     },
     {
@@ -3639,12 +3613,10 @@
       ],
       "required_by": [
         "cairo",
-        "ffmpeg",
+        "chafa",
         "gdal",
         "graphviz",
         "harfbuzz",
-        "imagemagick",
-        "libass",
         "libraqm",
         "librsvg",
         "libxext",
@@ -3653,10 +3625,11 @@
         "pillow",
         "poppler",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://www.x.org/",
-      "version": "1.8.12",
+      "version": "1.8.13",
       "status": "success"
     },
     {
@@ -3668,12 +3641,10 @@
       ],
       "required_by": [
         "cairo",
-        "ffmpeg",
+        "chafa",
         "gdal",
         "graphviz",
         "harfbuzz",
-        "imagemagick",
-        "libass",
         "libraqm",
         "librsvg",
         "libx11",
@@ -3684,6 +3655,7 @@
         "pillow",
         "poppler",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://www.x.org/",
@@ -3700,12 +3672,10 @@
       ],
       "required_by": [
         "cairo",
-        "ffmpeg",
+        "chafa",
         "gdal",
         "graphviz",
         "harfbuzz",
-        "imagemagick",
-        "libass",
         "libraqm",
         "librsvg",
         "libx11",
@@ -3715,6 +3685,7 @@
         "pillow",
         "poppler",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://www.x.org/",
@@ -3730,12 +3701,10 @@
       ],
       "required_by": [
         "cairo",
-        "ffmpeg",
+        "chafa",
         "gdal",
         "graphviz",
         "harfbuzz",
-        "imagemagick",
-        "libass",
         "libraqm",
         "librsvg",
         "libx11",
@@ -3746,6 +3715,7 @@
         "pillow",
         "poppler",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://www.x.org/",
@@ -3762,22 +3732,21 @@
       ],
       "required_by": [
         "cairo",
-        "ffmpeg",
+        "chafa",
         "gdal",
         "graphviz",
         "harfbuzz",
-        "imagemagick",
-        "libass",
         "libraqm",
         "librsvg",
         "pango",
         "pillow",
         "poppler",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://www.x.org/",
-      "version": "1.3.6",
+      "version": "1.3.7",
       "status": "success"
     },
     {
@@ -3793,7 +3762,7 @@
         "libspatialite"
       ],
       "homepage": "http://xmlsoft.org/",
-      "version": "2.15.1",
+      "version": "2.15.3",
       "status": "success"
     },
     {
@@ -3806,18 +3775,17 @@
       ],
       "required_by": [
         "cairo",
-        "ffmpeg",
+        "chafa",
         "gdal",
         "graphviz",
         "harfbuzz",
-        "imagemagick",
-        "libass",
         "libraqm",
         "librsvg",
         "pango",
         "pillow",
         "poppler",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://www.x.org/",
@@ -3830,29 +3798,17 @@
       "description": "YAML Parser",
       "dependencies": [],
       "required_by": [
-        "huggingface-cli",
+        "dtc",
+        "hf",
         "litecli",
         "pgsync",
-        "ruby"
+        "qemu",
+        "ruby",
+        "snowflake-cli",
+        "tmuxinator"
       ],
       "homepage": "https://github.com/yaml/libyaml",
       "version": "0.2.5",
-      "status": "success"
-    },
-    {
-      "name": "libzip",
-      "type": "formula",
-      "description": "C library for reading, creating, and modifying zip archives",
-      "dependencies": [
-        "xz",
-        "zstd"
-      ],
-      "required_by": [
-        "imagemagick",
-        "php"
-      ],
-      "homepage": "https://libzip.org/",
-      "version": "1.11.4",
       "status": "success"
     },
     {
@@ -3866,8 +3822,8 @@
         "python@3.14"
       ],
       "required_by": [],
-      "homepage": "https://github.com/dbcli/litecli",
-      "version": "1.17.0",
+      "homepage": "https://litecli.com",
+      "version": "1.17.1",
       "status": "success"
     },
     {
@@ -3879,26 +3835,38 @@
         "libtiff"
       ],
       "required_by": [
-        "aom",
-        "ffmpeg",
+        "chafa",
+        "deno",
         "gd",
         "gdal",
-        "graphviz",
         "imagemagick",
         "jpeg-xl",
         "leptonica",
-        "libavif",
-        "libheif",
-        "libraw",
         "openjpeg",
-        "php",
         "pillow",
         "poppler",
         "tesseract",
-        "weasyprint"
+        "toot",
+        "weasyprint",
+        "yt-dlp"
       ],
       "homepage": "https://www.littlecms.com/",
-      "version": "2.17",
+      "version": "2.19",
+      "status": "success"
+    },
+    {
+      "name": "llhttp",
+      "type": "formula",
+      "description": "Port of http_parser to llparse",
+      "dependencies": [],
+      "required_by": [
+        "eza",
+        "libgit2",
+        "node",
+        "rust"
+      ],
+      "homepage": "https://llhttp.org/",
+      "version": "9.4.3",
       "status": "success"
     },
     {
@@ -3908,8 +3876,8 @@
       "dependencies": [
         "python@3.14",
         "xz",
-        "z3",
-        "zstd"
+        "zstd",
+        "z3"
       ],
       "required_by": [
         "apache-arrow",
@@ -3917,7 +3885,7 @@
         "rust"
       ],
       "homepage": "https://llvm.org/",
-      "version": "21.1.8",
+      "version": "22.1.8",
       "status": "success"
     },
     {
@@ -3926,15 +3894,14 @@
       "description": "Extremely Fast Compression algorithm",
       "dependencies": [],
       "required_by": [
-        "aom",
         "apache-arrow",
         "boost",
         "cgal",
-        "curl",
+        "chafa",
+        "deno",
         "edencommon",
         "fb303",
         "fbthrift",
-        "ffmpeg",
         "fizz",
         "folly",
         "fonttools",
@@ -3946,22 +3913,21 @@
         "graphviz",
         "gts",
         "hdf5",
+        "hf",
         "httpie",
-        "huggingface-cli",
         "imagemagick",
         "ivandokov/contrib/phockup",
         "jpeg-xl",
         "keyring",
+        "ledger",
         "leptonica",
         "libarchive",
-        "libavif",
         "libgeotiff",
         "libheif",
-        "libraw",
+        "librist",
         "librsvg",
         "libspatialite",
         "libtiff",
-        "libzip",
         "litecli",
         "little-cms2",
         "llvm",
@@ -3975,22 +3941,23 @@
         "openexr",
         "openjpeg",
         "openjph",
-        "php",
         "pillow",
         "poppler",
-        "postgresql@14",
-        "postgresql@16",
+        "postgresql@17",
         "proj",
         "python@3.14",
         "qemu",
         "rust",
+        "semgrep",
         "sfcgal",
         "tesseract",
+        "toot",
         "virtualenv",
         "wangle",
         "watchman",
         "weasyprint",
         "webp",
+        "yt-dlp",
         "zstd"
       ],
       "homepage": "https://lz4.github.io/lz4/",
@@ -4004,12 +3971,10 @@
       "dependencies": [],
       "required_by": [
         "cairo",
-        "ffmpeg",
+        "chafa",
         "gdal",
         "graphviz",
         "harfbuzz",
-        "imagemagick",
-        "libass",
         "libraqm",
         "librsvg",
         "pango",
@@ -4017,6 +3982,7 @@
         "poppler",
         "qemu",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://www.oberhumer.com/opensource/lzo/",
@@ -4029,18 +3995,16 @@
       "description": "Macro processing language",
       "dependencies": [],
       "required_by": [
-        "autoconf",
         "freetds",
         "gdal",
         "graphviz",
         "guile",
         "imagemagick",
         "libtool",
-        "php",
         "unixodbc"
       ],
       "homepage": "https://www.gnu.org/software/m4/",
-      "version": "1.4.20",
+      "version": "1.4.21",
       "status": "success"
     },
     {
@@ -4050,17 +4014,31 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/metaspartan/mactop",
-      "version": "2.0.5",
+      "version": "2.1.5",
       "status": "success"
     },
     {
-      "name": "mailpit",
+      "name": "mad",
       "type": "formula",
-      "description": "Web and API based SMTP testing",
+      "description": "MPEG audio decoder",
       "dependencies": [],
+      "required_by": [
+        "sox"
+      ],
+      "homepage": "https://codeberg.org/tenacityteam/libmad",
+      "version": "0.16.4",
+      "status": "success"
+    },
+    {
+      "name": "marksman",
+      "type": "formula",
+      "description": "Language Server Protocol for Markdown",
+      "dependencies": [
+        "dotnet@9"
+      ],
       "required_by": [],
-      "homepage": "https://mailpit.axllent.org/",
-      "version": "1.28.0",
+      "homepage": "https://github.com/artempyanykh/marksman",
+      "version": "2026-02-08",
       "status": "success"
     },
     {
@@ -4069,11 +4047,24 @@
       "description": "Cryptographic & SSL/TLS library",
       "dependencies": [],
       "required_by": [
-        "ffmpeg",
         "librist"
       ],
-      "homepage": "https://tls.mbed.org/",
-      "version": "3.6.5",
+      "homepage": "https://www.trustedfirmware.org/projects/mbed-tls/",
+      "version": "3.6.7",
+      "status": "success"
+    },
+    {
+      "name": "merve",
+      "type": "formula",
+      "description": "C++ lexer for extracting named exports from CommonJS modules",
+      "dependencies": [
+        "simdutf"
+      ],
+      "required_by": [
+        "node"
+      ],
+      "homepage": "https://github.com/nodejs/merve",
+      "version": "1.2.2",
       "status": "success"
     },
     {
@@ -4088,7 +4079,7 @@
         "libspatialite"
       ],
       "homepage": "https://www.winimage.com/zLibDll/minizip.html",
-      "version": "1.3.1",
+      "version": "1.3.2",
       "status": "success"
     },
     {
@@ -4107,8 +4098,8 @@
       "description": "Deep clean and optimize your Mac",
       "dependencies": [],
       "required_by": [],
-      "homepage": "https://github.com/tw93/Mole",
-      "version": "1.18.0",
+      "homepage": "https://mole.fit",
+      "version": "1.50.0",
       "status": "success"
     },
     {
@@ -4119,6 +4110,16 @@
       "required_by": [],
       "homepage": "https://github.com/Y2Z/monolith",
       "version": "2.10.1",
+      "status": "success"
+    },
+    {
+      "name": "moor",
+      "type": "formula",
+      "description": "Nice to use pager for humans",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://github.com/walles/moor",
+      "version": "2.16.3",
       "status": "success"
     },
     {
@@ -4134,6 +4135,16 @@
       "status": "success"
     },
     {
+      "name": "moshi-hook",
+      "type": "formula",
+      "description": "Portable daemon + CLI that bridges AI coding agents to the Moshi mobile app",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://getmoshi.app",
+      "version": "0.2.84",
+      "status": "success"
+    },
+    {
       "name": "mpdecimal",
       "type": "formula",
       "description": "Library for decimal floating point arithmetic",
@@ -4142,19 +4153,23 @@
         "apache-arrow",
         "fonttools",
         "gdal",
+        "hf",
         "httpie",
-        "huggingface-cli",
         "ivandokov/contrib/phockup",
         "keyring",
-        "liblqr",
+        "ledger",
         "litecli",
         "llvm",
         "python@3.13",
         "python@3.14",
         "rust",
+        "semgrep",
+        "snowflake-cli",
+        "toot",
         "virtualenv",
         "watchman",
-        "weasyprint"
+        "weasyprint",
+        "yt-dlp"
       ],
       "homepage": "https://www.bytereef.org/mpdecimal/",
       "version": "4.0.1",
@@ -4172,6 +4187,7 @@
         "gcc",
         "gdal",
         "hdf5",
+        "ledger",
         "libmpc",
         "netcdf",
         "numpy",
@@ -4189,11 +4205,12 @@
       "dependencies": [],
       "required_by": [
         "ffmpeg",
+        "lame",
         "libsndfile",
-        "rubberband"
+        "sox"
       ],
       "homepage": "https://www.mpg123.de/",
-      "version": "1.33.4",
+      "version": "1.33.7",
       "status": "success"
     },
     {
@@ -4207,12 +4224,11 @@
         "folly",
         "gflags",
         "glog",
-        "libsodium",
         "openssl@3"
       ],
       "required_by": [],
       "homepage": "https://github.com/facebook/mvfst",
-      "version": "2025.12.29.00",
+      "version": "2026.07.27.00",
       "status": "success"
     },
     {
@@ -4225,12 +4241,24 @@
         "lz4",
         "openssl@3",
         "protobuf",
-        "zlib",
+        "zlib-ng-compat",
         "zstd"
       ],
       "required_by": [],
       "homepage": "https://github.com/mysql/mysql-server",
-      "version": "9.5.0",
+      "version": "9.7.1",
+      "status": "success"
+    },
+    {
+      "name": "nbytes",
+      "type": "formula",
+      "description": "Library of byte handling functions extracted from Node.js core",
+      "dependencies": [],
+      "required_by": [
+        "node"
+      ],
+      "homepage": "https://github.com/nodejs/nbytes",
+      "version": "0.1.4",
       "status": "success"
     },
     {
@@ -4253,27 +4281,15 @@
       "dependencies": [],
       "required_by": [
         "htop",
+        "joshmedeski/sesh/sesh",
         "ncdu",
         "qemu",
         "tmux",
+        "tmuxinator",
         "watch"
       ],
       "homepage": "https://invisible-island.net/ncurses/announce.html",
       "version": "6.6",
-      "status": "success"
-    },
-    {
-      "name": "net-snmp",
-      "type": "formula",
-      "description": "Implements SNMP v1, v2c, and v3, using IPv4 and IPv6",
-      "dependencies": [
-        "openssl@3"
-      ],
-      "required_by": [
-        "php"
-      ],
-      "homepage": "http://www.net-snmp.org/",
-      "version": "5.9.5.2",
       "status": "success"
     },
     {
@@ -4289,7 +4305,7 @@
         "gdal"
       ],
       "homepage": "https://www.unidata.ucar.edu/software/netcdf/",
-      "version": "4.9.3",
+      "version": "4.10.1",
       "status": "success"
     },
     {
@@ -4307,7 +4323,7 @@
         "gts"
       ],
       "homepage": "https://netpbm.sourceforge.net/",
-      "version": "11.02.19",
+      "version": "11.02.27",
       "status": "success"
     },
     {
@@ -4318,19 +4334,32 @@
         "gmp"
       ],
       "required_by": [
-        "ffmpeg",
         "gdal",
         "gnupg",
         "gnutls",
         "gpgme",
         "gpgmepp",
+        "ledger",
         "libmicrohttpd",
         "librist",
         "poppler",
         "qemu"
       ],
       "homepage": "https://www.lysator.liu.se/~nisse/nettle/",
-      "version": "3.10.2",
+      "version": "4.0",
+      "status": "success"
+    },
+    {
+      "name": "newsboat",
+      "type": "formula",
+      "description": "RSS/Atom feed reader for text terminals",
+      "dependencies": [
+        "json-c",
+        "gettext"
+      ],
+      "required_by": [],
+      "homepage": "https://newsboat.org/",
+      "version": "2.44",
       "status": "success"
     },
     {
@@ -4338,13 +4367,19 @@
       "type": "formula",
       "description": "Open-source, cross-platform JavaScript runtime environment",
       "dependencies": [
+        "ada-url",
         "brotli",
         "c-ares",
+        "hdrhistogram_c",
         "icu4c@78",
+        "libffi",
         "libnghttp2",
         "libnghttp3",
         "libngtcp2",
         "libuv",
+        "llhttp",
+        "merve",
+        "nbytes",
         "openssl@3",
         "simdjson",
         "sqlite",
@@ -4355,7 +4390,7 @@
         "fsouza/prettierd/prettierd"
       ],
       "homepage": "https://nodejs.org/",
-      "version": "25.2.1",
+      "version": "26.7.0",
       "status": "success"
     },
     {
@@ -4368,6 +4403,7 @@
         "gnupg",
         "gpgme",
         "gpgmepp",
+        "ledger",
         "poppler"
       ],
       "homepage": "https://gnupg.org/",
@@ -4385,7 +4421,7 @@
         "poppler"
       ],
       "homepage": "https://hg.mozilla.org/projects/nspr",
-      "version": "4.38.2",
+      "version": "4.40",
       "status": "success"
     },
     {
@@ -4400,7 +4436,7 @@
         "poppler"
       ],
       "homepage": "https://firefox-source-docs.mozilla.org/security/nss/index.html",
-      "version": "3.119.1",
+      "version": "3.126.1",
       "status": "success"
     },
     {
@@ -4414,7 +4450,7 @@
         "gdal"
       ],
       "homepage": "https://www.numpy.org/",
-      "version": "2.4.0",
+      "version": "2.5.2",
       "status": "success"
     },
     {
@@ -4424,11 +4460,44 @@
       "dependencies": [],
       "required_by": [
         "bat",
-        "jq",
-        "php"
+        "git-delta",
+        "jq"
       ],
       "homepage": "https://github.com/kkos/oniguruma/",
       "version": "6.9.10",
+      "status": "success"
+    },
+    {
+      "name": "onnx",
+      "type": "formula",
+      "description": "Open standard for machine learning interoperability",
+      "dependencies": [
+        "abseil",
+        "protobuf"
+      ],
+      "required_by": [
+        "onnxruntime",
+        "yvgude/lean-ctx/lean-ctx"
+      ],
+      "homepage": "https://onnx.ai/",
+      "version": "1.22.0",
+      "status": "success"
+    },
+    {
+      "name": "onnxruntime",
+      "type": "formula",
+      "description": "Cross-platform, high performance scoring engine for ML models",
+      "dependencies": [
+        "abseil",
+        "onnx",
+        "protobuf",
+        "re2"
+      ],
+      "required_by": [
+        "yvgude/lean-ctx/lean-ctx"
+      ],
+      "homepage": "https://github.com/microsoft/onnxruntime",
+      "version": "1.29.0",
       "status": "success"
     },
     {
@@ -4436,26 +4505,15 @@
       "type": "formula",
       "description": "Optimized BLAS library",
       "dependencies": [
-        "gcc"
+        "gcc",
+        "libomp"
       ],
       "required_by": [
         "gdal",
         "numpy"
       ],
       "homepage": "https://www.openblas.net/",
-      "version": "0.3.30",
-      "status": "success"
-    },
-    {
-      "name": "opencore-amr",
-      "type": "formula",
-      "description": "Audio codecs extracted from Android open source project",
-      "dependencies": [],
-      "required_by": [
-        "ffmpeg"
-      ],
-      "homepage": "https://opencore-amr.sourceforge.net/",
-      "version": "0.1.6",
+      "version": "0.3.34",
       "status": "success"
     },
     {
@@ -4468,21 +4526,13 @@
         "openjph"
       ],
       "required_by": [
-        "aom",
-        "ffmpeg",
+        "chafa",
         "gd",
         "gdal",
-        "graphviz",
-        "imagemagick",
-        "jpeg-xl",
-        "libavif",
-        "libheif",
-        "php",
-        "pillow",
-        "weasyprint"
+        "jpeg-xl"
       ],
       "homepage": "https://www.openexr.com/",
-      "version": "3.4.4",
+      "version": "3.4.14",
       "status": "success"
     },
     {
@@ -4495,13 +4545,12 @@
         "little-cms2"
       ],
       "required_by": [
-        "ffmpeg",
         "gdal",
-        "imagemagick",
         "leptonica",
         "pillow",
         "poppler",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://www.openjpeg.org/",
@@ -4516,46 +4565,13 @@
         "libtiff"
       ],
       "required_by": [
-        "aom",
-        "ffmpeg",
+        "chafa",
         "gdal",
-        "graphviz",
-        "imagemagick",
         "jpeg-xl",
-        "libheif",
-        "openexr",
-        "php",
-        "pillow",
-        "weasyprint"
+        "openexr"
       ],
       "homepage": "https://github.com/aous72/OpenJPH",
-      "version": "0.26.0",
-      "status": "success"
-    },
-    {
-      "name": "openldap",
-      "type": "formula",
-      "description": "Open source suite of directory software",
-      "dependencies": [
-        "openssl@3"
-      ],
-      "required_by": [
-        "php"
-      ],
-      "homepage": "https://www.openldap.org/software/",
-      "version": "2.6.10",
-      "status": "success"
-    },
-    {
-      "name": "openssl@1.1",
-      "type": "formula",
-      "description": "Cryptography and SSL/TLS Toolkit",
-      "dependencies": [
-        "ca-certificates"
-      ],
-      "required_by": [],
-      "homepage": "https://openssl.org/",
-      "version": "1.1.1w",
+      "version": "0.31.0",
       "status": "success"
     },
     {
@@ -4568,9 +4584,17 @@
       "required_by": [
         "apache-arrow",
         "apr-util",
+        "aws-c-auth",
+        "aws-c-event-stream",
+        "aws-c-http",
+        "aws-c-io",
+        "aws-c-mqtt",
+        "aws-c-s3",
+        "aws-crt-cpp",
+        "aws-sdk-cpp",
         "bat",
         "cryptography",
-        "curl",
+        "dotnet@9",
         "edencommon",
         "eza",
         "fb303",
@@ -4582,59 +4606,60 @@
         "freetds",
         "fsouza/prettierd/prettierd",
         "gdal",
-        "gnupg",
-        "gnutls",
-        "gpgme",
-        "gpgmepp",
+        "git-delta",
+        "git-trim",
         "grpc",
+        "hf",
         "httpie",
-        "huggingface-cli",
         "ivandokov/contrib/phockup",
+        "joshmedeski/sesh/sesh",
         "keyring",
         "krb5",
+        "ledger",
         "libdap",
         "libevent",
         "libgit2",
-        "liblqr",
-        "libmicrohttpd",
         "libngtcp2",
         "libpq",
-        "librist",
         "libssh",
         "libssh2",
         "libwebsockets",
         "litecli",
         "llvm",
+        "marksman",
         "mvfst",
-        "net-snmp",
         "node",
-        "openldap",
+        "opusfile",
         "pgsync",
-        "php",
-        "poppler",
-        "postgresql@14",
-        "postgresql@16",
+        "postgresql@17",
         "python@3.13",
         "python@3.14",
         "qemu",
-        "redis",
         "rtmpdump",
         "ruby",
         "rust",
+        "s2n",
+        "semgrep",
+        "snowflake-cli",
+        "sox",
         "srt",
         "tcl-tk",
         "thrift",
         "tmux",
+        "tmuxinator",
+        "toot",
         "ttyd",
         "unbound",
+        "valkey",
         "virtualenv",
         "wangle",
         "watchman",
         "weasyprint",
-        "wget"
+        "wget",
+        "yt-dlp"
       ],
       "homepage": "https://openssl-library.org",
-      "version": "3.6.0",
+      "version": "3.6.3",
       "status": "success"
     },
     {
@@ -4645,10 +4670,27 @@
       "required_by": [
         "ffmpeg",
         "libsndfile",
-        "rubberband"
+        "opusfile",
+        "sox"
       ],
       "homepage": "https://www.opus-codec.org/",
-      "version": "1.6",
+      "version": "1.6.1",
+      "status": "success"
+    },
+    {
+      "name": "opusfile",
+      "type": "formula",
+      "description": "API for decoding and seeking in .opus files",
+      "dependencies": [
+        "libogg",
+        "openssl@3",
+        "opus"
+      ],
+      "required_by": [
+        "sox"
+      ],
+      "homepage": "https://www.opus-codec.org/",
+      "version": "0.12",
       "status": "success"
     },
     {
@@ -4660,19 +4702,31 @@
         "libtasn1"
       ],
       "required_by": [
-        "ffmpeg",
         "gdal",
         "gnupg",
         "gnutls",
         "gpgme",
         "gpgmepp",
+        "ledger",
         "libmicrohttpd",
         "librist",
         "poppler",
         "qemu"
       ],
-      "homepage": "https://p11-glue.freedesktop.org",
-      "version": "0.25.10",
+      "homepage": "https://p11-glue.github.io/p11-glue/p11-kit.html",
+      "version": "0.26.5",
+      "status": "success"
+    },
+    {
+      "name": "pandoc",
+      "type": "formula",
+      "description": "Swiss-army knife of markup format conversion",
+      "dependencies": [
+        "gmp"
+      ],
+      "required_by": [],
+      "homepage": "https://pandoc.org/",
+      "version": "3.10.2",
       "status": "success"
     },
     {
@@ -4685,18 +4739,18 @@
         "freetype",
         "fribidi",
         "glib",
-        "harfbuzz"
+        "harfbuzz",
+        "libthai"
       ],
       "required_by": [
-        "ffmpeg",
+        "chafa",
         "graphviz",
-        "imagemagick",
         "librsvg",
         "tesseract",
         "weasyprint"
       ],
       "homepage": "https://www.gtk.org/docs/architecture/pango",
-      "version": "1.57.0",
+      "version": "1.58.2",
       "status": "success"
     },
     {
@@ -4706,7 +4760,7 @@
       "dependencies": [],
       "required_by": [
         "cairo",
-        "ffmpeg",
+        "chafa",
         "gdal",
         "gdk-pixbuf",
         "git",
@@ -4715,21 +4769,17 @@
         "grep",
         "gts",
         "harfbuzz",
-        "imagemagick",
-        "libass",
-        "libheif",
-        "liblqr",
         "libraqm",
         "librsvg",
         "libslirp",
         "pango",
-        "php",
         "pillow",
         "poppler",
         "qemu",
         "ripgrep",
-        "shared-mime-info",
+        "semgrep",
         "tesseract",
+        "toot",
         "watchman",
         "weasyprint"
       ],
@@ -4764,38 +4814,6 @@
       "status": "success"
     },
     {
-      "name": "php",
-      "type": "formula",
-      "description": "General-purpose scripting language",
-      "dependencies": [
-        "apr",
-        "apr-util",
-        "argon2",
-        "autoconf",
-        "curl",
-        "freetds",
-        "gd",
-        "gmp",
-        "icu4c@78",
-        "libpq",
-        "libsodium",
-        "libzip",
-        "net-snmp",
-        "oniguruma",
-        "openldap",
-        "openssl@3",
-        "pcre2",
-        "sqlite",
-        "tidy-html5",
-        "unixodbc",
-        "gettext"
-      ],
-      "required_by": [],
-      "homepage": "https://www.php.net/",
-      "version": "8.5.1",
-      "status": "success"
-    },
-    {
       "name": "pillow",
       "type": "formula",
       "description": "Friendly PIL fork (Python Imaging Library)",
@@ -4812,10 +4830,11 @@
         "webp"
       ],
       "required_by": [
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://python-pillow.github.io/",
-      "version": "12.1.0",
+      "version": "12.3.0",
       "status": "success"
     },
     {
@@ -4831,10 +4850,11 @@
         "gnupg",
         "gpgme",
         "gpgmepp",
+        "ledger",
         "poppler"
       ],
       "homepage": "https://www.gnupg.org/related_software/pinentry/",
-      "version": "1.3.2",
+      "version": "1.3.3",
       "status": "success"
     },
     {
@@ -4844,12 +4864,10 @@
       "dependencies": [],
       "required_by": [
         "cairo",
-        "ffmpeg",
+        "chafa",
         "gdal",
         "graphviz",
         "harfbuzz",
-        "imagemagick",
-        "libass",
         "libraqm",
         "librsvg",
         "pango",
@@ -4857,6 +4875,7 @@
         "poppler",
         "qemu",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://cairographics.org/",
@@ -4876,7 +4895,7 @@
         "rust"
       ],
       "homepage": "https://github.com/pkgconf/pkgconf",
-      "version": "2.5.1",
+      "version": "3.0.5",
       "status": "success"
     },
     {
@@ -4886,7 +4905,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://pnpm.io/",
-      "version": "10.27.0",
+      "version": "11.21.0",
       "status": "success"
     },
     {
@@ -4897,9 +4916,7 @@
         "cairo",
         "fontconfig",
         "freetype",
-        "gettext",
         "glib",
-        "gpgme",
         "gpgmepp",
         "jpeg-turbo",
         "libpng",
@@ -4908,13 +4925,14 @@
         "nspr",
         "nss",
         "openjpeg",
-        "libassuan"
+        "gettext",
+        "gpgme"
       ],
       "required_by": [
         "gdal"
       ],
       "homepage": "https://poppler.freedesktop.org/",
-      "version": "25.12.0",
+      "version": "26.08.0",
       "status": "success"
     },
     {
@@ -4941,23 +4959,7 @@
       "status": "success"
     },
     {
-      "name": "postgresql@14",
-      "type": "formula",
-      "description": "Object-relational database system",
-      "dependencies": [
-        "icu4c@78",
-        "krb5",
-        "lz4",
-        "openssl@3",
-        "readline"
-      ],
-      "required_by": [],
-      "homepage": "https://www.postgresql.org/",
-      "version": "14.20",
-      "status": "success"
-    },
-    {
-      "name": "postgresql@16",
+      "name": "postgresql@17",
       "type": "formula",
       "description": "Object-relational database system",
       "dependencies": [
@@ -4971,19 +4973,19 @@
       ],
       "required_by": [],
       "homepage": "https://www.postgresql.org/",
-      "version": "16.11",
+      "version": "17.11",
       "status": "success"
     },
     {
       "name": "prettierd",
       "type": "formula",
-      "description": "Prettier daemon",
+      "description": "prettier, on SPEED!",
       "dependencies": [
         "node"
       ],
       "required_by": [],
       "homepage": "https://github.com/fsouza/prettierd",
-      "version": "0.26.2",
+      "version": "0.26.1",
       "status": "success"
     },
     {
@@ -4999,7 +5001,7 @@
         "libspatialite"
       ],
       "homepage": "https://proj.org/",
-      "version": "9.7.1",
+      "version": "9.8.1",
       "status": "success"
     },
     {
@@ -5013,10 +5015,13 @@
         "apache-arrow",
         "gdal",
         "grpc",
-        "mosh"
+        "mosh",
+        "onnx",
+        "onnxruntime",
+        "yvgude/lean-ctx/lean-ctx"
       ],
       "homepage": "https://protobuf.dev/",
-      "version": "33.2",
+      "version": "35.1",
       "status": "success"
     },
     {
@@ -5026,10 +5031,13 @@
       "dependencies": [],
       "required_by": [
         "cffi",
-        "cryptography"
+        "cryptography",
+        "semgrep",
+        "snowflake-cli",
+        "weasyprint"
       ],
       "homepage": "https://github.com/eliben/pycparser",
-      "version": "2.23",
+      "version": "3.0",
       "status": "success"
     },
     {
@@ -5038,10 +5046,12 @@
       "description": "Data validation using Python type hints",
       "dependencies": [],
       "required_by": [
-        "litecli"
+        "litecli",
+        "semgrep",
+        "snowflake-cli"
       ],
-      "homepage": "https://github.com/pydantic/pydantic",
-      "version": "2.12.5",
+      "homepage": "https://pydantic.dev/docs/validation",
+      "version": "2.13.4",
       "status": "success"
     },
     {
@@ -5052,24 +5062,16 @@
         "ca-certificates"
       ],
       "required_by": [
+        "hf",
         "httpie",
-        "huggingface-cli",
-        "litecli"
+        "litecli",
+        "semgrep",
+        "snowflake-cli",
+        "toot",
+        "yt-dlp"
       ],
       "homepage": "https://github.com/certifi/python-certifi",
-      "version": "2025.11.12",
-      "status": "success"
-    },
-    {
-      "name": "python-packaging",
-      "type": "formula",
-      "description": "Core utilities for Python packages",
-      "dependencies": [],
-      "required_by": [
-        "liblqr"
-      ],
-      "homepage": "https://packaging.pypa.io/",
-      "version": "25.0",
+      "version": "2026.7.22",
       "status": "success"
     },
     {
@@ -5083,10 +5085,10 @@
         "xz"
       ],
       "required_by": [
-        "liblqr"
+        "snowflake-cli"
       ],
       "homepage": "https://www.python.org/",
-      "version": "3.13.11",
+      "version": "3.13.15",
       "status": "success"
     },
     {
@@ -5103,20 +5105,25 @@
       "required_by": [
         "apache-arrow",
         "fonttools",
+        "gcloud-cli",
         "gdal",
+        "hf",
         "httpie",
-        "huggingface-cli",
         "ivandokov/contrib/phockup",
         "keyring",
+        "ledger",
         "litecli",
         "llvm",
         "rust",
+        "semgrep",
+        "toot",
         "virtualenv",
         "watchman",
-        "weasyprint"
+        "weasyprint",
+        "yt-dlp"
       ],
       "homepage": "https://www.python.org/",
-      "version": "3.14.2",
+      "version": "3.14.7",
       "status": "success"
     },
     {
@@ -5142,7 +5149,7 @@
       ],
       "required_by": [],
       "homepage": "https://www.qemu.org/",
-      "version": "10.2.0",
+      "version": "11.1.0",
       "status": "success"
     },
     {
@@ -5158,15 +5165,13 @@
       "status": "success"
     },
     {
-      "name": "rav1e",
+      "name": "qsv",
       "type": "formula",
-      "description": "Fastest and safest AV1 video encoder",
+      "description": "Ultra-fast CSV data-wrangling toolkit",
       "dependencies": [],
-      "required_by": [
-        "ffmpeg"
-      ],
-      "homepage": "https://github.com/xiph/rav1e",
-      "version": "0.8.1",
+      "required_by": [],
+      "homepage": "https://qsv.dathere.com/",
+      "version": "22.0.1",
       "status": "success"
     },
     {
@@ -5179,10 +5184,12 @@
       "required_by": [
         "apache-arrow",
         "gdal",
-        "grpc"
+        "grpc",
+        "onnxruntime",
+        "yvgude/lean-ctx/lean-ctx"
       ],
       "homepage": "https://github.com/google/re2",
-      "version": "20251105",
+      "version": "2025-11-05",
       "status": "success"
     },
     {
@@ -5192,6 +5199,7 @@
       "dependencies": [],
       "required_by": [
         "apache-arrow",
+        "deno",
         "fonttools",
         "fsouza/prettierd/prettierd",
         "gdal",
@@ -5199,43 +5207,34 @@
         "gpgme",
         "gpgmepp",
         "guile",
+        "hf",
         "httpie",
-        "huggingface-cli",
         "ivandokov/contrib/phockup",
         "keyring",
+        "ledger",
         "libdap",
-        "liblqr",
+        "libpq",
         "libspatialite",
         "libxml2",
         "litecli",
         "llvm",
         "node",
-        "php",
         "poppler",
-        "postgresql@14",
-        "postgresql@16",
+        "postgresql@17",
         "python@3.13",
         "python@3.14",
         "rust",
+        "semgrep",
+        "snowflake-cli",
         "sqlite",
+        "toot",
         "virtualenv",
         "watchman",
-        "weasyprint"
+        "weasyprint",
+        "yt-dlp"
       ],
       "homepage": "https://tiswww.case.edu/php/chet/readline/rltop.html",
       "version": "8.3.3",
-      "status": "success"
-    },
-    {
-      "name": "redis",
-      "type": "formula",
-      "description": "Persistent key-value database, with built-in net interface",
-      "dependencies": [
-        "openssl@3"
-      ],
-      "required_by": [],
-      "homepage": "https://redis.io/",
-      "version": "8.4.0",
       "status": "success"
     },
     {
@@ -5247,7 +5246,29 @@
       ],
       "required_by": [],
       "homepage": "https://github.com/BurntSushi/ripgrep",
-      "version": "15.1.0",
+      "version": "15.2.0",
+      "status": "success"
+    },
+    {
+      "name": "rpds-py",
+      "type": "formula",
+      "description": "Python bindings to Rust's persistent data structures",
+      "dependencies": [],
+      "required_by": [
+        "semgrep"
+      ],
+      "homepage": "https://rpds.readthedocs.io/en/latest/",
+      "version": "2026.6.3",
+      "status": "success"
+    },
+    {
+      "name": "rtk",
+      "type": "formula",
+      "description": "CLI proxy to minimize LLM token consumption",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://www.rtk-ai.app/",
+      "version": "0.45.0",
       "status": "success"
     },
     {
@@ -5257,27 +5278,9 @@
       "dependencies": [
         "openssl@3"
       ],
-      "required_by": [
-        "curl",
-        "php"
-      ],
+      "required_by": [],
       "homepage": "https://rtmpdump.mplayerhq.hu/",
-      "version": "2.4-20151223",
-      "status": "success"
-    },
-    {
-      "name": "rubberband",
-      "type": "formula",
-      "description": "Audio time stretcher tool and library",
-      "dependencies": [
-        "libsamplerate",
-        "libsndfile"
-      ],
-      "required_by": [
-        "ffmpeg"
-      ],
-      "homepage": "https://breakfastquay.com/rubberband/",
-      "version": "4.0.0",
+      "version": "2.6",
       "status": "success"
     },
     {
@@ -5289,10 +5292,11 @@
         "openssl@3"
       ],
       "required_by": [
-        "pgsync"
+        "pgsync",
+        "tmuxinator"
       ],
       "homepage": "https://www.ruby-lang.org/",
-      "version": "4.0.0",
+      "version": "4.0.6",
       "status": "success"
     },
     {
@@ -5305,11 +5309,11 @@
         "llvm",
         "openssl@3",
         "pkgconf",
-        "zstd"
+        "sqlite"
       ],
       "required_by": [],
       "homepage": "https://www.rust-lang.org/",
-      "version": "1.92.0",
+      "version": "1.97.1",
       "status": "success"
     },
     {
@@ -5319,19 +5323,103 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/avencera/rustywind",
-      "version": "0.24.3",
+      "version": "v0.27.0",
       "status": "success"
     },
     {
-      "name": "sdl2",
+      "name": "s2n",
+      "type": "formula",
+      "description": "Implementation of the TLS/SSL protocols",
+      "dependencies": [
+        "openssl@3"
+      ],
+      "required_by": [
+        "apache-arrow",
+        "aws-c-auth",
+        "aws-c-event-stream",
+        "aws-c-http",
+        "aws-c-io",
+        "aws-c-mqtt",
+        "aws-c-s3",
+        "aws-crt-cpp",
+        "aws-sdk-cpp",
+        "gdal"
+      ],
+      "homepage": "https://aws.github.io/s2n-tls/usage-guide/",
+      "version": "1.7.7",
+      "status": "success"
+    },
+    {
+      "name": "sdl2-compat",
+      "type": "formula",
+      "description": "SDL2 compatibility layer that uses SDL3 behind the scenes",
+      "dependencies": [
+        "sdl3"
+      ],
+      "required_by": [
+        "ffmpeg"
+      ],
+      "homepage": "https://github.com/libsdl-org/sdl2-compat",
+      "version": "2.32.70",
+      "status": "success"
+    },
+    {
+      "name": "sdl3",
       "type": "formula",
       "description": "Low-level access to audio, keyboard, mouse, joystick, and graphics",
       "dependencies": [],
       "required_by": [
-        "ffmpeg"
+        "ffmpeg",
+        "sdl2-compat"
       ],
-      "homepage": "https://www.libsdl.org/",
-      "version": "2.32.10",
+      "homepage": "https://libsdl.org/",
+      "version": "3.4.14",
+      "status": "success"
+    },
+    {
+      "name": "semgrep",
+      "type": "formula",
+      "description": "Easily detect and prevent bugs and anti-patterns in your codebase",
+      "dependencies": [
+        "certifi",
+        "cryptography",
+        "dwarfutils",
+        "gmp",
+        "libev",
+        "pcre2",
+        "pydantic",
+        "python@3.14",
+        "rpds-py",
+        "sqlite",
+        "tree-sitter",
+        "zstd"
+      ],
+      "required_by": [],
+      "homepage": "https://semgrep.dev",
+      "version": "1.173.0",
+      "status": "success"
+    },
+    {
+      "name": "sentry-cli",
+      "type": "formula",
+      "description": "",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "",
+      "version": "",
+      "status": "success"
+    },
+    {
+      "name": "sesh",
+      "type": "formula",
+      "description": "Smart terminal session manager",
+      "dependencies": [
+        "tmux",
+        "zoxide"
+      ],
+      "required_by": [],
+      "homepage": "https://github.com/joshmedeski/sesh",
+      "version": "2.28.0",
       "status": "success"
     },
     {
@@ -5348,23 +5436,7 @@
         "gdal"
       ],
       "homepage": "https://sfcgal.gitlab.io/SFCGAL/",
-      "version": "2.2.0",
-      "status": "success"
-    },
-    {
-      "name": "shared-mime-info",
-      "type": "formula",
-      "description": "Database of common MIME types",
-      "dependencies": [
-        "glib"
-      ],
-      "required_by": [
-        "gdal",
-        "imagemagick",
-        "libheif"
-      ],
-      "homepage": "https://wiki.freedesktop.org/www/Software/shared-mime-info",
-      "version": "2.4",
+      "version": "2.3.0",
       "status": "success"
     },
     {
@@ -5377,17 +5449,22 @@
         "node"
       ],
       "homepage": "https://simdjson.org",
-      "version": "4.2.4",
+      "version": "4.6.7",
       "status": "success"
     },
     {
-      "name": "sketchybar",
+      "name": "simdutf",
       "type": "formula",
-      "description": "Custom macOS statusbar with shell plugin, interaction and graph support",
-      "dependencies": [],
-      "required_by": [],
-      "homepage": "https://github.com/FelixKratz/SketchyBar",
-      "version": "2.23.0",
+      "description": "Unicode conversion routines, fast",
+      "dependencies": [
+        "icu4c@78"
+      ],
+      "required_by": [
+        "merve",
+        "node"
+      ],
+      "homepage": "https://simdutf.github.io/simdutf/",
+      "version": "9.0.0",
       "status": "success"
     },
     {
@@ -5400,7 +5477,6 @@
         "edencommon",
         "fb303",
         "fbthrift",
-        "ffmpeg",
         "fizz",
         "folly",
         "gdal",
@@ -5414,17 +5490,48 @@
       "status": "success"
     },
     {
-      "name": "speex",
+      "name": "snowflake-cli",
       "type": "formula",
-      "description": "Audio codec designed for speech",
+      "description": "CLI for snowflake",
       "dependencies": [
-        "libogg"
+        "certifi",
+        "cryptography",
+        "libyaml",
+        "pydantic",
+        "python@3.13"
       ],
-      "required_by": [
-        "ffmpeg"
+      "required_by": [],
+      "homepage": "https://docs.snowflake.com/developer-guide/snowflake-cli/index",
+      "version": "3.24.1",
+      "status": "success"
+    },
+    {
+      "name": "sox",
+      "type": "formula",
+      "description": "SOund eXchange: universal sound sample translator",
+      "dependencies": [
+        "flac",
+        "lame",
+        "libogg",
+        "libpng",
+        "libsndfile",
+        "libvorbis",
+        "mad",
+        "opusfile"
       ],
-      "homepage": "https://speex.org/",
-      "version": "1.2.1",
+      "required_by": [],
+      "homepage": "https://sox.sourceforge.net/",
+      "version": "14.4.2",
+      "status": "success"
+    },
+    {
+      "name": "spacer",
+      "type": "formula",
+      "description": "Small command-line utility for adding spacers to command output",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://github.com/samwho/spacer",
+      "version": "0.5.0",
       "status": "success"
     },
     {
@@ -5436,28 +5543,32 @@
       ],
       "required_by": [
         "apache-arrow",
+        "deno",
         "fonttools",
         "fsouza/prettierd/prettierd",
         "gdal",
+        "hf",
         "httpie",
-        "huggingface-cli",
         "ivandokov/contrib/phockup",
         "keyring",
-        "liblqr",
+        "ledger",
         "libspatialite",
         "litecli",
         "llvm",
         "node",
-        "php",
         "python@3.13",
         "python@3.14",
         "rust",
+        "semgrep",
+        "snowflake-cli",
+        "toot",
         "virtualenv",
         "watchman",
-        "weasyprint"
+        "weasyprint",
+        "yt-dlp"
       ],
       "homepage": "https://sqlite.org/index.html",
-      "version": "3.51.1",
+      "version": "3.53.4",
       "status": "success"
     },
     {
@@ -5467,11 +5578,9 @@
       "dependencies": [
         "openssl@3"
       ],
-      "required_by": [
-        "ffmpeg"
-      ],
+      "required_by": [],
       "homepage": "https://www.srtalliance.org/",
-      "version": "1.5.4",
+      "version": "1.5.6",
       "status": "success"
     },
     {
@@ -5481,7 +5590,27 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://starship.rs/",
-      "version": "1.24.2",
+      "version": "1.26.0",
+      "status": "success"
+    },
+    {
+      "name": "stow",
+      "type": "formula",
+      "description": "Organize software neatly under a single directory tree (e.g. /usr/local)",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://www.gnu.org/software/stow/",
+      "version": "2.4.1",
+      "status": "success"
+    },
+    {
+      "name": "superfile",
+      "type": "formula",
+      "description": "Modern and pretty fancy file manager for the terminal",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://superfile.dev/",
+      "version": "1.6.0",
       "status": "success"
     },
     {
@@ -5493,7 +5622,7 @@
         "ffmpeg"
       ],
       "homepage": "https://gitlab.com/AOMediaCodec/SVT-AV1",
-      "version": "3.1.2",
+      "version": "4.2.0",
       "status": "success"
     },
     {
@@ -5506,7 +5635,7 @@
       ],
       "required_by": [],
       "homepage": "https://www.tcl-lang.org",
-      "version": "9.0.3",
+      "version": "9.0.4",
       "status": "success"
     },
     {
@@ -5515,8 +5644,18 @@
       "description": "General purpose fuzzy finder TUI",
       "dependencies": [],
       "required_by": [],
-      "homepage": "https://github.com/alexpasmantier/television",
-      "version": "0.14.4",
+      "homepage": "https://alexpasmantier.github.io/television/",
+      "version": "0.15.9",
+      "status": "success"
+    },
+    {
+      "name": "terminal-notifier",
+      "type": "formula",
+      "description": "Send macOS User Notifications from the command-line",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://github.com/julienXX/terminal-notifier",
+      "version": "2.0.0",
       "status": "success"
     },
     {
@@ -5535,26 +5674,9 @@
         "freetype",
         "gettext"
       ],
-      "required_by": [
-        "ffmpeg"
-      ],
+      "required_by": [],
       "homepage": "https://tesseract-ocr.github.io/",
-      "version": "5.5.2",
-      "status": "success"
-    },
-    {
-      "name": "theora",
-      "type": "formula",
-      "description": "Open video compression format",
-      "dependencies": [
-        "libogg",
-        "libvorbis"
-      ],
-      "required_by": [
-        "ffmpeg"
-      ],
-      "homepage": "https://www.theora.org/",
-      "version": "1.2.0",
+      "version": "5.5.3",
       "status": "success"
     },
     {
@@ -5569,19 +5691,7 @@
         "gdal"
       ],
       "homepage": "https://thrift.apache.org/",
-      "version": "0.22.0",
-      "status": "success"
-    },
-    {
-      "name": "tidy-html5",
-      "type": "formula",
-      "description": "Granddaddy of HTML tools, with support for modern standards",
-      "dependencies": [],
-      "required_by": [
-        "php"
-      ],
-      "homepage": "https://www.html-tidy.org/",
-      "version": "5.8.0",
+      "version": "0.24.0",
       "status": "success"
     },
     {
@@ -5593,9 +5703,52 @@
         "ncurses",
         "utf8proc"
       ],
-      "required_by": [],
+      "required_by": [
+        "joshmedeski/sesh/sesh",
+        "tmuxinator"
+      ],
       "homepage": "https://tmux.github.io/",
-      "version": "3.6a",
+      "version": "3.7b",
+      "status": "success"
+    },
+    {
+      "name": "tmuxinator",
+      "type": "formula",
+      "description": "Manage complex tmux sessions easily",
+      "dependencies": [
+        "ruby",
+        "tmux",
+        "tmuxinator-completion"
+      ],
+      "required_by": [],
+      "homepage": "https://github.com/tmuxinator/tmuxinator",
+      "version": "3.4.1",
+      "status": "success"
+    },
+    {
+      "name": "tmuxinator-completion",
+      "type": "formula",
+      "description": "Shell completion for Tmuxinator",
+      "dependencies": [],
+      "required_by": [
+        "tmuxinator"
+      ],
+      "homepage": "https://github.com/tmuxinator/tmuxinator",
+      "version": "3.4.1",
+      "status": "success"
+    },
+    {
+      "name": "toot",
+      "type": "formula",
+      "description": "Mastodon CLI & TUI",
+      "dependencies": [
+        "certifi",
+        "pillow",
+        "python@3.14"
+      ],
+      "required_by": [],
+      "homepage": "https://toot.bezdomni.net/",
+      "version": "0.52.1",
       "status": "success"
     },
     {
@@ -5605,7 +5758,19 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://oldmanprogrammer.net/source.php?dir=projects/tree",
-      "version": "2.2.1",
+      "version": "2.3.2",
+      "status": "success"
+    },
+    {
+      "name": "tree-sitter",
+      "type": "formula",
+      "description": "Incremental parsing library",
+      "dependencies": [],
+      "required_by": [
+        "semgrep"
+      ],
+      "homepage": "https://tree-sitter.github.io/",
+      "version": "0.26.12",
       "status": "success"
     },
     {
@@ -5631,7 +5796,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/crate-ci/typos",
-      "version": "1.41.0",
+      "version": "1.49.0",
       "status": "success"
     },
     {
@@ -5641,7 +5806,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://typst.app/",
-      "version": "0.14.2",
+      "version": "0.15.1",
       "status": "success"
     },
     {
@@ -5653,20 +5818,9 @@
         "libnghttp2",
         "openssl@3"
       ],
-      "required_by": [
-        "ffmpeg",
-        "gdal",
-        "gnupg",
-        "gnutls",
-        "gpgme",
-        "gpgmepp",
-        "libmicrohttpd",
-        "librist",
-        "poppler",
-        "qemu"
-      ],
+      "required_by": [],
       "homepage": "https://www.unbound.net",
-      "version": "1.24.2",
+      "version": "1.26.0",
       "status": "success"
     },
     {
@@ -5678,8 +5832,7 @@
       ],
       "required_by": [
         "freetds",
-        "gdal",
-        "php"
+        "gdal"
       ],
       "homepage": "https://www.unixodbc.org/",
       "version": "2.3.14",
@@ -5695,7 +5848,7 @@
         "libkml"
       ],
       "homepage": "https://uriparser.github.io/",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "status": "success"
     },
     {
@@ -5706,7 +5859,9 @@
       "required_by": [
         "apache-arrow",
         "gdal",
-        "tmux"
+        "joshmedeski/sesh/sesh",
+        "tmux",
+        "tmuxinator"
       ],
       "homepage": "https://juliastrings.github.io/utf8proc/",
       "version": "2.11.3",
@@ -5725,6 +5880,18 @@
       ],
       "homepage": "https://github.com/nodejs/uvwasi",
       "version": "0.0.23",
+      "status": "success"
+    },
+    {
+      "name": "valkey",
+      "type": "formula",
+      "description": "High-performance data structure server that primarily serves key/value workloads",
+      "dependencies": [
+        "openssl@3"
+      ],
+      "required_by": [],
+      "homepage": "https://valkey.io",
+      "version": "9.1.1",
       "status": "success"
     },
     {
@@ -5748,7 +5915,7 @@
       ],
       "required_by": [],
       "homepage": "https://virtualenv.pypa.io/",
-      "version": "20.35.4",
+      "version": "21.7.4",
       "status": "success"
     },
     {
@@ -5762,10 +5929,7 @@
         "folly",
         "gflags",
         "glog",
-        "libevent",
-        "lz4",
-        "openssl@3",
-        "zstd"
+        "openssl@3"
       ],
       "required_by": [
         "edencommon",
@@ -5774,7 +5938,7 @@
         "watchman"
       ],
       "homepage": "https://github.com/facebook/wangle",
-      "version": "2025.12.29.00",
+      "version": "2026.07.27.00",
       "status": "success"
     },
     {
@@ -5786,7 +5950,7 @@
       ],
       "required_by": [],
       "homepage": "https://gitlab.com/procps-ng/procps",
-      "version": "4.0.5",
+      "version": "4.0.7",
       "status": "success"
     },
     {
@@ -5799,16 +5963,13 @@
         "fbthrift",
         "fmt",
         "folly",
-        "gflags",
         "glog",
-        "libevent",
-        "openssl@3",
         "pcre2",
         "python@3.14"
       ],
       "required_by": [],
-      "homepage": "https://github.com/facebook/watchman",
-      "version": "2025.12.29.00",
+      "homepage": "https://facebook.github.io/watchman/",
+      "version": "2026.07.27.00",
       "status": "success"
     },
     {
@@ -5820,7 +5981,7 @@
       ],
       "required_by": [],
       "homepage": "https://www.gnu.org/software/wdiff/",
-      "version": "1.2.2",
+      "version": "1.2.3",
       "status": "success"
     },
     {
@@ -5828,13 +5989,14 @@
       "type": "formula",
       "description": "Convert HTML to PDF",
       "dependencies": [
+        "cffi",
         "pango",
         "pillow",
         "python@3.14"
       ],
       "required_by": [],
       "homepage": "https://www.courtbouillon.org/weasyprint",
-      "version": "67.0",
+      "version": "69.0",
       "status": "success"
     },
     {
@@ -5844,24 +6006,29 @@
       "dependencies": [
         "giflib",
         "jpeg-turbo",
-        "libpng",
-        "libtiff"
+        "libpng"
       ],
       "required_by": [
-        "aom",
-        "ffmpeg",
+        "chafa",
+        "deno",
         "gd",
         "gdal",
+        "gdk-pixbuf",
         "graphviz",
         "imagemagick",
         "jpeg-xl",
         "leptonica",
-        "libavif",
         "libheif",
-        "php",
+        "librsvg",
+        "libtiff",
+        "openexr",
+        "openjph",
         "pillow",
+        "poppler",
         "tesseract",
-        "weasyprint"
+        "toot",
+        "weasyprint",
+        "yt-dlp"
       ],
       "homepage": "https://developers.google.com/speed/webp/",
       "version": "1.6.0",
@@ -5873,6 +6040,7 @@
       "description": "Internet file retriever",
       "dependencies": [
         "libidn2",
+        "libpsl",
         "openssl@3",
         "gettext",
         "libunistring"
@@ -5880,6 +6048,16 @@
       "required_by": [],
       "homepage": "https://www.gnu.org/software/wget/",
       "version": "1.25.0",
+      "status": "success"
+    },
+    {
+      "name": "worktrunk",
+      "type": "formula",
+      "description": "CLI for Git worktree management, designed for parallel AI agent workflows",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://worktrunk.dev",
+      "version": "0.74.0",
       "status": "success"
     },
     {
@@ -5906,7 +6084,7 @@
         "libheif"
       ],
       "homepage": "https://bitbucket.org/multicoreware/x265_git",
-      "version": "4.1",
+      "version": "4.2",
       "status": "success"
     },
     {
@@ -5928,12 +6106,10 @@
       "dependencies": [],
       "required_by": [
         "cairo",
-        "ffmpeg",
+        "chafa",
         "gdal",
         "graphviz",
         "harfbuzz",
-        "imagemagick",
-        "libass",
         "libraqm",
         "librsvg",
         "libx11",
@@ -5946,32 +6122,11 @@
         "pillow",
         "poppler",
         "tesseract",
+        "toot",
         "weasyprint"
       ],
       "homepage": "https://www.x.org/",
       "version": "2025.1",
-      "status": "success"
-    },
-    {
-      "name": "xsv",
-      "type": "formula",
-      "description": "Fast CSV toolkit written in Rust",
-      "dependencies": [],
-      "required_by": [],
-      "homepage": "https://github.com/BurntSushi/xsv",
-      "version": "0.13.0",
-      "status": "success"
-    },
-    {
-      "name": "xvid",
-      "type": "formula",
-      "description": "High-performance, high-quality MPEG-4 video library",
-      "dependencies": [],
-      "required_by": [
-        "ffmpeg"
-      ],
-      "homepage": "https://labs.xvid.com/",
-      "version": "1.3.7",
       "status": "success"
     },
     {
@@ -5995,15 +6150,14 @@
       "description": "General-purpose data compression with high compression ratio",
       "dependencies": [],
       "required_by": [
-        "aom",
         "apache-arrow",
         "boost",
         "cgal",
-        "curl",
+        "chafa",
+        "deno",
         "edencommon",
         "fb303",
         "fbthrift",
-        "ffmpeg",
         "fizz",
         "folly",
         "fonttools",
@@ -6015,23 +6169,20 @@
         "graphviz",
         "gts",
         "hdf5",
+        "hf",
         "httpie",
-        "huggingface-cli",
         "imagemagick",
         "ivandokov/contrib/phockup",
         "jpeg-xl",
         "keyring",
+        "ledger",
         "leptonica",
         "libarchive",
-        "libavif",
         "libgeotiff",
         "libheif",
-        "liblqr",
-        "libraw",
         "librsvg",
         "libspatialite",
         "libtiff",
-        "libzip",
         "litecli",
         "little-cms2",
         "llvm",
@@ -6045,26 +6196,29 @@
         "openexr",
         "openjpeg",
         "openjph",
-        "php",
         "pillow",
         "poppler",
-        "postgresql@16",
+        "postgresql@17",
         "proj",
         "python@3.13",
         "python@3.14",
         "qemu",
         "rust",
+        "semgrep",
         "sfcgal",
+        "snowflake-cli",
         "tesseract",
+        "toot",
         "virtualenv",
         "wangle",
         "watchman",
         "weasyprint",
         "webp",
+        "yt-dlp",
         "zstd"
       ],
       "homepage": "https://tukaani.org/xz/",
-      "version": "5.8.2",
+      "version": "5.8.3",
       "status": "success"
     },
     {
@@ -6083,8 +6237,22 @@
       "description": "Blazing fast terminal file manager written in Rust, based on async I/O",
       "dependencies": [],
       "required_by": [],
-      "homepage": "https://github.com/sxyazi/yazi",
-      "version": "26.1.4",
+      "homepage": "https://yazi-rs.github.io",
+      "version": "26.5.6",
+      "status": "success"
+    },
+    {
+      "name": "yt-dlp",
+      "type": "formula",
+      "description": "Feature-rich command-line audio/video downloader",
+      "dependencies": [
+        "certifi",
+        "deno",
+        "python@3.14"
+      ],
+      "required_by": [],
+      "homepage": "https://github.com/yt-dlp/yt-dlp",
+      "version": "2026.7.4",
       "status": "success"
     },
     {
@@ -6099,33 +6267,17 @@
         "rust"
       ],
       "homepage": "https://github.com/Z3Prover/z3",
-      "version": "4.15.4",
+      "version": "4.16.0",
       "status": "success"
     },
     {
-      "name": "zeromq",
+      "name": "zizmor",
       "type": "formula",
-      "description": "High-performance, asynchronous messaging library",
-      "dependencies": [
-        "libsodium"
-      ],
-      "required_by": [
-        "ffmpeg"
-      ],
-      "homepage": "https://zeromq.org/",
-      "version": "4.3.5",
-      "status": "success"
-    },
-    {
-      "name": "zimg",
-      "type": "formula",
-      "description": "Scaling, colorspace conversion, and dithering library",
+      "description": "Find security issues in GitHub Actions setups",
       "dependencies": [],
-      "required_by": [
-        "ffmpeg"
-      ],
-      "homepage": "https://github.com/sekrit-twc/zimg",
-      "version": "3.0.6",
+      "required_by": [],
+      "homepage": "https://docs.zizmor.sh/",
+      "version": "1.29.0",
       "status": "success"
     },
     {
@@ -6135,7 +6287,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://zlib.net/",
-      "version": "1.3.1",
+      "version": "1.3.2",
       "status": "success"
     },
     {
@@ -6143,9 +6295,11 @@
       "type": "formula",
       "description": "Shell extension to navigate your filesystem faster",
       "dependencies": [],
-      "required_by": [],
+      "required_by": [
+        "joshmedeski/sesh/sesh"
+      ],
       "homepage": "https://github.com/ajeetdsouza/zoxide",
-      "version": "0.9.8",
+      "version": "0.10.0",
       "status": "success"
     },
     {
@@ -6177,15 +6331,14 @@
         "xz"
       ],
       "required_by": [
-        "aom",
         "apache-arrow",
         "boost",
         "cgal",
-        "curl",
+        "chafa",
+        "deno",
         "edencommon",
         "fb303",
         "fbthrift",
-        "ffmpeg",
         "fizz",
         "folly",
         "fonttools",
@@ -6197,22 +6350,20 @@
         "graphviz",
         "gts",
         "hdf5",
+        "hf",
         "httpie",
-        "huggingface-cli",
         "imagemagick",
         "ivandokov/contrib/phockup",
         "jpeg-xl",
         "keyring",
+        "ledger",
         "leptonica",
         "libarchive",
-        "libavif",
         "libgeotiff",
         "libheif",
-        "libraw",
         "librsvg",
         "libspatialite",
         "libtiff",
-        "libzip",
         "litecli",
         "little-cms2",
         "llvm",
@@ -6226,21 +6377,23 @@
         "openexr",
         "openjpeg",
         "openjph",
-        "php",
         "pillow",
         "poppler",
-        "postgresql@16",
+        "postgresql@17",
         "proj",
         "python@3.14",
         "qemu",
         "rust",
+        "semgrep",
         "sfcgal",
         "tesseract",
+        "toot",
         "virtualenv",
         "wangle",
         "watchman",
         "weasyprint",
-        "webp"
+        "webp",
+        "yt-dlp"
       ],
       "homepage": "https://facebook.github.io/zstd/",
       "version": "1.5.7",
@@ -6249,11 +6402,35 @@
   ],
   "casks": [
     {
+      "name": "1password-cli",
+      "type": "cask",
+      "description": "Command-line interface for 1Password",
+      "homepage": "https://developer.1password.com/docs/cli",
+      "version": "2.39.0",
+      "status": "success"
+    },
+    {
+      "name": "basictex",
+      "type": "cask",
+      "description": "Compact TeX distribution as alternative to the full TeX Live / MacTeX",
+      "homepage": "https://www.tug.org/mactex/morepackages.html",
+      "version": "2026.0301",
+      "status": "success"
+    },
+    {
       "name": "bruno",
       "type": "cask",
       "description": "Open source IDE for exploring and testing APIs",
       "homepage": "https://www.usebruno.com/",
-      "version": "2.15.1",
+      "version": "4.0.0",
+      "status": "success"
+    },
+    {
+      "name": "darktable",
+      "type": "cask",
+      "description": "Photography workflow application and raw developer",
+      "homepage": "https://www.darktable.org/",
+      "version": "5.6.0",
       "status": "success"
     },
     {
@@ -6265,11 +6442,19 @@
       "status": "success"
     },
     {
+      "name": "font-fira-code-nerd-font",
+      "type": "cask",
+      "description": null,
+      "homepage": "https://github.com/ryanoasis/nerd-fonts",
+      "version": "3.5.0",
+      "status": "success"
+    },
+    {
       "name": "font-hack-nerd-font",
       "type": "cask",
       "description": null,
       "homepage": "https://github.com/ryanoasis/nerd-fonts",
-      "version": "3.4.0",
+      "version": "3.5.0",
       "status": "success"
     },
     {
@@ -6277,7 +6462,15 @@
       "type": "cask",
       "description": null,
       "homepage": "https://github.com/ryanoasis/nerd-fonts",
-      "version": "3.4.0",
+      "version": "3.5.0",
+      "status": "success"
+    },
+    {
+      "name": "gcloud-cli",
+      "type": "cask",
+      "description": "Set of tools to manage resources and applications hosted on Google Cloud",
+      "homepage": "https://cloud.google.com/cli/",
+      "version": "580.0.0",
       "status": "success"
     },
     {
@@ -6285,15 +6478,7 @@
       "type": "cask",
       "description": "Terminal emulator that uses platform-native UI and GPU acceleration",
       "homepage": "https://ghostty.org/",
-      "version": "1.2.3",
-      "status": "success"
-    },
-    {
-      "name": "hyprspace",
-      "type": "cask",
-      "description": "HyprSpace is a heavily enhanced fork of AeroSpace with centered workspace bar and dwindle layout",
-      "homepage": "https://github.com/BarutSRB/HyprSpace",
-      "version": "0.5.0",
+      "version": "1.3.1",
       "status": "success"
     },
     {
@@ -6301,7 +6486,15 @@
       "type": "cask",
       "description": "Keyboard customiser",
       "homepage": "https://karabiner-elements.pqrs.org/",
-      "version": "15.7.0",
+      "version": "16.1.0",
+      "status": "success"
+    },
+    {
+      "name": "libreoffice",
+      "type": "cask",
+      "description": "Free cross-platform office suite, fresh version",
+      "homepage": "https://www.libreoffice.org/",
+      "version": "26.2.5",
       "status": "success"
     },
     {
@@ -6313,11 +6506,27 @@
       "status": "success"
     },
     {
+      "name": "muesli",
+      "type": "cask",
+      "description": "Local-first dictation and meeting transcription",
+      "homepage": "https://muesli.works/",
+      "version": "0.8.1",
+      "status": "success"
+    },
+    {
+      "name": "obsidian",
+      "type": "cask",
+      "description": "Knowledge base that works on top of a local folder of plain text Markdown files",
+      "homepage": "https://obsidian.md/",
+      "version": "1.13.7",
+      "status": "success"
+    },
+    {
       "name": "omniwm",
       "type": "cask",
       "description": "Tiling window manager for macOS with Niri-inspired column-based layout",
       "homepage": "https://github.com/BarutSRB/OmniWM",
-      "version": "0.2.0",
+      "version": "0.6.2",
       "status": "success"
     },
     {
@@ -6325,23 +6534,31 @@
       "type": "cask",
       "description": "Replacement for Docker Desktop",
       "homepage": "https://orbstack.dev/",
-      "version": "2.0.5,19905",
+      "version": "2.2.3,20963",
+      "status": "success"
+    },
+    {
+      "name": "recordly",
+      "type": "cask",
+      "description": "Screen recording app",
+      "homepage": "https://github.com/webadderallorg/Recordly",
+      "version": "1.3.3",
+      "status": "success"
+    },
+    {
+      "name": "session-manager-plugin",
+      "type": "cask",
+      "description": "Plugin for AWS CLI to start and end sessions that connect to managed instances",
+      "homepage": "https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html",
+      "version": "1.2.835.0",
       "status": "success"
     },
     {
       "name": "sf-symbols",
       "type": "cask",
       "description": "Tool that provides consistent, highly configurable symbols for apps",
-      "homepage": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/",
-      "version": "7.0,115",
-      "status": "success"
-    },
-    {
-      "name": "shortcat",
-      "type": "cask",
-      "description": "App that enables mouse-free UI interaction",
-      "homepage": "https://shortcat.app/",
-      "version": "0.12.2",
+      "homepage": "https://developer.apple.com/sf-symbols/",
+      "version": "8.0,135",
       "status": "success"
     },
     {
@@ -6349,7 +6566,39 @@
       "type": "cask",
       "description": "System monitor for the menu bar",
       "homepage": "https://github.com/exelban/stats",
-      "version": "2.11.63",
+      "version": "3.0.11",
+      "status": "success"
+    },
+    {
+      "name": "supacode",
+      "type": "cask",
+      "description": "Native terminal coding agents command center",
+      "homepage": "https://supacode.sh/",
+      "version": "0.10.8",
+      "status": "success"
+    },
+    {
+      "name": "thaw",
+      "type": "cask",
+      "description": "Menu bar manager",
+      "homepage": "https://github.com/thaw-app/Thaw/",
+      "version": "1.2.0",
+      "status": "success"
+    },
+    {
+      "name": "usagepal",
+      "type": "cask",
+      "description": "Menubar app to track AI coding assistant usage",
+      "homepage": "https://github.com/Halloweedev/usagepal",
+      "version": "0.7.68",
+      "status": "success"
+    },
+    {
+      "name": "yap",
+      "type": "cask",
+      "description": "On-device voice dictation",
+      "homepage": "https://github.com/FrigadeHQ/yap",
+      "version": "0.1.10",
       "status": "success"
     }
   ]
