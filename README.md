@@ -2,6 +2,28 @@
 
 A collection of fast, Python-based tools for managing and visualizing Homebrew packages.
 
+## Brewfile
+
+`Brewfile` is the declarative source of truth for which Homebrew packages to
+install (taps, formulae, casks). Manage it with `brew bundle`:
+
+```bash
+# Install everything declared in the Brewfile
+brew bundle --file=Brewfile
+
+# Report packages that are declared but not installed
+brew bundle check --file=Brewfile --verbose
+
+# List what the Brewfile declares
+brew bundle list --file=Brewfile
+
+# Uninstall anything NOT in the Brewfile (review first!)
+brew bundle cleanup --file=Brewfile
+```
+
+Consumed by the dotfiles bootstrap (`setup/setup_mac.sh`) via `brew bundle`.
+Non-brew installs (bun, `npm -g`, `gh` extensions) live in that script, not here.
+
 ## Tools
 
 ### 1. `brew-info.py` - Fast Package Information Generator
