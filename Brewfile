@@ -10,6 +10,7 @@
 # ---------------------------------------------------------------------------
 # Taps
 # ---------------------------------------------------------------------------
+tap "abue-ammar/tinycast" # tinycast
 tap "ivandokov/contrib"   # phockup
 tap "rjyo/moshi"          # moshi-hook (iPhone clipboard/notification sync)
 tap "theskumar/tap"       # personal casks (recordly, usagepal)
@@ -233,6 +234,7 @@ cask "basictex"          # minimal TeX distribution
 cask "iterm2"            # terminal emulator
 cask "karabiner-elements"  # keyboard customizer
 cask "thaw"              # macOS menu bar manager
+cask "abue-ammar/tinycast/tinycast"  # menu bar screen recorder
 
 # ---------------------------------------------------------------------------
 # Personal tap casks (theskumar/tap — apps not in homebrew-cask)
