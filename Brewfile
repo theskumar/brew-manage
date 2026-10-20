@@ -245,10 +245,6 @@ cask "theskumar/tap/usagepal"  # menubar AI coding usage tracker
 # ---------------------------------------------------------------------------
 # Quick Look plugins (run `qlmanage -r` after install)
 # ---------------------------------------------------------------------------
-cask "qlcolorcode"       # syntax-highlighted source preview
-cask "qlstephen"         # preview extensionless plain-text files
-cask "quicklook-json"    # JSON preview
-cask "qlprettypatch"     # .patch/.diff preview
 cask "quicklook-csv"     # CSV preview
 cask "betterzipql"       # archive preview
 cask "webp-quicklook"    # WebP preview
