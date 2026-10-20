@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-21T01:57:35.960257",
+  "generated_at": "2026-10-21T02:01:49.304134",
   "summary": {
     "total_formulas": 346,
-    "total_casks": 26,
-    "total_packages": 372
+    "total_casks": 25,
+    "total_packages": 371
   },
   "formulas": [
     {
@@ -6325,14 +6325,6 @@
       "description": "Replacement for Docker Desktop",
       "homepage": "https://orbstack.dev/",
       "version": "2.2.4,21120",
-      "status": "success"
-    },
-    {
-      "name": "qlmarkdown",
-      "type": "cask",
-      "description": "Quick Look generator for Markdown files",
-      "homepage": "https://github.com/sbarex/QLMarkdown",
-      "version": "1.5.7",
       "status": "success"
     },
     {
