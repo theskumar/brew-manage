@@ -245,7 +245,4 @@ cask "theskumar/tap/usagepal"  # menubar AI coding usage tracker
 # ---------------------------------------------------------------------------
 # Quick Look plugins (run `qlmanage -r` after install)
 # ---------------------------------------------------------------------------
-cask "quicklook-csv"     # CSV preview
-cask "betterzipql"       # archive preview
-cask "webp-quicklook"    # WebP preview
 cask "suspicious-package"  # inspect .pkg installers
