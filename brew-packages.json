@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-21T01:31:33.879494",
+  "generated_at": "2026-10-21T01:57:35.960257",
   "summary": {
-    "total_formulas": 358,
+    "total_formulas": 346,
     "total_casks": 26,
-    "total_packages": 384
+    "total_packages": 372
   },
   "formulas": [
     {
@@ -475,17 +475,9 @@
       ],
       "required_by": [
         "cgal",
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "fizz",
-        "folly",
         "gdal",
         "ledger",
-        "mvfst",
-        "sfcgal",
-        "wangle",
-        "watchman"
+        "sfcgal"
       ],
       "homepage": "https://www.boost.org/",
       "version": "1.92.0",
@@ -595,13 +587,8 @@
         "coreutils",
         "cryptography",
         "dotnet@9",
-        "edencommon",
         "eza",
-        "fb303",
-        "fbthrift",
         "ffmpeg",
-        "fizz",
-        "folly",
         "fonttools",
         "freetds",
         "fsouza/prettierd/prettierd",
@@ -632,7 +619,6 @@
         "libwebsockets",
         "litecli",
         "marksman",
-        "mvfst",
         "node",
         "openssl@3",
         "openssl@4",
@@ -662,8 +648,6 @@
         "unbound",
         "valkey",
         "virtualenv",
-        "wangle",
-        "watchman",
         "weasyprint",
         "wget",
         "yt-dlp"
@@ -972,25 +956,6 @@
       "status": "success"
     },
     {
-      "name": "double-conversion",
-      "type": "formula",
-      "description": "Binary-decimal and decimal-binary routines for IEEE doubles",
-      "dependencies": [],
-      "required_by": [
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "fizz",
-        "folly",
-        "mvfst",
-        "wangle",
-        "watchman"
-      ],
-      "homepage": "https://github.com/google/double-conversion",
-      "version": "3.4.0",
-      "status": "success"
-    },
-    {
       "name": "dtc",
       "type": "formula",
       "description": "Device tree compiler",
@@ -1024,23 +989,6 @@
       ],
       "homepage": "https://www.prevanders.net/dwarf.html",
       "version": "2.3.3",
-      "status": "success"
-    },
-    {
-      "name": "edencommon",
-      "type": "formula",
-      "description": "Shared library for Watchman and Eden projects",
-      "dependencies": [
-        "boost",
-        "fb303",
-        "fmt",
-        "folly"
-      ],
-      "required_by": [
-        "watchman"
-      ],
-      "homepage": "https://github.com/facebookexperimental/edencommon",
-      "version": "2026.10.19.00",
       "status": "success"
     },
     {
@@ -1106,49 +1054,6 @@
       "status": "success"
     },
     {
-      "name": "fb303",
-      "type": "formula",
-      "description": "Thrift functions for querying information from a service",
-      "dependencies": [
-        "fbthrift",
-        "fmt",
-        "folly",
-        "gflags",
-        "glog"
-      ],
-      "required_by": [
-        "edencommon",
-        "watchman"
-      ],
-      "homepage": "https://github.com/facebook/fb303",
-      "version": "2026.10.19.00",
-      "status": "success"
-    },
-    {
-      "name": "fbthrift",
-      "type": "formula",
-      "description": "Facebook's branch of Apache Thrift, including a new C++ server",
-      "dependencies": [
-        "double-conversion",
-        "fizz",
-        "fmt",
-        "folly",
-        "gflags",
-        "glog",
-        "openssl@4",
-        "wangle",
-        "xxhash"
-      ],
-      "required_by": [
-        "edencommon",
-        "fb303",
-        "watchman"
-      ],
-      "homepage": "https://github.com/facebook/fbthrift",
-      "version": "2026.10.19.00",
-      "status": "success"
-    },
-    {
       "name": "fclones",
       "type": "formula",
       "description": "Efficient Duplicate File Finder",
@@ -1201,30 +1106,6 @@
       "status": "success"
     },
     {
-      "name": "fizz",
-      "type": "formula",
-      "description": "C++14 implementation of the TLS-1.3 standard",
-      "dependencies": [
-        "fmt",
-        "folly",
-        "glog",
-        "libsodium",
-        "openssl@4",
-        "zstd"
-      ],
-      "required_by": [
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "mvfst",
-        "wangle",
-        "watchman"
-      ],
-      "homepage": "https://github.com/facebookincubator/fizz",
-      "version": "2026.10.19.00",
-      "status": "success"
-    },
-    {
       "name": "flac",
       "type": "formula",
       "description": "Free lossless audio codec",
@@ -1266,49 +1147,10 @@
       "dependencies": [],
       "required_by": [
         "ada-url",
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "fizz",
-        "folly",
-        "mvfst",
-        "node",
-        "wangle",
-        "watchman"
+        "node"
       ],
       "homepage": "https://fmt.dev/",
       "version": "12.2.0",
-      "status": "success"
-    },
-    {
-      "name": "folly",
-      "type": "formula",
-      "description": "Collection of reusable C++ library artifacts developed at Facebook",
-      "dependencies": [
-        "boost",
-        "double-conversion",
-        "fmt",
-        "gflags",
-        "glog",
-        "libevent",
-        "libsodium",
-        "lz4",
-        "openssl@4",
-        "snappy",
-        "xz",
-        "zstd"
-      ],
-      "required_by": [
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "fizz",
-        "mvfst",
-        "wangle",
-        "watchman"
-      ],
-      "homepage": "https://github.com/facebook/folly",
-      "version": "2026.10.19.00",
       "status": "success"
     },
     {
@@ -1654,26 +1496,6 @@
       "status": "success"
     },
     {
-      "name": "gflags",
-      "type": "formula",
-      "description": "Library for processing command-line flags",
-      "dependencies": [],
-      "required_by": [
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "fizz",
-        "folly",
-        "glog",
-        "mvfst",
-        "wangle",
-        "watchman"
-      ],
-      "homepage": "https://gflags.github.io/gflags/",
-      "version": "2.3.1",
-      "status": "success"
-    },
-    {
       "name": "gh",
       "type": "formula",
       "description": "GitHub command-line tool",
@@ -1820,27 +1642,6 @@
       ],
       "homepage": "https://docs.gtk.org/glib/",
       "version": "2.90.1",
-      "status": "success"
-    },
-    {
-      "name": "glog",
-      "type": "formula",
-      "description": "Application-level logging library",
-      "dependencies": [
-        "gflags"
-      ],
-      "required_by": [
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "fizz",
-        "folly",
-        "mvfst",
-        "wangle",
-        "watchman"
-      ],
-      "homepage": "https://google.github.io/glog/stable/",
-      "version": "0.7.1",
       "status": "success"
     },
     {
@@ -1997,6 +1798,7 @@
       "dependencies": [],
       "required_by": [
         "chafa",
+        "gdal",
         "graphviz",
         "harfbuzz",
         "libraqm",
@@ -2115,6 +1917,7 @@
       ],
       "required_by": [
         "chafa",
+        "gdal",
         "graphviz",
         "libraqm",
         "librsvg",
@@ -2280,11 +2083,6 @@
         "cgal",
         "chafa",
         "dotnet@9",
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "fizz",
-        "folly",
         "fsouza/prettierd/prettierd",
         "gdal",
         "graphviz",
@@ -2295,7 +2093,6 @@
         "librsvg",
         "marksman",
         "merve",
-        "mvfst",
         "node",
         "pango",
         "pgsync",
@@ -2306,8 +2103,6 @@
         "simdutf",
         "tesseract",
         "toot",
-        "wangle",
-        "watchman",
         "weasyprint"
       ],
       "homepage": "https://icu.unicode.org/home",
@@ -2401,6 +2196,7 @@
       "description": "Implementation of malloc emphasizing fragmentation avoidance",
       "dependencies": [],
       "required_by": [
+        "joshmedeski/sesh/sesh",
         "tmux",
         "tmuxinator"
       ],
@@ -2836,20 +2632,12 @@
         "openssl@4"
       ],
       "required_by": [
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "fizz",
-        "folly",
         "joshmedeski/sesh/sesh",
         "libwebsockets",
-        "mvfst",
         "tmux",
         "tmuxinator",
         "ttyd",
-        "unbound",
-        "wangle",
-        "watchman"
+        "unbound"
       ],
       "homepage": "https://libevent.org/",
       "version": "2.1.13",
@@ -3345,25 +3133,6 @@
       ],
       "homepage": "https://libsndfile.github.io/libsndfile/",
       "version": "1.2.2",
-      "status": "success"
-    },
-    {
-      "name": "libsodium",
-      "type": "formula",
-      "description": "NaCl networking and cryptography library",
-      "dependencies": [],
-      "required_by": [
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "fizz",
-        "folly",
-        "mvfst",
-        "wangle",
-        "watchman"
-      ],
-      "homepage": "https://libsodium.org/",
-      "version": "1.0.22",
       "status": "success"
     },
     {
@@ -3980,11 +3749,6 @@
         "cgal",
         "chafa",
         "deno",
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "fizz",
-        "folly",
         "fonttools",
         "fsouza/prettierd/prettierd",
         "gcc",
@@ -4012,7 +3776,6 @@
         "litecli",
         "little-cms2",
         "llvm",
-        "mvfst",
         "ncdu",
         "netcdf",
         "netpbm",
@@ -4037,8 +3800,6 @@
         "tesseract",
         "toot",
         "virtualenv",
-        "wangle",
-        "watchman",
         "weasyprint",
         "webp",
         "yt-dlp",
@@ -4222,7 +3983,6 @@
       "description": "Library for decimal floating point arithmetic",
       "dependencies": [],
       "required_by": [
-        "apache-arrow",
         "fonttools",
         "gdal",
         "hf",
@@ -4238,7 +3998,6 @@
         "snowflake-cli",
         "toot",
         "virtualenv",
-        "watchman",
         "weasyprint",
         "yt-dlp"
       ],
@@ -4282,24 +4041,6 @@
       ],
       "homepage": "https://www.mpg123.de/",
       "version": "1.33.7",
-      "status": "success"
-    },
-    {
-      "name": "mvfst",
-      "type": "formula",
-      "description": "QUIC transport protocol implementation",
-      "dependencies": [
-        "double-conversion",
-        "fizz",
-        "fmt",
-        "folly",
-        "gflags",
-        "glog",
-        "openssl@4"
-      ],
-      "required_by": [],
-      "homepage": "https://github.com/facebook/mvfst",
-      "version": "2026.10.19.00",
       "status": "success"
     },
     {
@@ -4622,26 +4363,18 @@
         "ca-certificates"
       ],
       "required_by": [
-        "apache-arrow",
         "bat",
         "dotnet@9",
-        "edencommon",
         "eza",
-        "fb303",
-        "fbthrift",
         "fsouza/prettierd/prettierd",
-        "gdal",
         "git-trim",
         "ivandokov/contrib/phockup",
-        "joshmedeski/sesh/sesh",
         "keyring",
         "libdap",
         "marksman",
         "pgsync",
         "python@3.13",
-        "sox",
-        "thrift",
-        "watchman"
+        "sox"
       ],
       "homepage": "https://openssl-library.org",
       "version": "3.5.9",
@@ -4655,6 +4388,7 @@
         "ca-certificates"
       ],
       "required_by": [
+        "apache-arrow",
         "apr-util",
         "aws-c-auth",
         "aws-c-cal",
@@ -4668,14 +4402,14 @@
         "coreutils",
         "cryptography",
         "ffmpeg",
-        "fizz",
-        "folly",
         "fonttools",
         "freetds",
+        "gdal",
         "git-delta",
         "grpc",
         "hf",
         "httpie",
+        "joshmedeski/sesh/sesh",
         "krb5",
         "ledger",
         "libevent",
@@ -4686,7 +4420,6 @@
         "libssh2",
         "libwebsockets",
         "litecli",
-        "mvfst",
         "node",
         "opusfile",
         "postgresql@17",
@@ -4701,6 +4434,7 @@
         "semgrep",
         "snowflake-cli",
         "srt",
+        "thrift",
         "tmux",
         "tmuxinator",
         "toot",
@@ -4708,7 +4442,6 @@
         "unbound",
         "valkey",
         "virtualenv",
-        "wangle",
         "weasyprint",
         "wget",
         "yt-dlp"
@@ -4835,7 +4568,6 @@
         "semgrep",
         "tesseract",
         "toot",
-        "watchman",
         "weasyprint"
       ],
       "homepage": "https://www.pcre.org/",
@@ -5160,11 +4892,8 @@
         "zstd"
       ],
       "required_by": [
-        "apache-arrow",
-        "gdal",
         "ivandokov/contrib/phockup",
-        "keyring",
-        "watchman"
+        "keyring"
       ],
       "homepage": "https://www.python.org/",
       "version": "3.14.8",
@@ -5184,6 +4913,7 @@
       ],
       "required_by": [
         "fonttools",
+        "gdal",
         "hf",
         "httpie",
         "ledger",
@@ -5269,7 +4999,6 @@
       "description": "Library for command-line editing",
       "dependencies": [],
       "required_by": [
-        "apache-arrow",
         "deno",
         "fonttools",
         "fsouza/prettierd/prettierd",
@@ -5300,7 +5029,6 @@
         "sqlite",
         "toot",
         "virtualenv",
-        "watchman",
         "weasyprint",
         "yt-dlp"
       ],
@@ -5533,7 +5261,9 @@
       "description": "SIMD-accelerated C++ JSON parser",
       "dependencies": [],
       "required_by": [
+        "apache-arrow",
         "fsouza/prettierd/prettierd",
+        "gdal",
         "node"
       ],
       "homepage": "https://simdjson.org",
@@ -5563,16 +5293,8 @@
       "dependencies": [],
       "required_by": [
         "apache-arrow",
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "fizz",
-        "folly",
         "gdal",
-        "mvfst",
-        "qemu",
-        "wangle",
-        "watchman"
+        "qemu"
       ],
       "homepage": "https://google.github.io/snappy/",
       "version": "1.3.1",
@@ -5631,7 +5353,6 @@
         "readline"
       ],
       "required_by": [
-        "apache-arrow",
         "deno",
         "fonttools",
         "fsouza/prettierd/prettierd",
@@ -5652,7 +5373,6 @@
         "snowflake-cli",
         "toot",
         "virtualenv",
-        "watchman",
         "weasyprint",
         "yt-dlp"
       ],
@@ -5933,6 +5653,7 @@
       "description": "URI parsing library (strictly RFC 3986 compliant)",
       "dependencies": [],
       "required_by": [
+        "apache-arrow",
         "gdal",
         "libkml"
       ],
@@ -6018,29 +5739,6 @@
       "status": "success"
     },
     {
-      "name": "wangle",
-      "type": "formula",
-      "description": "Modular, composable client/server abstractions framework",
-      "dependencies": [
-        "double-conversion",
-        "fizz",
-        "fmt",
-        "folly",
-        "gflags",
-        "glog",
-        "openssl@4"
-      ],
-      "required_by": [
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "watchman"
-      ],
-      "homepage": "https://github.com/facebook/wangle",
-      "version": "2026.10.19.00",
-      "status": "success"
-    },
-    {
       "name": "watch",
       "type": "formula",
       "description": "Executes a program periodically, showing output fullscreen",
@@ -6050,25 +5748,6 @@
       "required_by": [],
       "homepage": "https://gitlab.com/procps-ng/procps",
       "version": "4.0.7",
-      "status": "success"
-    },
-    {
-      "name": "watchman",
-      "type": "formula",
-      "description": "Watch files and take action when they change",
-      "dependencies": [
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "fmt",
-        "folly",
-        "glog",
-        "pcre2",
-        "python@3.15"
-      ],
-      "required_by": [],
-      "homepage": "https://facebook.github.io/watchman/",
-      "version": "2026.10.19.00",
       "status": "success"
     },
     {
@@ -6249,11 +5928,7 @@
       "description": "Extremely fast non-cryptographic hash algorithm",
       "dependencies": [],
       "required_by": [
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "rsync",
-        "watchman"
+        "rsync"
       ],
       "homepage": "https://xxhash.com",
       "version": "0.8.4",
@@ -6270,12 +5945,7 @@
         "cgal",
         "chafa",
         "deno",
-        "edencommon",
-        "fb303",
-        "fbthrift",
         "ffmpeg",
-        "fizz",
-        "folly",
         "fonttools",
         "fsouza/prettierd/prettierd",
         "gcc",
@@ -6302,7 +5972,6 @@
         "litecli",
         "little-cms2",
         "llvm",
-        "mvfst",
         "ncdu",
         "netcdf",
         "netpbm",
@@ -6328,8 +5997,6 @@
         "tesseract",
         "toot",
         "virtualenv",
-        "wangle",
-        "watchman",
         "weasyprint",
         "webp",
         "yt-dlp",
@@ -6456,11 +6123,6 @@
         "cgal",
         "chafa",
         "deno",
-        "edencommon",
-        "fb303",
-        "fbthrift",
-        "fizz",
-        "folly",
         "fonttools",
         "fsouza/prettierd/prettierd",
         "gcc",
@@ -6487,7 +6149,6 @@
         "litecli",
         "little-cms2",
         "llvm",
-        "mvfst",
         "ncdu",
         "netcdf",
         "netpbm",
@@ -6512,8 +6173,6 @@
         "tesseract",
         "toot",
         "virtualenv",
-        "wangle",
-        "watchman",
         "weasyprint",
         "webp",
         "yt-dlp"
