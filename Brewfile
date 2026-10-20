@@ -247,7 +247,6 @@ cask "theskumar/tap/usagepal"  # menubar AI coding usage tracker
 # ---------------------------------------------------------------------------
 cask "qlcolorcode"       # syntax-highlighted source preview
 cask "qlstephen"         # preview extensionless plain-text files
-cask "qlmarkdown"        # markdown preview
 cask "quicklook-json"    # JSON preview
 cask "qlprettypatch"     # .patch/.diff preview
 cask "quicklook-csv"     # CSV preview
