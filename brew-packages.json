@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-15T16:02:52.317310",
+  "generated_at": "2026-10-21T01:31:33.879494",
   "summary": {
-    "total_formulas": 353,
-    "total_casks": 25,
-    "total_packages": 378
+    "total_formulas": 358,
+    "total_casks": 26,
+    "total_packages": 384
   },
   "formulas": [
     {
@@ -16,14 +16,12 @@
         "gdal",
         "grpc",
         "mosh",
-        "onnx",
-        "onnxruntime",
+        "node",
         "protobuf",
-        "re2",
-        "yvgude/lean-ctx/lean-ctx"
+        "re2"
       ],
       "homepage": "https://abseil.io",
-      "version": "20260526.0",
+      "version": "20260817.0",
       "status": "success"
     },
     {
@@ -33,7 +31,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://developer.atlassian.com/cloud/acli/reference/commands/",
-      "version": "1.3.23-stable",
+      "version": "1.3.39-stable",
       "status": "success"
     },
     {
@@ -41,7 +39,8 @@
       "type": "formula",
       "description": "WHATWG-compliant and fast URL parser written in modern C++",
       "dependencies": [
-        "fmt"
+        "fmt",
+        "simdutf"
       ],
       "required_by": [
         "node"
@@ -90,7 +89,7 @@
         "weasyprint"
       ],
       "homepage": "https://aomedia.googlesource.com/aom",
-      "version": "3.14.1",
+      "version": "3.15.2",
       "status": "success"
     },
     {
@@ -105,11 +104,13 @@
         "grpc",
         "llvm",
         "lz4",
-        "openssl@3",
+        "openssl@4",
         "protobuf",
         "re2",
+        "simdjson",
         "snappy",
         "thrift",
+        "uriparser",
         "utf8proc",
         "zstd"
       ],
@@ -117,7 +118,7 @@
         "gdal"
       ],
       "homepage": "https://arrow.apache.org/",
-      "version": "25.0.1",
+      "version": "26.0.0",
       "status": "success"
     },
     {
@@ -138,7 +139,7 @@
       "description": "Companion library to apr, the Apache Portable Runtime library",
       "dependencies": [
         "apr",
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [],
       "homepage": "https://apr.apache.org/",
@@ -164,7 +165,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-auth",
-      "version": "0.10.4",
+      "version": "1.0.1",
       "status": "success"
     },
     {
@@ -172,7 +173,8 @@
       "type": "formula",
       "description": "AWS Crypto Abstraction Layer",
       "dependencies": [
-        "aws-c-common"
+        "aws-c-common",
+        "openssl@4"
       ],
       "required_by": [
         "apache-arrow",
@@ -187,7 +189,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-cal",
-      "version": "0.9.15",
+      "version": "1.0.0",
       "status": "success"
     },
     {
@@ -212,7 +214,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-common",
-      "version": "0.14.5",
+      "version": "1.0.3",
       "status": "success"
     },
     {
@@ -233,7 +235,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-compression",
-      "version": "0.3.2",
+      "version": "1.0.0",
       "status": "success"
     },
     {
@@ -252,7 +254,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-event-stream",
-      "version": "0.7.1",
+      "version": "1.0.0",
       "status": "success"
     },
     {
@@ -275,7 +277,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-http",
-      "version": "0.11.0",
+      "version": "1.1.1",
       "status": "success"
     },
     {
@@ -285,7 +287,6 @@
       "dependencies": [
         "aws-c-cal",
         "aws-c-common",
-        "openssl@3",
         "s2n"
       ],
       "required_by": [
@@ -300,7 +301,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-io",
-      "version": "0.27.6",
+      "version": "1.1.0",
       "status": "success"
     },
     {
@@ -319,7 +320,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-mqtt",
-      "version": "0.16.1",
+      "version": "1.1.2",
       "status": "success"
     },
     {
@@ -341,7 +342,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-s3",
-      "version": "0.13.5",
+      "version": "1.3.1",
       "status": "success"
     },
     {
@@ -360,7 +361,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-c-sdkutils",
-      "version": "0.2.9",
+      "version": "1.0.0",
       "status": "success"
     },
     {
@@ -379,7 +380,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-checksums",
-      "version": "0.2.10",
+      "version": "1.0.1",
       "status": "success"
     },
     {
@@ -404,7 +405,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/awslabs/aws-crt-cpp",
-      "version": "0.43.5",
+      "version": "0.44.1",
       "status": "success"
     },
     {
@@ -425,7 +426,7 @@
         "gdal"
       ],
       "homepage": "https://github.com/aws/aws-sdk-cpp",
-      "version": "1.11.870",
+      "version": "1.11.900",
       "status": "success"
     },
     {
@@ -507,14 +508,28 @@
       "dependencies": [],
       "required_by": [
         "apache-arrow",
+        "cairo",
         "chafa",
         "dotnet@9",
+        "fontconfig",
+        "freetype",
         "fsouza/prettierd/prettierd",
         "gd",
         "gdal",
+        "graphviz",
+        "harfbuzz",
+        "imagemagick",
         "jpeg-xl",
+        "libraqm",
+        "librsvg",
         "marksman",
-        "node"
+        "node",
+        "pango",
+        "pillow",
+        "poppler",
+        "tesseract",
+        "toot",
+        "weasyprint"
       ],
       "homepage": "https://github.com/google/brotli",
       "version": "1.2.0",
@@ -543,7 +558,7 @@
         "node"
       ],
       "homepage": "https://c-ares.org/",
-      "version": "1.34.8",
+      "version": "1.34.9",
       "status": "success"
     },
     {
@@ -567,6 +582,7 @@
         "apache-arrow",
         "apr-util",
         "aws-c-auth",
+        "aws-c-cal",
         "aws-c-event-stream",
         "aws-c-http",
         "aws-c-io",
@@ -576,6 +592,7 @@
         "aws-sdk-cpp",
         "bat",
         "certifi",
+        "coreutils",
         "cryptography",
         "dotnet@9",
         "edencommon",
@@ -614,11 +631,11 @@
         "libssh2",
         "libwebsockets",
         "litecli",
-        "llvm",
         "marksman",
         "mvfst",
         "node",
         "openssl@3",
+        "openssl@4",
         "opusfile",
         "p11-kit",
         "pgsync",
@@ -626,7 +643,9 @@
         "postgresql@17",
         "python@3.13",
         "python@3.14",
+        "python@3.15",
         "qemu",
+        "rsync",
         "rtmpdump",
         "ruby",
         "rust",
@@ -635,7 +654,6 @@
         "snowflake-cli",
         "sox",
         "srt",
-        "tcl-tk",
         "thrift",
         "tmux",
         "tmuxinator",
@@ -651,7 +669,7 @@
         "yt-dlp"
       ],
       "homepage": "https://curl.se/docs/caextract.html",
-      "version": "2026-08-13",
+      "version": "2026-10-20",
       "status": "success"
     },
     {
@@ -661,7 +679,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://caddyserver.com/",
-      "version": "2.11.4",
+      "version": "2.11.7",
       "status": "success"
     },
     {
@@ -696,7 +714,7 @@
         "weasyprint"
       ],
       "homepage": "https://cairographics.org/",
-      "version": "1.18.4",
+      "version": "1.18.6",
       "status": "success"
     },
     {
@@ -730,7 +748,7 @@
         "yt-dlp"
       ],
       "homepage": "https://github.com/certifi/python-certifi",
-      "version": "2026.7.22",
+      "version": "2026.10.19",
       "status": "success"
     },
     {
@@ -744,7 +762,8 @@
         "cryptography",
         "semgrep",
         "snowflake-cli",
-        "weasyprint"
+        "weasyprint",
+        "yt-dlp"
       ],
       "homepage": "https://cffi.readthedocs.io/en/latest/",
       "version": "2.1.1",
@@ -777,7 +796,7 @@
         "sfcgal"
       ],
       "homepage": "https://www.cgal.org/",
-      "version": "6.2",
+      "version": "6.2.1",
       "status": "success"
     },
     {
@@ -799,7 +818,7 @@
       ],
       "required_by": [],
       "homepage": "https://hpjansson.org/chafa/",
-      "version": "1.18.2",
+      "version": "1.18.3",
       "status": "success"
     },
     {
@@ -821,7 +840,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://www.cmake.org/",
-      "version": "4.4.2",
+      "version": "4.4.4",
       "status": "success"
     },
     {
@@ -839,11 +858,12 @@
       "type": "formula",
       "description": "GNU File, Shell, and Text utilities",
       "dependencies": [
-        "gmp"
+        "gmp",
+        "openssl@4"
       ],
       "required_by": [],
       "homepage": "https://www.gnu.org/software/coreutils/",
-      "version": "9.11",
+      "version": "9.12",
       "status": "success"
     },
     {
@@ -862,14 +882,14 @@
       "description": "Cryptographic recipes and primitives for Python",
       "dependencies": [
         "cffi",
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [
         "semgrep",
         "snowflake-cli"
       ],
       "homepage": "https://cryptography.io/en/latest/",
-      "version": "50.0.0",
+      "version": "50.0.2",
       "status": "success"
     },
     {
@@ -902,7 +922,7 @@
         "yt-dlp"
       ],
       "homepage": "https://deno.com/",
-      "version": "2.9.5",
+      "version": "2.9.7",
       "status": "success"
     },
     {
@@ -922,17 +942,17 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://difftastic.wilfred.me.uk/",
-      "version": "0.70.0",
+      "version": "0.71.0",
       "status": "success"
     },
     {
       "name": "dotenvx",
       "type": "formula",
-      "description": "Secure dotenv\u2013from the creator of `dotenv`",
+      "description": "Secure dotenv\u2014from the creator of `dotenv`",
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/dotenvx/dotenvx",
-      "version": "2.21.0",
+      "version": "2.38.1",
       "status": "success"
     },
     {
@@ -948,7 +968,7 @@
         "marksman"
       ],
       "homepage": "https://dotnet.microsoft.com/",
-      "version": "9.0.119",
+      "version": "9.0.122",
       "status": "success"
     },
     {
@@ -991,7 +1011,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://www.duckdb.org",
-      "version": "1.5.5",
+      "version": "1.5.6",
       "status": "success"
     },
     {
@@ -1003,7 +1023,7 @@
         "semgrep"
       ],
       "homepage": "https://www.prevanders.net/dwarf.html",
-      "version": "2.3.2",
+      "version": "2.3.3",
       "status": "success"
     },
     {
@@ -1020,7 +1040,7 @@
         "watchman"
       ],
       "homepage": "https://github.com/facebookexperimental/edencommon",
-      "version": "2026.07.27.00",
+      "version": "2026.10.19.00",
       "status": "success"
     },
     {
@@ -1082,7 +1102,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/danielmiessler/fabric",
-      "version": "1.4.470",
+      "version": "1.4.529",
       "status": "success"
     },
     {
@@ -1101,7 +1121,7 @@
         "watchman"
       ],
       "homepage": "https://github.com/facebook/fb303",
-      "version": "2026.07.27.00",
+      "version": "2026.10.19.00",
       "status": "success"
     },
     {
@@ -1115,7 +1135,7 @@
         "folly",
         "gflags",
         "glog",
-        "openssl@3",
+        "openssl@4",
         "wangle",
         "xxhash"
       ],
@@ -1125,7 +1145,17 @@
         "watchman"
       ],
       "homepage": "https://github.com/facebook/fbthrift",
-      "version": "2026.07.27.00",
+      "version": "2026.10.19.00",
+      "status": "success"
+    },
+    {
+      "name": "fclones",
+      "type": "formula",
+      "description": "Efficient Duplicate File Finder",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://github.com/pkolaczk/fclones",
+      "version": "0.35.0",
       "status": "success"
     },
     {
@@ -1135,7 +1165,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/sharkdp/fd",
-      "version": "10.4.2",
+      "version": "10.5.0",
       "status": "success"
     },
     {
@@ -1147,7 +1177,7 @@
         "lame",
         "libvmaf",
         "libvpx",
-        "openssl@3",
+        "openssl@4",
         "opus",
         "sdl2-compat",
         "svt-av1",
@@ -1157,7 +1187,7 @@
       ],
       "required_by": [],
       "homepage": "https://ffmpeg.org/",
-      "version": "9.0.1",
+      "version": "9.0.2",
       "status": "success"
     },
     {
@@ -1179,7 +1209,7 @@
         "folly",
         "glog",
         "libsodium",
-        "openssl@3",
+        "openssl@4",
         "zstd"
       ],
       "required_by": [
@@ -1191,7 +1221,7 @@
         "watchman"
       ],
       "homepage": "https://github.com/facebookincubator/fizz",
-      "version": "2026.07.27.00",
+      "version": "2026.10.19.00",
       "status": "success"
     },
     {
@@ -1210,13 +1240,23 @@
       "status": "success"
     },
     {
+      "name": "flarectl",
+      "type": "formula",
+      "description": "CLI application for interacting with a Cloudflare account",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://github.com/cloudflare/cloudflare-go/tree/v0/cmd/flarectl",
+      "version": "0.119.0",
+      "status": "success"
+    },
+    {
       "name": "flyctl",
       "type": "formula",
       "description": "Command-line tools for fly.io services",
       "dependencies": [],
       "required_by": [],
       "homepage": "https://fly.io",
-      "version": "0.4.83",
+      "version": "0.4.120",
       "status": "success"
     },
     {
@@ -1253,7 +1293,7 @@
         "libevent",
         "libsodium",
         "lz4",
-        "openssl@3",
+        "openssl@4",
         "snappy",
         "xz",
         "zstd"
@@ -1268,7 +1308,7 @@
         "watchman"
       ],
       "homepage": "https://github.com/facebook/folly",
-      "version": "2026.07.27.00",
+      "version": "2026.10.19.00",
       "status": "success"
     },
     {
@@ -1304,11 +1344,11 @@
       "type": "formula",
       "description": "Library for manipulating fonts",
       "dependencies": [
-        "python@3.14"
+        "python@3.15"
       ],
       "required_by": [],
       "homepage": "https://github.com/fonttools/fonttools",
-      "version": "4.63.0",
+      "version": "4.67.0",
       "status": "success"
     },
     {
@@ -1336,12 +1376,12 @@
       "type": "formula",
       "description": "Libraries to talk to Microsoft SQL Server and Sybase databases",
       "dependencies": [
-        "openssl@3",
+        "openssl@4",
         "unixodbc"
       ],
       "required_by": [],
       "homepage": "https://www.freetds.org/",
-      "version": "1.5.18",
+      "version": "1.5.19",
       "status": "success"
     },
     {
@@ -1349,6 +1389,7 @@
       "type": "formula",
       "description": "Software library to render fonts",
       "dependencies": [
+        "brotli",
         "libpng"
       ],
       "required_by": [
@@ -1370,7 +1411,7 @@
         "weasyprint"
       ],
       "homepage": "https://www.freetype.org/",
-      "version": "2.14.3",
+      "version": "2.15.0",
       "status": "success"
     },
     {
@@ -1405,7 +1446,7 @@
         "weasyprint"
       ],
       "homepage": "https://github.com/fribidi/fribidi",
-      "version": "1.0.16",
+      "version": "1.0.17",
       "status": "success"
     },
     {
@@ -1425,7 +1466,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://junegunn.github.io/fzf/",
-      "version": "0.74.2",
+      "version": "0.74.5",
       "status": "success"
     },
     {
@@ -1447,7 +1488,7 @@
         "openblas"
       ],
       "homepage": "https://gcc.gnu.org/",
-      "version": "16.1.0",
+      "version": "16.2.0",
       "status": "success"
     },
     {
@@ -1504,11 +1545,11 @@
         "numpy",
         "openexr",
         "openjpeg",
-        "openssl@3",
+        "openssl@4",
         "pcre2",
         "poppler",
         "proj",
-        "python@3.14",
+        "python@3.15",
         "qhull",
         "sfcgal",
         "sqlite",
@@ -1522,7 +1563,7 @@
       ],
       "required_by": [],
       "homepage": "https://gdal.org/en/stable/",
-      "version": "3.13.2",
+      "version": "3.13.3",
       "status": "success"
     },
     {
@@ -1556,7 +1597,7 @@
         "libspatialite"
       ],
       "homepage": "https://libgeos.org/",
-      "version": "3.14.1",
+      "version": "3.15.0",
       "status": "success"
     },
     {
@@ -1601,6 +1642,7 @@
         "poppler",
         "postgresql@17",
         "qemu",
+        "rsync",
         "tesseract",
         "toot",
         "wdiff",
@@ -1638,7 +1680,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://cli.github.com/",
-      "version": "2.97.0",
+      "version": "2.102.0",
       "status": "success"
     },
     {
@@ -1653,16 +1695,21 @@
         "gdal",
         "gdk-pixbuf",
         "graphviz",
+        "gts",
         "imagemagick",
         "jpeg-xl",
         "leptonica",
         "libheif",
         "librsvg",
         "libtiff",
+        "little-cms2",
+        "netpbm",
         "openexr",
+        "openjpeg",
         "openjph",
         "pillow",
         "poppler",
+        "proj",
         "tesseract",
         "toot",
         "weasyprint",
@@ -1683,7 +1730,7 @@
       ],
       "required_by": [],
       "homepage": "https://git-scm.com",
-      "version": "2.55.0",
+      "version": "2.56.0",
       "status": "success"
     },
     {
@@ -1696,7 +1743,7 @@
       ],
       "required_by": [],
       "homepage": "https://dandavison.github.io/delta/",
-      "version": "0.19.2",
+      "version": "0.20.1",
       "status": "success"
     },
     {
@@ -1718,7 +1765,7 @@
         "hf"
       ],
       "homepage": "https://git-lfs.com/",
-      "version": "3.7.1",
+      "version": "3.8.0",
       "status": "success"
     },
     {
@@ -1726,7 +1773,8 @@
       "type": "formula",
       "description": "Trim your git remote tracking branches that are merged or gone",
       "dependencies": [
-        "openssl@3"
+        "libssh2",
+        "openssl@4"
       ],
       "required_by": [],
       "homepage": "https://github.com/foriequal0/git-trim",
@@ -1771,7 +1819,7 @@
         "weasyprint"
       ],
       "homepage": "https://docs.gtk.org/glib/",
-      "version": "2.88.3",
+      "version": "2.90.1",
       "status": "success"
     },
     {
@@ -1875,7 +1923,7 @@
         "poppler"
       ],
       "homepage": "https://gnupg.org/",
-      "version": "2.5.21",
+      "version": "2.5.24",
       "status": "success"
     },
     {
@@ -1923,7 +1971,7 @@
         "poppler"
       ],
       "homepage": "https://www.gnupg.org/related_software/gpgme/",
-      "version": "2.1.2",
+      "version": "2.2.0",
       "status": "success"
     },
     {
@@ -1939,7 +1987,7 @@
         "poppler"
       ],
       "homepage": "https://www.gnupg.org/related_software/gpgme/",
-      "version": "2.1.0",
+      "version": "2.2.0",
       "status": "success"
     },
     {
@@ -1955,6 +2003,7 @@
         "librsvg",
         "pango",
         "pillow",
+        "poppler",
         "tesseract",
         "toot",
         "weasyprint"
@@ -1985,7 +2034,7 @@
       ],
       "required_by": [],
       "homepage": "https://graphviz.org/",
-      "version": "15.1.1",
+      "version": "16.1.0",
       "status": "success"
     },
     {
@@ -2007,7 +2056,7 @@
       "dependencies": [
         "abseil",
         "c-ares",
-        "openssl@3",
+        "openssl@4",
         "protobuf",
         "re2"
       ],
@@ -2016,7 +2065,7 @@
         "gdal"
       ],
       "homepage": "https://grpc.io/",
-      "version": "1.83.0",
+      "version": "1.84.0",
       "status": "success"
     },
     {
@@ -2071,12 +2120,13 @@
         "librsvg",
         "pango",
         "pillow",
+        "poppler",
         "tesseract",
         "toot",
         "weasyprint"
       ],
       "homepage": "https://github.com/harfbuzz/harfbuzz",
-      "version": "14.3.1",
+      "version": "14.6.0",
       "status": "success"
     },
     {
@@ -2105,7 +2155,7 @@
         "node"
       ],
       "homepage": "https://github.com/HdrHistogram/HdrHistogram_c",
-      "version": "0.11.10",
+      "version": "0.12.1",
       "status": "success"
     },
     {
@@ -2125,7 +2175,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://cli.heroku.com",
-      "version": "11.9.0",
+      "version": "11.12.0",
       "status": "success"
     },
     {
@@ -2136,11 +2186,11 @@
         "certifi",
         "git-lfs",
         "libyaml",
-        "python@3.14"
+        "python@3.15"
       ],
       "required_by": [],
       "homepage": "https://huggingface.co/docs/huggingface_hub/guides/cli",
-      "version": "1.27.0",
+      "version": "2.2.0",
       "status": "success"
     },
     {
@@ -2152,7 +2202,8 @@
         "chafa",
         "gd",
         "gdal",
-        "jpeg-xl"
+        "jpeg-xl",
+        "node"
       ],
       "homepage": "https://github.com/google/highway",
       "version": "1.4.0",
@@ -2165,7 +2216,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/pamburus/hl",
-      "version": "0.36.3",
+      "version": "0.36.4",
       "status": "success"
     },
     {
@@ -2177,7 +2228,7 @@
       ],
       "required_by": [],
       "homepage": "https://htop.dev/",
-      "version": "3.5.2",
+      "version": "3.5.3",
       "status": "success"
     },
     {
@@ -2186,7 +2237,7 @@
       "description": "User-friendly cURL replacement (command-line HTTP client)",
       "dependencies": [
         "certifi",
-        "python@3.14"
+        "python@3.15"
       ],
       "required_by": [],
       "homepage": "https://httpie.io/",
@@ -2201,11 +2252,11 @@
         "certifi",
         "git-lfs",
         "libyaml",
-        "python@3.14"
+        "python@3.15"
       ],
       "required_by": [],
       "homepage": "https://huggingface.co/docs/huggingface_hub/guides/cli",
-      "version": "1.27.0",
+      "version": "2.2.0",
       "status": "success"
     },
     {
@@ -2215,7 +2266,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://gohugo.io/",
-      "version": "0.165.0",
+      "version": "0.168.0",
       "status": "success"
     },
     {
@@ -2224,6 +2275,7 @@
       "description": "C/C++ and Java libraries for Unicode and globalization",
       "dependencies": [],
       "required_by": [
+        "ada-url",
         "boost",
         "cgal",
         "chafa",
@@ -2248,6 +2300,7 @@
         "pango",
         "pgsync",
         "pillow",
+        "poppler",
         "postgresql@17",
         "sfcgal",
         "simdutf",
@@ -2278,7 +2331,7 @@
       ],
       "required_by": [],
       "homepage": "https://imagemagick.org",
-      "version": "7.1.2-29",
+      "version": "7.1.2-34",
       "status": "success"
     },
     {
@@ -2294,7 +2347,7 @@
         "openexr"
       ],
       "homepage": "https://imath.readthedocs.io/en/latest/",
-      "version": "3.2.2",
+      "version": "3.2.3",
       "status": "success"
     },
     {
@@ -2323,7 +2376,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://iwe.md",
-      "version": "0.19.1",
+      "version": "0.28.0",
       "status": "success"
     },
     {
@@ -2343,6 +2396,19 @@
       "status": "success"
     },
     {
+      "name": "jemalloc",
+      "type": "formula",
+      "description": "Implementation of malloc emphasizing fragmentation avoidance",
+      "dependencies": [],
+      "required_by": [
+        "tmux",
+        "tmuxinator"
+      ],
+      "homepage": "https://jemalloc.net/",
+      "version": "5.4.0",
+      "status": "success"
+    },
+    {
       "name": "jj",
       "type": "formula",
       "description": "Git-compatible distributed version control system",
@@ -2351,7 +2417,7 @@
         "jjui"
       ],
       "homepage": "https://github.com/jj-vcs/jj",
-      "version": "0.44.0",
+      "version": "0.46.0",
       "status": "success"
     },
     {
@@ -2363,7 +2429,7 @@
       ],
       "required_by": [],
       "homepage": "https://idursun.github.io/jjui/",
-      "version": "0.10.9",
+      "version": "0.10.12",
       "status": "success"
     },
     {
@@ -2449,6 +2515,7 @@
       "description": "JSON parser for C",
       "dependencies": [],
       "required_by": [
+        "cairo",
         "capstone",
         "chafa",
         "fontconfig",
@@ -2461,10 +2528,13 @@
         "gpgme",
         "gpgmepp",
         "graphviz",
+        "gts",
         "harfbuzz",
         "ledger",
+        "libgcrypt",
         "libksba",
         "libmicrohttpd",
+        "libraqm",
         "librist",
         "librsvg",
         "libslirp",
@@ -2473,10 +2543,15 @@
         "pillow",
         "pinentry",
         "poppler",
+        "postgresql@17",
         "qemu",
+        "rsync",
+        "tesseract",
         "toot",
         "ttyd",
-        "weasyprint"
+        "wdiff",
+        "weasyprint",
+        "wget"
       ],
       "homepage": "https://github.com/json-c/json-c/wiki",
       "version": "0.19",
@@ -2489,17 +2564,17 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://just.systems",
-      "version": "1.58.0",
+      "version": "1.59.0",
       "status": "success"
     },
     {
       "name": "ketch",
       "type": "formula",
-      "description": "Fast web search and scrape CLI for agents",
+      "description": "Web search and scraping for agents",
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/1broseidon/ketch",
-      "version": "0.14.0",
+      "version": "0.20.0",
       "status": "success"
     },
     {
@@ -2507,7 +2582,7 @@
       "type": "formula",
       "description": "Easy way to access the system keyring service from python",
       "dependencies": [
-        "python@3.14"
+        "python@3.15"
       ],
       "required_by": [],
       "homepage": "https://github.com/jaraco/keyring",
@@ -2519,7 +2594,7 @@
       "type": "formula",
       "description": "Network authentication protocol",
       "dependencies": [
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [
         "gdal",
@@ -2554,19 +2629,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/jesseduffield/lazygit/",
-      "version": "0.64.1",
-      "status": "success"
-    },
-    {
-      "name": "lean-ctx",
-      "type": "formula",
-      "description": "The Context Engineering Layer for AI Coding \u2014 71 MCP tools, 10 read modes, 95+ shell patterns",
-      "dependencies": [
-        "onnxruntime"
-      ],
-      "required_by": [],
-      "homepage": "https://leanctx.com",
-      "version": "3.9.18",
+      "version": "0.66.2",
       "status": "success"
     },
     {
@@ -2579,7 +2642,7 @@
         "gpgme",
         "gpgmepp",
         "mpfr",
-        "python@3.14",
+        "python@3.15",
         "libassuan"
       ],
       "required_by": [],
@@ -2616,7 +2679,7 @@
         "hdf5",
         "netcdf"
       ],
-      "homepage": "https://gitlab.dkrz.de/k202009/libaec",
+      "homepage": "https://github.com/Deutsches-Klimarechenzentrum/libaec",
       "version": "1.1.7",
       "status": "success"
     },
@@ -2635,7 +2698,7 @@
         "tesseract"
       ],
       "homepage": "https://www.libarchive.org",
-      "version": "3.8.9",
+      "version": "3.8.10",
       "status": "success"
     },
     {
@@ -2699,8 +2762,7 @@
       "type": "formula",
       "description": "Framework for scientific data networking",
       "dependencies": [
-        "libxml2",
-        "openssl@3"
+        "libxml2"
       ],
       "required_by": [],
       "homepage": "https://www.opendap.org/",
@@ -2718,6 +2780,7 @@
         "librsvg",
         "libthai",
         "pango",
+        "tesseract",
         "weasyprint"
       ],
       "homepage": "https://github.com/tlwg/libdatrie",
@@ -2735,7 +2798,7 @@
         "libheif"
       ],
       "homepage": "https://github.com/strukturag/libde265",
-      "version": "1.1.1",
+      "version": "1.1.3",
       "status": "success"
     },
     {
@@ -2750,7 +2813,7 @@
         "openexr"
       ],
       "homepage": "https://github.com/ebiggers/libdeflate",
-      "version": "1.25",
+      "version": "1.26",
       "status": "success"
     },
     {
@@ -2770,7 +2833,7 @@
       "type": "formula",
       "description": "Asynchronous event library",
       "dependencies": [
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [
         "edencommon",
@@ -2820,7 +2883,7 @@
         "poppler"
       ],
       "homepage": "https://gnupg.org/related_software/libgcrypt/",
-      "version": "1.12.2",
+      "version": "1.12.4",
       "status": "success"
     },
     {
@@ -2845,7 +2908,8 @@
       "description": "C library of Git core methods that is re-entrant and linkable",
       "dependencies": [
         "libssh2",
-        "llhttp"
+        "llhttp",
+        "openssl@4"
       ],
       "required_by": [
         "bat",
@@ -2898,7 +2962,7 @@
         "imagemagick"
       ],
       "homepage": "https://www.libde265.org/",
-      "version": "1.23.1",
+      "version": "1.23.6",
       "status": "success"
     },
     {
@@ -2920,6 +2984,7 @@
         "librist",
         "poppler",
         "qemu",
+        "rsync",
         "wget"
       ],
       "homepage": "https://www.gnu.org/software/libidn/#libidn2",
@@ -2971,7 +3036,7 @@
         "poppler"
       ],
       "homepage": "https://www.gnupg.org/related_software/libksba/",
-      "version": "1.8.0",
+      "version": "1.8.1",
       "status": "success"
     },
     {
@@ -3050,8 +3115,7 @@
       "description": "HTTP/3 library written in C",
       "dependencies": [],
       "required_by": [
-        "fsouza/prettierd/prettierd",
-        "node"
+        "fsouza/prettierd/prettierd"
       ],
       "homepage": "https://nghttp2.org/nghttp3/",
       "version": "1.18.0",
@@ -3062,11 +3126,10 @@
       "type": "formula",
       "description": "IETF QUIC protocol implementation",
       "dependencies": [
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [
-        "fsouza/prettierd/prettierd",
-        "node"
+        "fsouza/prettierd/prettierd"
       ],
       "homepage": "https://nghttp2.org/ngtcp2/",
       "version": "1.25.0",
@@ -3099,7 +3162,7 @@
         "openblas"
       ],
       "homepage": "https://openmp.llvm.org/",
-      "version": "22.1.8",
+      "version": "23.1.4",
       "status": "success"
     },
     {
@@ -3127,6 +3190,7 @@
         "libraqm",
         "librsvg",
         "libtiff",
+        "little-cms2",
         "netpbm",
         "openexr",
         "openjpeg",
@@ -3134,6 +3198,7 @@
         "pango",
         "pillow",
         "poppler",
+        "proj",
         "qemu",
         "sox",
         "tesseract",
@@ -3143,7 +3208,7 @@
         "yt-dlp"
       ],
       "homepage": "https://www.libpng.org/pub/png/libpng.html",
-      "version": "1.6.58",
+      "version": "1.6.59",
       "status": "success"
     },
     {
@@ -3153,7 +3218,7 @@
       "dependencies": [
         "icu4c@78",
         "krb5",
-        "openssl@3",
+        "openssl@4",
         "readline"
       ],
       "required_by": [
@@ -3162,6 +3227,18 @@
       ],
       "homepage": "https://www.postgresql.org/docs/current/libpq.html",
       "version": "18.6",
+      "status": "success"
+    },
+    {
+      "name": "libpsl",
+      "type": "formula",
+      "description": "C library for the Public Suffix List",
+      "dependencies": [],
+      "required_by": [
+        "wget"
+      ],
+      "homepage": "https://rockdaboot.github.io/libpsl",
+      "version": "0.23.3",
       "status": "success"
     },
     {
@@ -3188,9 +3265,11 @@
       "description": "Reliable Internet Stream Transport (RIST)",
       "dependencies": [
         "cjson",
+        "gmp",
+        "gnutls",
         "libmicrohttpd",
         "lz4",
-        "mbedtls@3"
+        "nettle"
       ],
       "required_by": [],
       "homepage": "https://code.videolan.org/rist/",
@@ -3217,7 +3296,7 @@
         "graphviz"
       ],
       "homepage": "https://wiki.gnome.org/Projects/LibRsvg",
-      "version": "2.62.3",
+      "version": "2.63.3",
       "status": "success"
     },
     {
@@ -3246,7 +3325,7 @@
         "qemu"
       ],
       "homepage": "https://gitlab.freedesktop.org/slirp/libslirp",
-      "version": "4.9.3",
+      "version": "4.9.5",
       "status": "success"
     },
     {
@@ -3312,7 +3391,7 @@
       "type": "formula",
       "description": "C library SSHv1/SSHv2 client and server protocols",
       "dependencies": [
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [
         "qemu"
@@ -3326,7 +3405,7 @@
       "type": "formula",
       "description": "C library implementing the SSH2 protocol",
       "dependencies": [
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [
         "bat",
@@ -3373,6 +3452,7 @@
         "graphviz",
         "librsvg",
         "pango",
+        "tesseract",
         "weasyprint"
       ],
       "homepage": "https://linux.thai.net/projects/libthai",
@@ -3473,6 +3553,7 @@
         "gpgme",
         "gpgmepp",
         "graphviz",
+        "gts",
         "guile",
         "harfbuzz",
         "ledger",
@@ -3493,6 +3574,7 @@
         "poppler",
         "postgresql@17",
         "qemu",
+        "rsync",
         "tesseract",
         "toot",
         "wdiff",
@@ -3500,7 +3582,7 @@
         "wget"
       ],
       "homepage": "https://www.gnu.org/software/libunistring/",
-      "version": "1.4.2",
+      "version": "1.5",
       "status": "success"
     },
     {
@@ -3534,7 +3616,7 @@
         "uvwasi"
       ],
       "homepage": "https://libuv.org/",
-      "version": "1.52.1",
+      "version": "1.53.0",
       "status": "success"
     },
     {
@@ -3557,7 +3639,7 @@
         "weasyprint"
       ],
       "homepage": "https://github.com/Netflix/vmaf",
-      "version": "3.2.0",
+      "version": "3.2.1",
       "status": "success"
     },
     {
@@ -3584,7 +3666,7 @@
         "ffmpeg"
       ],
       "homepage": "https://www.webmproject.org/code/",
-      "version": "1.16.0",
+      "version": "1.17.0",
       "status": "success"
     },
     {
@@ -3594,7 +3676,7 @@
       "dependencies": [
         "libevent",
         "libuv",
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [
         "ttyd"
@@ -3629,7 +3711,7 @@
         "weasyprint"
       ],
       "homepage": "https://www.x.org/",
-      "version": "1.8.13",
+      "version": "1.8.14",
       "status": "success"
     },
     {
@@ -3762,7 +3844,7 @@
         "libspatialite"
       ],
       "homepage": "http://xmlsoft.org/",
-      "version": "2.15.3",
+      "version": "2.15.4",
       "status": "success"
     },
     {
@@ -3789,7 +3871,7 @@
         "weasyprint"
       ],
       "homepage": "https://www.x.org/",
-      "version": "0.9.12",
+      "version": "0.9.13",
       "status": "success"
     },
     {
@@ -3819,7 +3901,7 @@
         "certifi",
         "libyaml",
         "pydantic",
-        "python@3.14"
+        "python@3.15"
       ],
       "required_by": [],
       "homepage": "https://litecli.com",
@@ -3851,7 +3933,7 @@
         "yt-dlp"
       ],
       "homepage": "https://www.littlecms.com/",
-      "version": "2.19",
+      "version": "2.19.1",
       "status": "success"
     },
     {
@@ -3861,6 +3943,7 @@
       "dependencies": [],
       "required_by": [
         "eza",
+        "git-delta",
         "libgit2",
         "node",
         "rust"
@@ -3874,8 +3957,6 @@
       "type": "formula",
       "description": "Next-gen compiler infrastructure",
       "dependencies": [
-        "python@3.14",
-        "xz",
         "zstd",
         "z3"
       ],
@@ -3885,7 +3966,7 @@
         "rust"
       ],
       "homepage": "https://llvm.org/",
-      "version": "22.1.8",
+      "version": "23.1.3",
       "status": "success"
     },
     {
@@ -3946,10 +4027,13 @@
         "postgresql@17",
         "proj",
         "python@3.14",
+        "python@3.15",
         "qemu",
+        "rsync",
         "rust",
         "semgrep",
         "sfcgal",
+        "snowflake-cli",
         "tesseract",
         "toot",
         "virtualenv",
@@ -4014,7 +4098,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/metaspartan/mactop",
-      "version": "2.1.5",
+      "version": "2.1.6",
       "status": "success"
     },
     {
@@ -4026,7 +4110,7 @@
         "sox"
       ],
       "homepage": "https://codeberg.org/tenacityteam/libmad",
-      "version": "0.16.4",
+      "version": "0.16.5",
       "status": "success"
     },
     {
@@ -4039,18 +4123,6 @@
       "required_by": [],
       "homepage": "https://github.com/artempyanykh/marksman",
       "version": "2026-02-08",
-      "status": "success"
-    },
-    {
-      "name": "mbedtls@3",
-      "type": "formula",
-      "description": "Cryptographic & SSL/TLS library",
-      "dependencies": [],
-      "required_by": [
-        "librist"
-      ],
-      "homepage": "https://www.trustedfirmware.org/projects/mbed-tls/",
-      "version": "3.6.7",
       "status": "success"
     },
     {
@@ -4099,7 +4171,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://mole.fit",
-      "version": "1.50.0",
+      "version": "1.61.0",
       "status": "success"
     },
     {
@@ -4109,7 +4181,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/Y2Z/monolith",
-      "version": "2.10.1",
+      "version": "2.11.6",
       "status": "success"
     },
     {
@@ -4119,7 +4191,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/walles/moor",
-      "version": "2.16.3",
+      "version": "2.19.5",
       "status": "success"
     },
     {
@@ -4141,7 +4213,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://getmoshi.app",
-      "version": "0.2.84",
+      "version": "0.4.34",
       "status": "success"
     },
     {
@@ -4159,10 +4231,9 @@
         "keyring",
         "ledger",
         "litecli",
-        "llvm",
         "python@3.13",
         "python@3.14",
-        "rust",
+        "python@3.15",
         "semgrep",
         "snowflake-cli",
         "toot",
@@ -4224,11 +4295,11 @@
         "folly",
         "gflags",
         "glog",
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [],
       "homepage": "https://github.com/facebook/mvfst",
-      "version": "2026.07.27.00",
+      "version": "2026.10.19.00",
       "status": "success"
     },
     {
@@ -4239,14 +4310,14 @@
         "abseil",
         "icu4c@78",
         "lz4",
-        "openssl@3",
+        "openssl@4",
         "protobuf",
         "zlib-ng-compat",
         "zstd"
       ],
       "required_by": [],
       "homepage": "https://github.com/mysql/mysql-server",
-      "version": "9.7.1",
+      "version": "26.7.0",
       "status": "success"
     },
     {
@@ -4323,7 +4394,7 @@
         "gts"
       ],
       "homepage": "https://netpbm.sourceforge.net/",
-      "version": "11.02.27",
+      "version": "10.86.51",
       "status": "success"
     },
     {
@@ -4359,7 +4430,7 @@
       ],
       "required_by": [],
       "homepage": "https://newsboat.org/",
-      "version": "2.44",
+      "version": "2.45",
       "status": "success"
     },
     {
@@ -4367,6 +4438,7 @@
       "type": "formula",
       "description": "Open-source, cross-platform JavaScript runtime environment",
       "dependencies": [
+        "abseil",
         "ada-url",
         "brotli",
         "c-ares",
@@ -4374,23 +4446,23 @@
         "icu4c@78",
         "libffi",
         "libnghttp2",
-        "libnghttp3",
-        "libngtcp2",
         "libuv",
         "llhttp",
         "merve",
         "nbytes",
-        "openssl@3",
+        "openssl@4",
         "simdjson",
+        "simdutf",
         "sqlite",
         "uvwasi",
-        "zstd"
+        "zstd",
+        "highway"
       ],
       "required_by": [
         "fsouza/prettierd/prettierd"
       ],
       "homepage": "https://nodejs.org/",
-      "version": "26.7.0",
+      "version": "26.12.0",
       "status": "success"
     },
     {
@@ -4436,7 +4508,7 @@
         "poppler"
       ],
       "homepage": "https://firefox-source-docs.mozilla.org/security/nss/index.html",
-      "version": "3.126.1",
+      "version": "3.131.1",
       "status": "success"
     },
     {
@@ -4450,7 +4522,7 @@
         "gdal"
       ],
       "homepage": "https://www.numpy.org/",
-      "version": "2.5.2",
+      "version": "2.5.4",
       "status": "success"
     },
     {
@@ -4465,39 +4537,6 @@
       ],
       "homepage": "https://github.com/kkos/oniguruma/",
       "version": "6.9.10",
-      "status": "success"
-    },
-    {
-      "name": "onnx",
-      "type": "formula",
-      "description": "Open standard for machine learning interoperability",
-      "dependencies": [
-        "abseil",
-        "protobuf"
-      ],
-      "required_by": [
-        "onnxruntime",
-        "yvgude/lean-ctx/lean-ctx"
-      ],
-      "homepage": "https://onnx.ai/",
-      "version": "1.22.0",
-      "status": "success"
-    },
-    {
-      "name": "onnxruntime",
-      "type": "formula",
-      "description": "Cross-platform, high performance scoring engine for ML models",
-      "dependencies": [
-        "abseil",
-        "onnx",
-        "protobuf",
-        "re2"
-      ],
-      "required_by": [
-        "yvgude/lean-ctx/lean-ctx"
-      ],
-      "homepage": "https://github.com/microsoft/onnxruntime",
-      "version": "1.29.0",
       "status": "success"
     },
     {
@@ -4523,7 +4562,8 @@
       "dependencies": [
         "imath",
         "libdeflate",
-        "openjph"
+        "openjph",
+        "zstd"
       ],
       "required_by": [
         "chafa",
@@ -4532,7 +4572,7 @@
         "jpeg-xl"
       ],
       "homepage": "https://www.openexr.com/",
-      "version": "3.4.14",
+      "version": "3.5.2",
       "status": "success"
     },
     {
@@ -4571,7 +4611,7 @@
         "openexr"
       ],
       "homepage": "https://github.com/aous72/OpenJPH",
-      "version": "0.31.0",
+      "version": "0.32.0",
       "status": "success"
     },
     {
@@ -4583,8 +4623,41 @@
       ],
       "required_by": [
         "apache-arrow",
+        "bat",
+        "dotnet@9",
+        "edencommon",
+        "eza",
+        "fb303",
+        "fbthrift",
+        "fsouza/prettierd/prettierd",
+        "gdal",
+        "git-trim",
+        "ivandokov/contrib/phockup",
+        "joshmedeski/sesh/sesh",
+        "keyring",
+        "libdap",
+        "marksman",
+        "pgsync",
+        "python@3.13",
+        "sox",
+        "thrift",
+        "watchman"
+      ],
+      "homepage": "https://openssl-library.org",
+      "version": "3.5.9",
+      "status": "success"
+    },
+    {
+      "name": "openssl@4",
+      "type": "formula",
+      "description": "Cryptography and SSL/TLS Toolkit",
+      "dependencies": [
+        "ca-certificates"
+      ],
+      "required_by": [
         "apr-util",
         "aws-c-auth",
+        "aws-c-cal",
         "aws-c-event-stream",
         "aws-c-http",
         "aws-c-io",
@@ -4592,31 +4665,19 @@
         "aws-c-s3",
         "aws-crt-cpp",
         "aws-sdk-cpp",
-        "bat",
+        "coreutils",
         "cryptography",
-        "dotnet@9",
-        "edencommon",
-        "eza",
-        "fb303",
-        "fbthrift",
         "ffmpeg",
         "fizz",
         "folly",
         "fonttools",
         "freetds",
-        "fsouza/prettierd/prettierd",
-        "gdal",
         "git-delta",
-        "git-trim",
         "grpc",
         "hf",
         "httpie",
-        "ivandokov/contrib/phockup",
-        "joshmedeski/sesh/sesh",
-        "keyring",
         "krb5",
         "ledger",
-        "libdap",
         "libevent",
         "libgit2",
         "libngtcp2",
@@ -4625,26 +4686,21 @@
         "libssh2",
         "libwebsockets",
         "litecli",
-        "llvm",
-        "marksman",
         "mvfst",
         "node",
         "opusfile",
-        "pgsync",
         "postgresql@17",
-        "python@3.13",
         "python@3.14",
+        "python@3.15",
         "qemu",
+        "rsync",
         "rtmpdump",
         "ruby",
         "rust",
         "s2n",
         "semgrep",
         "snowflake-cli",
-        "sox",
         "srt",
-        "tcl-tk",
-        "thrift",
         "tmux",
         "tmuxinator",
         "toot",
@@ -4653,13 +4709,12 @@
         "valkey",
         "virtualenv",
         "wangle",
-        "watchman",
         "weasyprint",
         "wget",
         "yt-dlp"
       ],
       "homepage": "https://openssl-library.org",
-      "version": "3.6.3",
+      "version": "4.0.3",
       "status": "success"
     },
     {
@@ -4683,7 +4738,7 @@
       "description": "API for decoding and seeking in .opus files",
       "dependencies": [
         "libogg",
-        "openssl@3",
+        "openssl@4",
         "opus"
       ],
       "required_by": [
@@ -4726,7 +4781,7 @@
       ],
       "required_by": [],
       "homepage": "https://pandoc.org/",
-      "version": "3.10.2",
+      "version": "3.12.1",
       "status": "success"
     },
     {
@@ -4784,7 +4839,7 @@
         "weasyprint"
       ],
       "homepage": "https://www.pcre.org/",
-      "version": "10.47",
+      "version": "10.49",
       "status": "success"
     },
     {
@@ -4834,7 +4889,7 @@
         "weasyprint"
       ],
       "homepage": "https://python-pillow.github.io/",
-      "version": "12.3.0",
+      "version": "13.0.0",
       "status": "success"
     },
     {
@@ -4895,7 +4950,7 @@
         "rust"
       ],
       "homepage": "https://github.com/pkgconf/pkgconf",
-      "version": "3.0.5",
+      "version": "3.0.10",
       "status": "success"
     },
     {
@@ -4905,7 +4960,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://pnpm.io/",
-      "version": "11.21.0",
+      "version": "12.14.0",
       "status": "success"
     },
     {
@@ -4913,11 +4968,13 @@
       "type": "formula",
       "description": "PDF rendering library (based on the xpdf-3.0 code base)",
       "dependencies": [
+        "brotli",
         "cairo",
         "fontconfig",
         "freetype",
         "glib",
         "gpgmepp",
+        "harfbuzz",
         "jpeg-turbo",
         "libpng",
         "libtiff",
@@ -4932,7 +4989,7 @@
         "gdal"
       ],
       "homepage": "https://poppler.freedesktop.org/",
-      "version": "26.08.0",
+      "version": "26.10.0",
       "status": "success"
     },
     {
@@ -4942,7 +4999,8 @@
       "dependencies": [],
       "required_by": [
         "epsilon",
-        "gdal"
+        "gdal",
+        "rsync"
       ],
       "homepage": "https://github.com/rpm-software-management/popt",
       "version": "1.19",
@@ -4966,7 +5024,7 @@
         "icu4c@78",
         "krb5",
         "lz4",
-        "openssl@3",
+        "openssl@4",
         "readline",
         "zstd",
         "gettext"
@@ -5001,7 +5059,7 @@
         "libspatialite"
       ],
       "homepage": "https://proj.org/",
-      "version": "9.8.1",
+      "version": "9.9.0",
       "status": "success"
     },
     {
@@ -5015,13 +5073,10 @@
         "apache-arrow",
         "gdal",
         "grpc",
-        "mosh",
-        "onnx",
-        "onnxruntime",
-        "yvgude/lean-ctx/lean-ctx"
+        "mosh"
       ],
       "homepage": "https://protobuf.dev/",
-      "version": "35.1",
+      "version": "36.2",
       "status": "success"
     },
     {
@@ -5034,10 +5089,11 @@
         "cryptography",
         "semgrep",
         "snowflake-cli",
-        "weasyprint"
+        "weasyprint",
+        "yt-dlp"
       ],
       "homepage": "https://github.com/eliben/pycparser",
-      "version": "3.0",
+      "version": "3.11",
       "status": "success"
     },
     {
@@ -5051,7 +5107,7 @@
         "snowflake-cli"
       ],
       "homepage": "https://pydantic.dev/docs/validation",
-      "version": "2.13.4",
+      "version": "2.14.1",
       "status": "success"
     },
     {
@@ -5071,7 +5127,7 @@
         "yt-dlp"
       ],
       "homepage": "https://github.com/certifi/python-certifi",
-      "version": "2026.7.22",
+      "version": "2026.10.19",
       "status": "success"
     },
     {
@@ -5085,10 +5141,10 @@
         "xz"
       ],
       "required_by": [
-        "snowflake-cli"
+        "gcloud-cli"
       ],
       "homepage": "https://www.python.org/",
-      "version": "3.13.15",
+      "version": "3.13.16",
       "status": "success"
     },
     {
@@ -5096,34 +5152,51 @@
       "type": "formula",
       "description": "Interpreted, interactive, object-oriented programming language",
       "dependencies": [
+        "ca-certificates",
         "mpdecimal",
-        "openssl@3",
+        "openssl@4",
         "sqlite",
         "xz",
         "zstd"
       ],
       "required_by": [
         "apache-arrow",
-        "fonttools",
-        "gcloud-cli",
         "gdal",
-        "hf",
-        "httpie",
         "ivandokov/contrib/phockup",
         "keyring",
+        "watchman"
+      ],
+      "homepage": "https://www.python.org/",
+      "version": "3.14.8",
+      "status": "success"
+    },
+    {
+      "name": "python@3.15",
+      "type": "formula",
+      "description": "Interpreted, interactive, object-oriented programming language",
+      "dependencies": [
+        "ca-certificates",
+        "mpdecimal",
+        "openssl@4",
+        "sqlite",
+        "xz",
+        "zstd"
+      ],
+      "required_by": [
+        "fonttools",
+        "hf",
+        "httpie",
         "ledger",
         "litecli",
-        "llvm",
-        "rust",
         "semgrep",
+        "snowflake-cli",
         "toot",
         "virtualenv",
-        "watchman",
         "weasyprint",
         "yt-dlp"
       ],
       "homepage": "https://www.python.org/",
-      "version": "3.14.7",
+      "version": "3.15.0",
       "status": "success"
     },
     {
@@ -5149,7 +5222,7 @@
       ],
       "required_by": [],
       "homepage": "https://www.qemu.org/",
-      "version": "11.1.0",
+      "version": "11.1.2",
       "status": "success"
     },
     {
@@ -5171,7 +5244,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://qsv.dathere.com/",
-      "version": "22.0.1",
+      "version": "26.0.0",
       "status": "success"
     },
     {
@@ -5184,9 +5257,7 @@
       "required_by": [
         "apache-arrow",
         "gdal",
-        "grpc",
-        "onnxruntime",
-        "yvgude/lean-ctx/lean-ctx"
+        "grpc"
       ],
       "homepage": "https://github.com/google/re2",
       "version": "2025-11-05",
@@ -5217,12 +5288,12 @@
         "libspatialite",
         "libxml2",
         "litecli",
-        "llvm",
         "node",
         "poppler",
         "postgresql@17",
         "python@3.13",
         "python@3.14",
+        "python@3.15",
         "rust",
         "semgrep",
         "snowflake-cli",
@@ -5234,7 +5305,7 @@
         "yt-dlp"
       ],
       "homepage": "https://tiswww.case.edu/php/chet/readline/rltop.html",
-      "version": "8.3.3",
+      "version": "8.3.6",
       "status": "success"
     },
     {
@@ -5258,7 +5329,24 @@
         "semgrep"
       ],
       "homepage": "https://rpds.readthedocs.io/en/latest/",
-      "version": "2026.6.3",
+      "version": "2026.9.1",
+      "status": "success"
+    },
+    {
+      "name": "rsync",
+      "type": "formula",
+      "description": "Utility that provides fast incremental file transfer",
+      "dependencies": [
+        "libidn2",
+        "lz4",
+        "openssl@4",
+        "popt",
+        "xxhash",
+        "zstd"
+      ],
+      "required_by": [],
+      "homepage": "https://rsync.samba.org/",
+      "version": "3.5.1",
       "status": "success"
     },
     {
@@ -5268,7 +5356,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://www.rtk-ai.app/",
-      "version": "0.45.0",
+      "version": "1.0.1",
       "status": "success"
     },
     {
@@ -5276,7 +5364,7 @@
       "type": "formula",
       "description": "Tool for downloading RTMP streaming media",
       "dependencies": [
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [],
       "homepage": "https://rtmpdump.mplayerhq.hu/",
@@ -5289,14 +5377,14 @@
       "description": "Powerful, clean, object-oriented scripting language",
       "dependencies": [
         "libyaml",
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [
         "pgsync",
         "tmuxinator"
       ],
       "homepage": "https://www.ruby-lang.org/",
-      "version": "4.0.6",
+      "version": "4.0.7",
       "status": "success"
     },
     {
@@ -5307,13 +5395,13 @@
         "libgit2",
         "libssh2",
         "llvm",
-        "openssl@3",
+        "openssl@4",
         "pkgconf",
         "sqlite"
       ],
       "required_by": [],
       "homepage": "https://www.rust-lang.org/",
-      "version": "1.97.1",
+      "version": "1.99.1",
       "status": "success"
     },
     {
@@ -5323,7 +5411,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/avencera/rustywind",
-      "version": "v0.27.0",
+      "version": "v0.28.0",
       "status": "success"
     },
     {
@@ -5331,7 +5419,7 @@
       "type": "formula",
       "description": "Implementation of the TLS/SSL protocols",
       "dependencies": [
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [
         "apache-arrow",
@@ -5346,7 +5434,7 @@
         "gdal"
       ],
       "homepage": "https://aws.github.io/s2n-tls/usage-guide/",
-      "version": "1.7.7",
+      "version": "1.7.12",
       "status": "success"
     },
     {
@@ -5360,7 +5448,7 @@
         "ffmpeg"
       ],
       "homepage": "https://github.com/libsdl-org/sdl2-compat",
-      "version": "2.32.70",
+      "version": "2.32.74",
       "status": "success"
     },
     {
@@ -5373,7 +5461,7 @@
         "sdl2-compat"
       ],
       "homepage": "https://libsdl.org/",
-      "version": "3.4.14",
+      "version": "3.4.18",
       "status": "success"
     },
     {
@@ -5388,7 +5476,7 @@
         "libev",
         "pcre2",
         "pydantic",
-        "python@3.14",
+        "python@3.15",
         "rpds-py",
         "sqlite",
         "tree-sitter",
@@ -5396,7 +5484,7 @@
       ],
       "required_by": [],
       "homepage": "https://semgrep.dev",
-      "version": "1.173.0",
+      "version": "1.181.0",
       "status": "success"
     },
     {
@@ -5419,7 +5507,7 @@
       ],
       "required_by": [],
       "homepage": "https://github.com/joshmedeski/sesh",
-      "version": "2.28.0",
+      "version": "2.33.0",
       "status": "success"
     },
     {
@@ -5449,7 +5537,7 @@
         "node"
       ],
       "homepage": "https://simdjson.org",
-      "version": "4.6.7",
+      "version": "5.0.5",
       "status": "success"
     },
     {
@@ -5460,11 +5548,12 @@
         "icu4c@78"
       ],
       "required_by": [
+        "ada-url",
         "merve",
         "node"
       ],
       "homepage": "https://simdutf.github.io/simdutf/",
-      "version": "9.0.0",
+      "version": "9.3.2",
       "status": "success"
     },
     {
@@ -5486,7 +5575,7 @@
         "watchman"
       ],
       "homepage": "https://google.github.io/snappy/",
-      "version": "1.2.2",
+      "version": "1.3.1",
       "status": "success"
     },
     {
@@ -5498,11 +5587,11 @@
         "cryptography",
         "libyaml",
         "pydantic",
-        "python@3.13"
+        "python@3.15"
       ],
       "required_by": [],
       "homepage": "https://docs.snowflake.com/developer-guide/snowflake-cli/index",
-      "version": "3.24.1",
+      "version": "3.29.0",
       "status": "success"
     },
     {
@@ -5554,10 +5643,10 @@
         "ledger",
         "libspatialite",
         "litecli",
-        "llvm",
         "node",
         "python@3.13",
         "python@3.14",
+        "python@3.15",
         "rust",
         "semgrep",
         "snowflake-cli",
@@ -5568,7 +5657,7 @@
         "yt-dlp"
       ],
       "homepage": "https://sqlite.org/index.html",
-      "version": "3.53.4",
+      "version": "3.54.1",
       "status": "success"
     },
     {
@@ -5576,11 +5665,11 @@
       "type": "formula",
       "description": "Secure Reliable Transport",
       "dependencies": [
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [],
       "homepage": "https://www.srtalliance.org/",
-      "version": "1.5.6",
+      "version": "1.5.7",
       "status": "success"
     },
     {
@@ -5590,7 +5679,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://starship.rs/",
-      "version": "1.26.0",
+      "version": "1.27.0",
       "status": "success"
     },
     {
@@ -5630,12 +5719,11 @@
       "type": "formula",
       "description": "Tool Command Language",
       "dependencies": [
-        "libtommath",
-        "openssl@3"
+        "libtommath"
       ],
       "required_by": [],
       "homepage": "https://www.tcl-lang.org",
-      "version": "9.0.4",
+      "version": "9.1.0",
       "status": "success"
     },
     {
@@ -5655,7 +5743,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/julienXX/terminal-notifier",
-      "version": "2.0.0",
+      "version": "3.1.0",
       "status": "success"
     },
     {
@@ -5684,14 +5772,14 @@
       "type": "formula",
       "description": "Framework for scalable cross-language services development",
       "dependencies": [
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [
         "apache-arrow",
         "gdal"
       ],
       "homepage": "https://thrift.apache.org/",
-      "version": "0.24.0",
+      "version": "0.25.0",
       "status": "success"
     },
     {
@@ -5701,14 +5789,15 @@
       "dependencies": [
         "libevent",
         "ncurses",
-        "utf8proc"
+        "utf8proc",
+        "jemalloc"
       ],
       "required_by": [
         "joshmedeski/sesh/sesh",
         "tmuxinator"
       ],
       "homepage": "https://tmux.github.io/",
-      "version": "3.7b",
+      "version": "3.8",
       "status": "success"
     },
     {
@@ -5722,7 +5811,7 @@
       ],
       "required_by": [],
       "homepage": "https://github.com/tmuxinator/tmuxinator",
-      "version": "3.4.1",
+      "version": "3.4.2",
       "status": "success"
     },
     {
@@ -5734,7 +5823,7 @@
         "tmuxinator"
       ],
       "homepage": "https://github.com/tmuxinator/tmuxinator",
-      "version": "3.4.1",
+      "version": "3.4.2",
       "status": "success"
     },
     {
@@ -5744,7 +5833,7 @@
       "dependencies": [
         "certifi",
         "pillow",
-        "python@3.14"
+        "python@3.15"
       ],
       "required_by": [],
       "homepage": "https://toot.bezdomni.net/",
@@ -5770,7 +5859,7 @@
         "semgrep"
       ],
       "homepage": "https://tree-sitter.github.io/",
-      "version": "0.26.12",
+      "version": "0.27.1",
       "status": "success"
     },
     {
@@ -5782,7 +5871,7 @@
         "libevent",
         "libuv",
         "libwebsockets",
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [],
       "homepage": "https://tsl0922.github.io/ttyd/",
@@ -5796,7 +5885,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://github.com/crate-ci/typos",
-      "version": "1.49.0",
+      "version": "1.51.1",
       "status": "success"
     },
     {
@@ -5816,11 +5905,11 @@
       "dependencies": [
         "libevent",
         "libnghttp2",
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [],
       "homepage": "https://www.unbound.net",
-      "version": "1.26.0",
+      "version": "1.26.1",
       "status": "success"
     },
     {
@@ -5864,7 +5953,17 @@
         "tmuxinator"
       ],
       "homepage": "https://juliastrings.github.io/utf8proc/",
-      "version": "2.11.3",
+      "version": "2.12.0",
+      "status": "success"
+    },
+    {
+      "name": "uv",
+      "type": "formula",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://docs.astral.sh/uv/",
+      "version": "0.13.4",
       "status": "success"
     },
     {
@@ -5887,11 +5986,11 @@
       "type": "formula",
       "description": "High-performance data structure server that primarily serves key/value workloads",
       "dependencies": [
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [],
       "homepage": "https://valkey.io",
-      "version": "9.1.1",
+      "version": "9.1.2",
       "status": "success"
     },
     {
@@ -5911,11 +6010,11 @@
       "type": "formula",
       "description": "Tool for creating isolated virtual python environments",
       "dependencies": [
-        "python@3.14"
+        "python@3.15"
       ],
       "required_by": [],
       "homepage": "https://virtualenv.pypa.io/",
-      "version": "21.7.4",
+      "version": "21.14.11",
       "status": "success"
     },
     {
@@ -5929,7 +6028,7 @@
         "folly",
         "gflags",
         "glog",
-        "openssl@3"
+        "openssl@4"
       ],
       "required_by": [
         "edencommon",
@@ -5938,7 +6037,7 @@
         "watchman"
       ],
       "homepage": "https://github.com/facebook/wangle",
-      "version": "2026.07.27.00",
+      "version": "2026.10.19.00",
       "status": "success"
     },
     {
@@ -5965,11 +6064,11 @@
         "folly",
         "glog",
         "pcre2",
-        "python@3.14"
+        "python@3.15"
       ],
       "required_by": [],
       "homepage": "https://facebook.github.io/watchman/",
-      "version": "2026.07.27.00",
+      "version": "2026.10.19.00",
       "status": "success"
     },
     {
@@ -5992,11 +6091,11 @@
         "cffi",
         "pango",
         "pillow",
-        "python@3.14"
+        "python@3.15"
       ],
       "required_by": [],
       "homepage": "https://www.courtbouillon.org/weasyprint",
-      "version": "69.0",
+      "version": "70.0",
       "status": "success"
     },
     {
@@ -6015,16 +6114,21 @@
         "gdal",
         "gdk-pixbuf",
         "graphviz",
+        "gts",
         "imagemagick",
         "jpeg-xl",
         "leptonica",
         "libheif",
         "librsvg",
         "libtiff",
+        "little-cms2",
+        "netpbm",
         "openexr",
+        "openjpeg",
         "openjph",
         "pillow",
         "poppler",
+        "proj",
         "tesseract",
         "toot",
         "weasyprint",
@@ -6041,7 +6145,7 @@
       "dependencies": [
         "libidn2",
         "libpsl",
-        "openssl@3",
+        "openssl@4",
         "gettext",
         "libunistring"
       ],
@@ -6051,13 +6155,23 @@
       "status": "success"
     },
     {
+      "name": "whatcable-cli",
+      "type": "formula",
+      "description": "Command-line USB-C cable diagnostics",
+      "dependencies": [],
+      "required_by": [],
+      "homepage": "https://github.com/darrylmorley/whatcable",
+      "version": "1.5.0",
+      "status": "success"
+    },
+    {
       "name": "worktrunk",
       "type": "formula",
       "description": "CLI for Git worktree management, designed for parallel AI agent workflows",
       "dependencies": [],
       "required_by": [],
       "homepage": "https://worktrunk.dev",
-      "version": "0.74.0",
+      "version": "0.80.0",
       "status": "success"
     },
     {
@@ -6083,8 +6197,8 @@
         "imagemagick",
         "libheif"
       ],
-      "homepage": "https://bitbucket.org/multicoreware/x265_git",
-      "version": "4.2",
+      "homepage": "https://github.com/Multicorewareinc/x265",
+      "version": "4.3",
       "status": "success"
     },
     {
@@ -6126,7 +6240,7 @@
         "weasyprint"
       ],
       "homepage": "https://www.x.org/",
-      "version": "2025.1",
+      "version": "2026.1",
       "status": "success"
     },
     {
@@ -6138,10 +6252,11 @@
         "edencommon",
         "fb303",
         "fbthrift",
+        "rsync",
         "watchman"
       ],
       "homepage": "https://xxhash.com",
-      "version": "0.8.3",
+      "version": "0.8.4",
       "status": "success"
     },
     {
@@ -6158,6 +6273,7 @@
         "edencommon",
         "fb303",
         "fbthrift",
+        "ffmpeg",
         "fizz",
         "folly",
         "fonttools",
@@ -6202,7 +6318,9 @@
         "proj",
         "python@3.13",
         "python@3.14",
+        "python@3.15",
         "qemu",
+        "rsync",
         "rust",
         "semgrep",
         "sfcgal",
@@ -6218,7 +6336,7 @@
         "zstd"
       ],
       "homepage": "https://tukaani.org/xz/",
-      "version": "5.8.3",
+      "version": "5.8.4",
       "status": "success"
     },
     {
@@ -6238,7 +6356,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://yazi-rs.github.io",
-      "version": "26.5.6",
+      "version": "26.9.1",
       "status": "success"
     },
     {
@@ -6247,12 +6365,14 @@
       "description": "Feature-rich command-line audio/video downloader",
       "dependencies": [
         "certifi",
+        "cffi",
         "deno",
-        "python@3.14"
+        "pycparser",
+        "python@3.15"
       ],
       "required_by": [],
       "homepage": "https://github.com/yt-dlp/yt-dlp",
-      "version": "2026.7.4",
+      "version": "2026.8.19",
       "status": "success"
     },
     {
@@ -6267,7 +6387,7 @@
         "rust"
       ],
       "homepage": "https://github.com/Z3Prover/z3",
-      "version": "4.16.0",
+      "version": "5.3.1",
       "status": "success"
     },
     {
@@ -6277,7 +6397,7 @@
       "dependencies": [],
       "required_by": [],
       "homepage": "https://docs.zizmor.sh/",
-      "version": "1.29.0",
+      "version": "1.31.1",
       "status": "success"
     },
     {
@@ -6382,10 +6502,13 @@
         "postgresql@17",
         "proj",
         "python@3.14",
+        "python@3.15",
         "qemu",
+        "rsync",
         "rust",
         "semgrep",
         "sfcgal",
+        "snowflake-cli",
         "tesseract",
         "toot",
         "virtualenv",
@@ -6406,7 +6529,7 @@
       "type": "cask",
       "description": "Command-line interface for 1Password",
       "homepage": "https://developer.1password.com/docs/cli",
-      "version": "2.39.0",
+      "version": "2.41.0",
       "status": "success"
     },
     {
@@ -6422,7 +6545,15 @@
       "type": "cask",
       "description": "Open source IDE for exploring and testing APIs",
       "homepage": "https://www.usebruno.com/",
-      "version": "4.0.0",
+      "version": "4.2.1",
+      "status": "success"
+    },
+    {
+      "name": "codex",
+      "type": "cask",
+      "description": "OpenAI's coding agent that runs in your terminal",
+      "homepage": "https://github.com/openai/codex",
+      "version": "0.163.0",
       "status": "success"
     },
     {
@@ -6430,7 +6561,7 @@
       "type": "cask",
       "description": "Photography workflow application and raw developer",
       "homepage": "https://www.darktable.org/",
-      "version": "5.6.0",
+      "version": "5.6.2",
       "status": "success"
     },
     {
@@ -6446,7 +6577,7 @@
       "type": "cask",
       "description": null,
       "homepage": "https://github.com/ryanoasis/nerd-fonts",
-      "version": "3.5.0",
+      "version": "3.5.1",
       "status": "success"
     },
     {
@@ -6454,7 +6585,7 @@
       "type": "cask",
       "description": null,
       "homepage": "https://github.com/ryanoasis/nerd-fonts",
-      "version": "3.5.0",
+      "version": "3.5.1",
       "status": "success"
     },
     {
@@ -6462,7 +6593,7 @@
       "type": "cask",
       "description": null,
       "homepage": "https://github.com/ryanoasis/nerd-fonts",
-      "version": "3.5.0",
+      "version": "3.5.1",
       "status": "success"
     },
     {
@@ -6470,7 +6601,7 @@
       "type": "cask",
       "description": "Set of tools to manage resources and applications hosted on Google Cloud",
       "homepage": "https://cloud.google.com/cli/",
-      "version": "580.0.0",
+      "version": "590.0.0",
       "status": "success"
     },
     {
@@ -6486,7 +6617,7 @@
       "type": "cask",
       "description": "Keyboard customiser",
       "homepage": "https://karabiner-elements.pqrs.org/",
-      "version": "16.1.0",
+      "version": "16.3.0",
       "status": "success"
     },
     {
@@ -6494,7 +6625,7 @@
       "type": "cask",
       "description": "Free cross-platform office suite, fresh version",
       "homepage": "https://www.libreoffice.org/",
-      "version": "26.2.5",
+      "version": "26.8.1",
       "status": "success"
     },
     {
@@ -6502,7 +6633,7 @@
       "type": "cask",
       "description": "Tool to control external monitor brightness & volume",
       "homepage": "https://github.com/MonitorControl/MonitorControl",
-      "version": "4.3.3",
+      "version": "4.4.0",
       "status": "success"
     },
     {
@@ -6510,7 +6641,7 @@
       "type": "cask",
       "description": "Local-first dictation and meeting transcription",
       "homepage": "https://muesli.works/",
-      "version": "0.8.1",
+      "version": "0.8.5",
       "status": "success"
     },
     {
@@ -6518,15 +6649,15 @@
       "type": "cask",
       "description": "Knowledge base that works on top of a local folder of plain text Markdown files",
       "homepage": "https://obsidian.md/",
-      "version": "1.13.7",
+      "version": "1.14.4",
       "status": "success"
     },
     {
       "name": "omniwm",
       "type": "cask",
-      "description": "Tiling window manager for macOS with Niri-inspired column-based layout",
-      "homepage": "https://github.com/BarutSRB/OmniWM",
-      "version": "0.6.2",
+      "description": "Tiling window manager",
+      "homepage": "https://omniwm.app/",
+      "version": "0.7.6",
       "status": "success"
     },
     {
@@ -6534,15 +6665,23 @@
       "type": "cask",
       "description": "Replacement for Docker Desktop",
       "homepage": "https://orbstack.dev/",
-      "version": "2.2.3,20963",
+      "version": "2.2.4,21120",
+      "status": "success"
+    },
+    {
+      "name": "qlmarkdown",
+      "type": "cask",
+      "description": "Quick Look generator for Markdown files",
+      "homepage": "https://github.com/sbarex/QLMarkdown",
+      "version": "1.5.7",
       "status": "success"
     },
     {
       "name": "recordly",
       "type": "cask",
-      "description": "Screen recording app",
+      "description": "Creator-focused screen recorder with auto-zoom, cursor effects, and more",
       "homepage": "https://github.com/webadderallorg/Recordly",
-      "version": "1.3.3",
+      "version": "1.4.0",
       "status": "success"
     },
     {
@@ -6558,7 +6697,7 @@
       "type": "cask",
       "description": "Tool that provides consistent, highly configurable symbols for apps",
       "homepage": "https://developer.apple.com/sf-symbols/",
-      "version": "8.0,135",
+      "version": "27.0,140",
       "status": "success"
     },
     {
@@ -6566,15 +6705,7 @@
       "type": "cask",
       "description": "System monitor for the menu bar",
       "homepage": "https://github.com/exelban/stats",
-      "version": "3.0.11",
-      "status": "success"
-    },
-    {
-      "name": "supacode",
-      "type": "cask",
-      "description": "Native terminal coding agents command center",
-      "homepage": "https://supacode.sh/",
-      "version": "0.10.8",
+      "version": "3.0.22",
       "status": "success"
     },
     {
@@ -6582,7 +6713,15 @@
       "type": "cask",
       "description": "Menu bar manager",
       "homepage": "https://github.com/thaw-app/Thaw/",
-      "version": "1.2.0",
+      "version": "2.1.0",
+      "status": "success"
+    },
+    {
+      "name": "tinycast",
+      "type": "cask",
+      "description": "Tiny, fully native launcher, hotkeys, and clipboard history",
+      "homepage": "https://github.com/abue-ammar/tinycast",
+      "version": "0.12.1",
       "status": "success"
     },
     {
@@ -6591,14 +6730,6 @@
       "description": "Menubar app to track AI coding assistant usage",
       "homepage": "https://github.com/Halloweedev/usagepal",
       "version": "0.7.68",
-      "status": "success"
-    },
-    {
-      "name": "yap",
-      "type": "cask",
-      "description": "On-device voice dictation",
-      "homepage": "https://github.com/FrigadeHQ/yap",
-      "version": "0.1.10",
       "status": "success"
     }
   ]
