@@ -234,7 +234,7 @@ cask "basictex"          # minimal TeX distribution
 cask "iterm2"            # terminal emulator
 cask "karabiner-elements"  # keyboard customizer
 cask "thaw"              # macOS menu bar manager
-cask "abue-ammar/tinycast/tinycast"  # launcher, hotkeys, clipboard history (Spotlight replacement)
+cask "abue-ammar/tinycast/tinycast"  # Raycast alternative: launcher, hotkeys, clipboard history
 
 # ---------------------------------------------------------------------------
 # Personal tap casks (theskumar/tap — apps not in homebrew-cask)
