@@ -227,7 +227,6 @@ cask "obsidian"          # markdown knowledge base
 cask "bruno"             # API client
 cask "1password-cli"     # 1Password CLI
 cask "stats"             # menu bar system monitor
-cask "monitorcontrol"    # external display brightness
 cask "finicky"           # default browser router
 cask "omniwm"            # tiling window manager
 cask "basictex"          # minimal TeX distribution
